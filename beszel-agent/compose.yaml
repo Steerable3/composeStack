@@ -1,11 +1,5 @@
 name: beszel-agent
 
-secrets:
-  ssh-key:
-    file: ./ssh-key.txt
-  token:
-    file: ./token.txt
-
 services:
   beszel-agent:
     image: henrygd/beszel-agent
@@ -20,9 +14,6 @@ services:
       - ${PARITY_DISK}/.beszel:/extra-filesystems/parity-disk:ro
     environment:
       LISTEN: 45876
-      KEY_FILE: /run/secrets/ssh-key
+      KEY: ${SSH_KEY}
       HUB_URL: "http://mainframe:3200"
-      TOKEN_FILE: /run/secrets/token
-    secrets:
-      - ssh-key
-      - token
+      TOKEN: ${TOKEN}
