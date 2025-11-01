@@ -87,3 +87,9 @@ PRAGMA temp_store=2;
 [2025-11-01 18:19:43.662 +01:00] [INF] [39] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: Optimizing and vacuuming jellyfin.db...
 [2025-11-01 18:19:43.812 +01:00] [INF] [39] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: jellyfin.db optimized successfully!
 [2025-11-01 18:19:43.812 +01:00] [INF] [39] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Optimize database" Completed after 0 minute(s) and 0 seconds
+[2025-11-01 18:57:29.843 +01:00] [INF] [85] Emby.Server.Implementations.Session.SessionManager: Sending shutdown notifications
+[2025-11-01 18:57:29.860 +01:00] [INF] [83] Main: Running query planner optimizations in the database... This might take a while
+[2025-11-01 18:57:29.884 +01:00] [INF] [83] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2025-11-01 18:57:29.884 +01:00] [INF] [83] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzArtistProvider"
+[2025-11-01 18:57:29.884 +01:00] [INF] [83] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2025-11-01 18:57:29.884 +01:00] [INF] [83] Emby.Server.Implementations.ApplicationHost: Disposing "PluginManager"
