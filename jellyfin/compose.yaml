@@ -1,0 +1,21 @@
+name: jellyfin
+
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Vienna
+      - JELLYFIN_PublishedServerUrl=https://stream.neverlab.dev #optional
+    volumes:
+      - ./config:/config
+      - /safe/media:/data
+    devices:
+      - nvidia.com/gpu=all
+    ports:
+      - 2600:8096
+      - 7359:7359/udp #Service Discovery
+      - 1900:1900/udp #Client Discovery
+    restart: unless-stopped

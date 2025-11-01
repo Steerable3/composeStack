@@ -1,0 +1,39 @@
+name: proxy
+
+secrets:
+  api-token:
+    file: ./api-token.txt
+
+services:
+  proxy:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - data:/data
+      - letsencrypt:/etc/letsencrypt
+    healthcheck:
+      test: ["CMD", "/usr/bin/check-health"]
+      interval: 10s
+      timeout: 3s
+
+  ddns:
+    image: favonia/cloudflare-ddns:latest
+    container_name: cloudflare-ddns
+    restart: unless-stopped
+    user: "1000:1000"
+    read_only: true
+    cap_drop: [all]
+    security_opt: [no-new-privileges:true]
+    environment:
+      - CLOUDFLARE_API_TOKEN_FILE=/run/secrets/api-token
+      - DOMAINS=neverlab.dev
+      - PROXIED=true
+      - IP6_PROVIDER=none
+    secrets:
+      - api-token
+
+volumes:
+  data:
+  letsencrypt:

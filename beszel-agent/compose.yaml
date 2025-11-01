@@ -1,0 +1,28 @@
+name: beszel-agent
+
+secrets:
+  ssh-key:
+    file: ./ssh-key.txt
+  token:
+    file: ./token.txt
+
+services:
+  beszel-agent:
+    image: henrygd/beszel-agent
+    container_name: beszel-agent
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./beszel_agent_data:/var/lib/beszel-agent
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      # monitor other disks / partitions by mounting a folder in /extra-filesystems
+      - ${DATA_DISK}/.beszel:/extra-filesystems/data-disk:ro
+      - ${PARITY_DISK}/.beszel:/extra-filesystems/parity-disk:ro
+    environment:
+      LISTEN: 45876
+      KEY_FILE: /run/secrets/ssh-key
+      HUB_URL: "http://mainframe:3200"
+      TOKEN_FILE: /run/secrets/token
+    secrets:
+      - ssh-key
+      - token

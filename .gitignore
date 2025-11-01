@@ -1,0 +1,19 @@
+# Ignore everything in the repo
+*
+
+# Keep the compose.yaml files in the directories
+!/.gitignore
+!/*/
+!/*/compose.yaml
+
+# Also keep the specified files
+!/servarr/**
+!/immich/**
+/immich/db-password.txt
+!/jellyfin/**
+!/beszel-hub/**
+!/audiobookshelf/**
+!/navidrome/**
+!/home-assistant/**
+!/pihole/**
+/pihole/web-password.txt
