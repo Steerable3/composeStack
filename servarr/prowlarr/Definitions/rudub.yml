@@ -9,20 +9,8 @@ type: semi-private
 encoding: windows-1251
 followredirect: true
 links:
-  - https://oct25.rudub.homes/
+  - https://oct31.rudub.homes/
 legacylinks:
-  - https://oct10.rudub.mom/
-  - http://oct11.rudub.mom/
-  - https://oct11.rudub.mom/
-  - http://oct12.rudub.mom/
-  - https://oct12.rudub.mom/
-  - http://oct13.rudub.mom/
-  - https://oct13.rudub.mom/
-  - http://oct14.rudub.mom/
-  - https://oct14.rudub.mom/
-  - http://oct15.rudub.mom/
-  - https://oct15.rudub.mom/
-  - http://oct16.rudub.mom/
   - https://oct16.rudub.mom/
   - http://oct17.rudub.mom/
   - https://oct17.rudub.mom/
@@ -41,6 +29,18 @@ legacylinks:
   - http://oct24.rudub.homes/
   - https://oct24.rudub.homes/
   - http://oct25.rudub.homes/
+  - https://oct25.rudub.homes/
+  - http://oct26.rudub.homes/
+  - https://oct26.rudub.homes/
+  - http://oct27.rudub.homes/
+  - https://oct27.rudub.homes/
+  - http://oct28.rudub.homes/
+  - https://oct28.rudub.homes/
+  - http://oct29.rudub.homes/
+  - https://oct29.rudub.homes/
+  - http://oct30.rudub.homes/
+  - https://oct30.rudub.homes/
+  - http://oct31.rudub.homes/
 caps:
   categorymappings:
     - {id: 1, cat: TV, desc: "TV"}

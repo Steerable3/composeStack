@@ -6,7 +6,7 @@ addic7ed:
   username: ''
   vip: false
 analytics:
-  enabled: true
+  enabled: false
 anidb:
   api_client: ''
   api_client_ver: 1
@@ -20,9 +20,9 @@ assrt:
   token: ''
 auth:
   apikey: 99b22248aa0c11ae0fc36a4bbab664f5
-  password: ''
-  type: null
-  username: ''
+  password: 6ff14bfe9071343e6fd0b5463106f2d3
+  type: form
+  username: jacko
 avistaz:
   cookies: ''
   user_agent: ''
@@ -66,7 +66,10 @@ general:
   embedded_subs_show_desired: true
   embedded_subtitles_parser: ffprobe
   enabled_integrations: []
-  enabled_providers: []
+  enabled_providers:
+  - podnapisi
+  - opensubtitlescom
+  - gestdown
   flask_secret_key: 06d54a17d5d4bb04ce0e1297fd6e40b6
   hi_extension: hi
   ignore_ass_subs: false
@@ -75,13 +78,13 @@ general:
   ip: '*'
   language_equals: []
   minimum_score: 90
-  minimum_score_movie: 70
-  movie_default_enabled: false
-  movie_default_profile: ''
+  minimum_score_movie: 80
+  movie_default_enabled: true
+  movie_default_profile: 2
   movie_tag_enabled: false
   multithreading: true
   page_size: 25
-  parse_embedded_audio_track: false
+  parse_embedded_audio_track: true
   path_mappings: []
   path_mappings_movie: []
   port: 6767
@@ -89,8 +92,8 @@ general:
   postprocessing_threshold: 90
   postprocessing_threshold_movie: 70
   remove_profile_tags: []
-  serie_default_enabled: false
-  serie_default_profile: ''
+  serie_default_enabled: true
+  serie_default_profile: 2
   serie_tag_enabled: false
   single_language: false
   skip_hashing: false
@@ -106,9 +109,9 @@ general:
   use_postprocessing: false
   use_postprocessing_threshold: false
   use_postprocessing_threshold_movie: false
-  use_radarr: false
+  use_radarr: true
   use_scenename: true
-  use_sonarr: false
+  use_sonarr: true
   utf8_encode: true
   wanted_search_frequency: 6
   wanted_search_frequency_movie: 6
@@ -168,9 +171,9 @@ opensubtitles:
   vip: false
 opensubtitlescom:
   include_ai_translated: false
-  password: ''
+  password: a6e3qD9WspV*@c
   use_hash: true
-  username: ''
+  username: subberfortitles
 plex:
   apikey: ''
   auth_method: apikey
@@ -215,17 +218,17 @@ proxy:
   url: ''
   username: ''
 radarr:
-  apikey: ''
-  base_url: /
+  apikey: f4abd08fbebc42ac86b1b2a6eea7cfa1
+  base_url: ''
   defer_search_signalr: false
   excluded_tags: []
   full_update: Daily
   full_update_day: 6
   full_update_hour: 4
   http_timeout: 60
-  ip: 127.0.0.1
+  ip: 172.27.7.5
   movies_sync: 60
-  only_monitored: false
+  only_monitored: true
   port: 7878
   ssl: false
   sync_only_monitored_movies: false
@@ -244,8 +247,8 @@ series_scores:
   video_codec: 2
   year: 90
 sonarr:
-  apikey: ''
-  base_url: /
+  apikey: 3194480568d449ddb5ecd20782052618
+  base_url: ''
   defer_search_signalr: false
   exclude_season_zero: false
   excluded_series_types: []
@@ -254,8 +257,8 @@ sonarr:
   full_update_day: 6
   full_update_hour: 4
   http_timeout: 60
-  ip: 127.0.0.1
-  only_monitored: false
+  ip: 172.27.7.6
+  only_monitored: true
   port: 8989
   series_sync: 60
   ssl: false

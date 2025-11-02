@@ -385,3 +385,1314 @@
 2025-10-25 22:49:01.1|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
 2025-10-25 23:19:54.0|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2025-10-25 23:19:54.6|Info|ConsoleApp|Exiting main.
+2025-11-01 22:00:20.4|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-11-01 22:00:20.4|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-11-01 22:00:20.4|Debug|ProcessProvider| - [152] Prowlarr
+2025-11-01 22:00:20.5|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-01 22:00:20.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-01 22:00:20.6|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-01 22:00:20.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-01 22:00:20.7|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-01 22:00:20.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.06455s
+2025-11-01 22:00:20.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-01 22:00:20.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0704243s
+2025-11-01 22:00:20.7|Debug|MigrationController|Took: 00:00:00.2481282
+2025-11-01 22:00:20.7|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-01 22:00:20.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-01 22:00:20.8|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-01 22:00:20.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-01 22:00:20.8|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-01 22:00:20.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0052169s
+2025-11-01 22:00:20.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-01 22:00:20.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0055983s
+2025-11-01 22:00:20.8|Debug|MigrationController|Took: 00:00:00.0443096
+2025-11-01 22:00:21.3|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-11-01 22:00:21.9|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-11-01 22:00:21.9|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-11-01 22:00:24.9|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-11-01 22:00:25.0|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-01 22:00:25.2|Debug|HttpClient|Downloading Completed. took 0s
+2025-11-01 22:00:25.3|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-11-01 22:00:25.3|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-11-01 22:00:25.6|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-11-01 22:00:25.6|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-11-01 22:00:25.6|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-11-01 22:00:25.6|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-01 22:00:25.6|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-01 22:00:25.6|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-11-01 22:00:52.4|Info|HistoryService|Removing items older than 30 days from history
+2025-11-01 22:00:52.5|Debug|HistoryService|History has been cleaned up.
+2025-11-01 22:00:52.8|Debug|InstallUpdateService|Checking for updates
+2025-11-01 22:00:53.0|Debug|InstallUpdateService|No update available
+2025-11-01 22:00:53.1|Info|BackupService|Starting Backup
+2025-11-01 22:00:53.1|Debug|BackupService|Cleaning up backup files older than 28 days
+2025-11-01 22:00:53.1|Debug|BackupService|Finished cleaning up old backup files
+2025-11-01 22:00:53.1|Debug|BackupService|Backing up config.xml
+2025-11-01 22:00:53.1|Debug|DiskTransferService|Copy [/config/config.xml] > [/run/prowlarr-temp/prowlarr_backup/config.xml]
+2025-11-01 22:00:53.1|Debug|BackupService|Backing up database
+2025-11-01 22:00:53.5|Info|HousekeepingService|Running housecleaning tasks
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Starting CleanupAdditionalUsers
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Completed CleanupAdditionalUsers
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Starting CleanupCommandQueue
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Completed CleanupCommandQueue
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Starting CleanupOrphanedApplicationStatus
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Completed CleanupOrphanedApplicationStatus
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Starting CleanupOrphanedDownloadClientStatus
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Completed CleanupOrphanedDownloadClientStatus
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Starting CleanupOrphanedHistoryItems
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Completed CleanupOrphanedHistoryItems
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Starting CleanupOrphanedIndexerStatus
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Completed CleanupOrphanedIndexerStatus
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Starting CleanupOrphanedNotificationStatus
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Completed CleanupOrphanedNotificationStatus
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Starting CleanupTemporaryUpdateFiles
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Completed CleanupTemporaryUpdateFiles
+2025-11-01 22:00:53.5|Debug|HousekeepingService|Starting CleanupUnusedTags
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Completed CleanupUnusedTags
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Starting FixFutureApplicationStatusTimes
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Completed FixFutureApplicationStatusTimes
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Starting FixFutureDownloadClientStatusTimes
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Completed FixFutureDownloadClientStatusTimes
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Starting FixFutureIndexerStatusTimes
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Completed FixFutureIndexerStatusTimes
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Starting FixFutureNotificationStatusTimes
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Completed FixFutureNotificationStatusTimes
+2025-11-01 22:00:53.6|Debug|HousekeepingService|Starting FixFutureRunScheduledTasks
+2025-11-01 22:00:54.0|Debug|BackupService|Creating backup zip
+2025-11-01 22:00:54.0|Debug|ArchiveService|Creating archive /config/Backups/scheduled/prowlarr_backup_v2.1.5.5216_2025.11.01_22.00.53.zip
+2025-11-01 22:00:54.1|Debug|BackupService|Backup zip created
+2025-11-01 22:00:54.2|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-11-01 22:00:54.3|Debug|HousekeepingService|Completed FixFutureRunScheduledTasks
+2025-11-01 22:00:54.3|Debug|HousekeepingService|Starting TrimLogDatabase
+2025-11-01 22:00:54.3|Info|Database|Vacuuming Log database
+2025-11-01 22:00:54.5|Debug|HttpClient|Downloading Completed. took 0s
+2025-11-01 22:00:54.6|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-11-01 22:00:54.8|Info|Database|Log database compressed
+2025-11-01 22:00:54.8|Debug|HousekeepingService|Completed TrimLogDatabase
+2025-11-01 22:00:54.8|Debug|HousekeepingService|Compressing main database after housekeeping
+2025-11-01 22:00:54.8|Info|Database|Vacuuming Main database
+2025-11-01 22:00:55.2|Info|Database|Main database compressed
+2025-11-01 22:09:13.5|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-11-01 22:09:14.5|Info|ConsoleApp|Exiting main.
+2025-11-01 22:09:37.0|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-11-01 22:09:37.0|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-11-01 22:09:37.0|Debug|ProcessProvider| - [150] Prowlarr
+2025-11-01 22:09:37.1|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-01 22:09:37.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-01 22:09:37.1|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-01 22:09:37.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-01 22:09:37.2|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-01 22:09:37.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0426277s
+2025-11-01 22:09:37.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-01 22:09:37.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.046178s
+2025-11-01 22:09:37.2|Debug|MigrationController|Took: 00:00:00.1501923
+2025-11-01 22:09:37.2|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-01 22:09:37.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-01 22:09:37.2|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-01 22:09:37.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-01 22:09:37.2|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-01 22:09:37.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.003792s
+2025-11-01 22:09:37.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-01 22:09:37.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0040227s
+2025-11-01 22:09:37.2|Debug|MigrationController|Took: 00:00:00.0211269
+2025-11-01 22:09:37.6|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-11-01 22:09:37.9|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-11-01 22:09:37.9|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-11-01 22:09:39.5|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-11-01 22:09:39.6|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-01 22:09:39.9|Debug|HttpClient|Downloading Completed. took 0s
+2025-11-01 22:09:40.1|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-11-01 22:09:40.1|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-11-01 22:09:40.1|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-11-01 22:09:40.2|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-11-01 22:09:40.2|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-11-01 22:09:40.2|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-01 22:09:40.2|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-01 22:09:40.2|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-11-01 22:20:51.8|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-11-01 22:20:53.0|Info|ConsoleApp|Exiting main.
+2025-11-01 22:21:14.8|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-11-01 22:21:14.8|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-11-01 22:21:14.8|Debug|ProcessProvider| - [150] Prowlarr
+2025-11-01 22:21:14.9|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-01 22:21:15.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-01 22:21:15.0|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-01 22:21:15.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-01 22:21:15.1|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-01 22:21:15.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.063449s
+2025-11-01 22:21:15.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-01 22:21:15.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0699999s
+2025-11-01 22:21:15.1|Debug|MigrationController|Took: 00:00:00.2674718
+2025-11-01 22:21:15.1|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-01 22:21:15.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-01 22:21:15.2|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-01 22:21:15.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-01 22:21:15.2|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-01 22:21:15.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0115903s
+2025-11-01 22:21:15.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-01 22:21:15.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0119346s
+2025-11-01 22:21:15.2|Debug|MigrationController|Took: 00:00:00.0798700
+2025-11-01 22:21:15.8|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-11-01 22:21:15.9|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-11-01 22:21:15.9|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-11-01 22:21:17.6|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-11-01 22:21:17.7|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-01 22:21:18.0|Debug|HttpClient|Downloading Completed. took 0s
+2025-11-01 22:21:18.3|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-11-01 22:21:18.3|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-11-01 22:21:18.5|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-11-01 22:21:18.5|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-11-01 22:21:18.5|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-11-01 22:21:18.5|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-01 22:21:18.5|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-01 22:21:18.5|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-11-01 22:42:07.9|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-11-01 22:42:09.2|Info|ConsoleApp|Exiting main.
+2025-11-02 01:37:37.7|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-11-02 01:37:37.7|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-11-02 01:37:37.7|Debug|ProcessProvider| - [150] Prowlarr
+2025-11-02 01:37:37.7|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 01:37:37.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 01:37:37.8|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 01:37:37.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 01:37:37.9|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 01:37:37.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0456779s
+2025-11-02 01:37:37.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 01:37:37.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0518022s
+2025-11-02 01:37:37.9|Debug|MigrationController|Took: 00:00:00.1654783
+2025-11-02 01:37:37.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 01:37:37.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 01:37:37.9|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 01:37:37.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 01:37:37.9|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 01:37:37.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0044969s
+2025-11-02 01:37:37.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 01:37:37.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0049035s
+2025-11-02 01:37:37.9|Debug|MigrationController|Took: 00:00:00.0302354
+2025-11-02 01:37:38.3|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-11-02 01:37:38.5|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-11-02 01:37:38.5|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-11-02 01:37:39.8|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-11-02 01:37:40.0|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-02 01:37:40.4|Debug|HttpClient|Downloading Completed. took 0s
+2025-11-02 01:37:40.8|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-11-02 01:37:40.8|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-11-02 01:37:40.8|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-11-02 01:37:40.8|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-11-02 01:37:40.8|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-11-02 01:37:40.8|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-02 01:37:40.8|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-02 01:37:40.8|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-11-02 01:38:35.7|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:35.8|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:35.8|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:35.8|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:35.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:35.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:35.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:35.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:36.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:36.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:36.2|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (97 ms)
+2025-11-02 01:38:36.3|Debug|Api|[GET] /api/v1/indexer: 200.OK (175 ms)
+2025-11-02 01:38:36.3|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (174 ms)
+2025-11-02 01:38:36.3|Debug|Api|[GET] /api/v1/appprofile: 200.OK (183 ms)
+2025-11-02 01:38:36.3|Debug|Api|[GET] /api/v1/customFilter: 200.OK (184 ms)
+2025-11-02 01:38:36.3|Debug|Api|[GET] /api/v1/tag: 200.OK (184 ms)
+2025-11-02 01:38:36.3|Debug|Api|[GET] /api/v1/config/ui: 200.OK (73 ms)
+2025-11-02 01:38:36.3|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:36.3|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:38:36.3|Debug|Api|[GET] /api/v1/localization: 200.OK (14 ms)
+2025-11-02 01:38:36.4|Debug|Api|[GET] /api/v1/system/status: 200.OK (36 ms)
+2025-11-02 01:38:36.4|Debug|Api|[GET] /api/v1/config/host: 200.OK (51 ms)
+2025-11-02 01:38:36.4|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (4 ms)
+2025-11-02 01:38:36.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (5 ms)
+2025-11-02 01:38:36.4|Debug|Api|[GET] /api/v1/config/host: 200.OK (12 ms)
+2025-11-02 01:38:36.4|Debug|Api|[GET] /api/v1/health: 200.OK (18 ms)
+2025-11-02 01:38:36.5|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.5|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.5|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.5|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.5|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.6|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.6|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.7|Debug|Api|[GET] /api/v1/customFilter: 200.OK (2 ms)
+2025-11-02 01:40:08.8|Debug|Api|[GET] /api/v1/appprofile: 200.OK (11 ms)
+2025-11-02 01:40:08.8|Debug|Api|[GET] /api/v1/tag: 200.OK (11 ms)
+2025-11-02 01:40:08.8|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (2 ms)
+2025-11-02 01:40:08.8|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.8|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (2 ms)
+2025-11-02 01:40:08.8|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:40:08.8|Debug|Api|[GET] /api/v1/indexer: 200.OK (74 ms)
+2025-11-02 01:40:08.8|Debug|Api|[GET] /api/v1/system/status: 200.OK (71 ms)
+2025-11-02 01:40:08.8|Debug|Api|[GET] /api/v1/config/host: 200.OK (79 ms)
+2025-11-02 01:40:08.8|Debug|Api|[GET] /api/v1/config/ui: 200.OK (81 ms)
+2025-11-02 01:40:08.8|Debug|Api|[GET] /api/v1/localization: 200.OK (85 ms)
+2025-11-02 01:40:08.9|Debug|Api|[GET] /api/v1/indexer: 200.OK (3 ms)
+2025-11-02 01:40:08.9|Debug|Api|[GET] /api/v1/health: 200.OK (3 ms)
+2025-11-02 01:40:08.9|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (5 ms)
+2025-11-02 01:40:08.9|Debug|Api|[GET] /api/v1/config/host: 200.OK (15 ms)
+2025-11-02 01:40:08.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-11-02 01:43:31.5|Debug|Api|[PUT] /api/v1/config/host: 202.Accepted (673 ms)
+2025-11-02 01:43:31.6|Debug|Api|[GET] /api/v1/system/status: 200.OK (2 ms)
+2025-11-02 01:43:35.1|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-11-02 01:43:35.1|Debug|Api|[GET] /api/v1/system/status: 200.OK (2 ms)
+2025-11-02 01:43:35.9|Debug|Api|[GET] /api/v1/health: 200.OK (0 ms)
+2025-11-02 01:43:39.1|Debug|Api|[GET] /api/v1/command: 200.OK (30 ms)
+2025-11-02 01:43:40.1|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (9 ms)
+2025-11-02 01:43:41.4|Debug|Api|[GET] /api/v1/downloadclient/schema: 200.OK (59 ms)
+2025-11-02 01:45:41.8|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-11-02 01:45:42.9|Info|ConsoleApp|Exiting main.
+2025-11-02 01:46:10.8|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-11-02 01:46:10.8|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-11-02 01:46:10.8|Debug|ProcessProvider| - [150] Prowlarr
+2025-11-02 01:46:10.9|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 01:46:11.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 01:46:11.0|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 01:46:11.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 01:46:11.1|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 01:46:11.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0677246s
+2025-11-02 01:46:11.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 01:46:11.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0743161s
+2025-11-02 01:46:11.1|Debug|MigrationController|Took: 00:00:00.2618995
+2025-11-02 01:46:11.1|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 01:46:11.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 01:46:11.2|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 01:46:11.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 01:46:11.2|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 01:46:11.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.006374s
+2025-11-02 01:46:11.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 01:46:11.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.007697s
+2025-11-02 01:46:11.2|Debug|MigrationController|Took: 00:00:00.0430253
+2025-11-02 01:46:11.9|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-11-02 01:46:12.1|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-11-02 01:46:12.1|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-11-02 01:46:13.3|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-11-02 01:46:13.4|Debug|Api|[GET] /api/v1/health: 200.OK (106 ms)
+2025-11-02 01:46:13.5|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-02 01:46:13.6|Debug|Api|[GET] /api/v1/indexer: 200.OK (249 ms)
+2025-11-02 01:46:13.6|Debug|Api|[GET] /api/v1/command: 200.OK (297 ms)
+2025-11-02 01:46:13.9|Debug|HttpClient|Downloading Completed. took 0s
+2025-11-02 01:46:14.0|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-11-02 01:46:14.0|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-11-02 01:46:14.5|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-11-02 01:46:14.5|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-11-02 01:46:14.5|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-11-02 01:46:14.5|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-02 01:46:14.5|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-02 01:46:14.5|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-11-02 01:46:15.5|Debug|Api|[GET] /api/v1/health: 200.OK (5 ms)
+2025-11-02 01:47:26.1|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-11-02 01:47:26.8|Info|ConsoleApp|Exiting main.
+2025-11-02 01:48:06.2|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-11-02 01:48:06.3|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-11-02 01:48:06.3|Debug|ProcessProvider| - [152] Prowlarr
+2025-11-02 01:48:06.3|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 01:48:06.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 01:48:06.5|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 01:48:06.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 01:48:06.5|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 01:48:06.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0659332s
+2025-11-02 01:48:06.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 01:48:06.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0724955s
+2025-11-02 01:48:06.6|Debug|MigrationController|Took: 00:00:00.2520159
+2025-11-02 01:48:06.6|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 01:48:06.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 01:48:06.6|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 01:48:06.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 01:48:06.6|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 01:48:06.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0050223s
+2025-11-02 01:48:06.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 01:48:06.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0053466s
+2025-11-02 01:48:06.6|Debug|MigrationController|Took: 00:00:00.0320877
+2025-11-02 01:48:07.0|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-11-02 01:48:07.1|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-11-02 01:48:07.1|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-11-02 01:48:09.6|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-11-02 01:48:09.6|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-02 01:48:09.9|Debug|HttpClient|Downloading Completed. took 0s
+2025-11-02 01:48:10.1|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-11-02 01:48:10.1|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-11-02 01:48:10.1|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-11-02 01:48:10.1|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-11-02 01:48:10.1|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-11-02 01:48:10.1|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-02 01:48:10.1|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-02 01:48:10.1|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-11-02 01:48:13.0|Debug|Api|[GET] /api/v1/health: 200.OK (35 ms)
+2025-11-02 01:48:13.0|Debug|Api|[GET] /api/v1/command: 200.OK (48 ms)
+2025-11-02 01:48:13.1|Debug|Api|[GET] /api/v1/indexer: 200.OK (140 ms)
+2025-11-02 01:49:07.7|Debug|Api|[GET] /api/v1/command: 200.OK (17 ms)
+2025-11-02 01:51:06.4|Debug|QBittorrentProxyV2|qBittorrent authentication succeeded.
+2025-11-02 01:51:06.5|Debug|Api|[POST] /api/v1/downloadclient/test: 200.OK (256 ms)
+2025-11-02 01:51:08.4|Debug|Api|[POST] /api/v1/downloadclient: 201.Created (403 ms)
+2025-11-02 01:51:11.3|Debug|Api|[GET] /api/v1/applications: 200.OK (17 ms)
+2025-11-02 01:51:11.3|Debug|Api|[GET] /api/v1/appprofile: 200.OK (14 ms)
+2025-11-02 01:51:15.9|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (28 ms)
+2025-11-02 01:54:03.9|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (9 ms)
+2025-11-02 01:54:09.0|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (6 ms)
+2025-11-02 01:54:37.8|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2025-11-02 01:54:46.9|Warn|Radarr|Unable to complete application test
+
+[v2.1.5.5216] System.Net.Http.HttpRequestException: Connection refused (172.27.7.5:2704)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 355
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 341
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.GetIndexerSchema(RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 80
+   at NzbDrone.Core.Applications.Radarr.Radarr.<>c__DisplayClass11_0.<BuildRadarrIndexer>b__0() in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 231
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Applications.Radarr.Radarr.BuildRadarrIndexer(IndexerDefinition indexer, IndexerCapabilities indexerCapabilities, DownloadProtocol protocol, Int32 id) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 231
+   at NzbDrone.Core.Applications.Radarr.Radarr.Test() in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 52
+
+
+2025-11-02 01:54:47.0|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- BaseUrl: Unable to complete application test, cannot connect to Radarr. Connection refused (172.27.7.5:2704)
+2025-11-02 01:54:47.0|Debug|Api|[POST] /api/v1/applications/test: 400.BadRequest (87 ms)
+2025-11-02 01:56:11.2|Warn|Radarr|Unable to complete application test
+
+[v2.1.5.5216] System.Net.Http.HttpRequestException: Connection refused (172.27.7.5:2704)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 355
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 341
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.GetIndexerSchema(RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 80
+   at NzbDrone.Core.Applications.Radarr.Radarr.<>c__DisplayClass11_0.<BuildRadarrIndexer>b__0() in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 231
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Applications.Radarr.Radarr.BuildRadarrIndexer(IndexerDefinition indexer, IndexerCapabilities indexerCapabilities, DownloadProtocol protocol, Int32 id) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 231
+   at NzbDrone.Core.Applications.Radarr.Radarr.Test() in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 52
+
+
+2025-11-02 01:56:11.3|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- BaseUrl: Unable to complete application test, cannot connect to Radarr. Connection refused (172.27.7.5:2704)
+2025-11-02 01:56:11.3|Debug|Api|[POST] /api/v1/applications/test?forceTest=true: 400.BadRequest (42 ms)
+2025-11-02 01:56:23.4|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://172.27.7.5:7878/api/v3/indexer/test: 400.BadRequest (244 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Unable to connect to indexer, please check your DNS settings and ensure IPv6 is working or disabled. Connection refused (172.27.7.4:2703)",
+    "severity": "error"
+  }
+]
+2025-11-02 01:56:23.4|Warn|Radarr|Prowlarr URL is invalid
+
+[v2.1.5.5216] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://172.27.7.5:7878/api/v3/indexer/test]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Post(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 423
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.TestConnection(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 132
+   at NzbDrone.Core.Applications.Radarr.Radarr.Test() in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 52
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Unable to connect to indexer, please check your DNS settings and ensure IPv6 is working or disabled. Connection refused (172.27.7.4:2703)",
+    "severity": "error"
+  }
+]
+
+
+2025-11-02 01:56:23.4|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- ProwlarrUrl: Prowlarr URL is invalid, Radarr cannot connect to Prowlarr
+2025-11-02 01:56:23.4|Debug|Api|[POST] /api/v1/applications/test: 400.BadRequest (311 ms)
+2025-11-02 01:56:44.8|Debug|Api|[POST] /api/v1/applications/test: 200.OK (106 ms)
+2025-11-02 01:56:49.1|Debug|Api|[POST] /api/v1/applications: 201.Created (197 ms)
+2025-11-02 01:56:56.1|Debug|Api|[POST] /api/v1/applications/test: 200.OK (16 ms)
+2025-11-02 01:56:59.6|Debug|Api|[PUT] /api/v1/applications/1: 202.Accepted (206 ms)
+2025-11-02 01:57:04.7|Debug|Api|[GET] /api/v1/health: 200.OK (2 ms)
+2025-11-02 02:00:07.9|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2025-11-02 02:00:18.5|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (7 ms)
+2025-11-02 02:01:12.9|Debug|Api|[POST] /api/v1/applications/test: 200.OK (285 ms)
+2025-11-02 02:01:16.6|Debug|Api|[POST] /api/v1/applications: 201.Created (120 ms)
+2025-11-02 02:01:18.6|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (6 ms)
+2025-11-02 02:02:58.5|Debug|Api|[POST] /api/v1/applications/test: 200.OK (196 ms)
+2025-11-02 02:03:00.6|Debug|Api|[POST] /api/v1/applications: 201.Created (1085 ms)
+2025-11-02 02:03:01.9|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (6 ms)
+2025-11-02 02:03:08.7|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (8 ms)
+2025-11-02 02:03:34.3|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (9 ms)
+2025-11-02 02:04:58.0|Debug|Api|[GET] /api/v1/indexer: 200.OK (9 ms)
+2025-11-02 02:04:58.0|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (6 ms)
+2025-11-02 02:05:00.1|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (594 ms)
+2025-11-02 02:05:24.4|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (8 ms)
+2025-11-02 02:05:24.5|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (99 ms)
+2025-11-02 02:05:38.1|Debug|Api|[GET] /api/v1/command: 200.OK (0 ms)
+2025-11-02 02:05:38.7|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-11-02 02:07:39.8|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (338 ms)
+2025-11-02 02:07:42.7|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (3 ms)
+2025-11-02 02:07:42.7|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (18 ms)
+2025-11-02 02:08:23.7|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:23.7|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:24.2|Debug|Api|[POST] /api/v1/indexer/test: 200.OK (550 ms)
+2025-11-02 02:08:25.3|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:25.3|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:26.1|Debug|Api|[POST] /api/v1/indexer: 201.Created (861 ms)
+2025-11-02 02:08:26.1|Debug|ApplicationService|No tags set to application Radarr.
+2025-11-02 02:08:26.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-11-02 02:08:26.2|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:26.2|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:28.0|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:28.0|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:30.2|Debug|ReleaseSearchService|Total of 123 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020] from 1 indexer(s)
+2025-11-02 02:08:30.7|Debug|ApplicationService|No tags set to application Sonarr.
+2025-11-02 02:08:30.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-11-02 02:08:30.8|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:30.8|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:31.2|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-11-02 02:08:32.0|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:32.0|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:33.5|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (4 ms)
+2025-11-02 02:08:33.5|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (21 ms)
+2025-11-02 02:08:34.1|Debug|ReleaseSearchService|Total of 140 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070] from 1 indexer(s)
+2025-11-02 02:08:34.5|Debug|ApplicationService|No tags set to application Lidarr.
+2025-11-02 02:08:34.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-11-02 02:08:34.5|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:34.5|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:36.0|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:36.0|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:38.1|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000] from 1 indexer(s)
+2025-11-02 02:08:39.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-11-02 02:08:39.6|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:39.6|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:39.9|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:39.9|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:40.7|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:08:40.7|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:08:40.8|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-11-02 02:08:40.8|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (174 ms)
+2025-11-02 02:08:42.3|Debug|ReleaseSearchService|Total of 140 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070] from 1 indexer(s)
+2025-11-02 02:08:45.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-11-02 02:08:45.0|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:45.0|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:45.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:08:45.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:08:45.0|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-11-02 02:08:45.0|Debug|Api|[POST] /api/v1/indexer/test?forceTest=true: 400.BadRequest (27 ms)
+2025-11-02 02:08:45.4|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:45.4|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:45.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-11-02 02:08:45.8|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:45.8|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:08:47.5|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000] from 1 indexer(s)
+2025-11-02 02:08:49.2|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:49.2|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:08:51.5|Debug|ReleaseSearchService|Total of 123 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020] from 1 indexer(s)
+2025-11-02 02:09:43.3|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (5 ms)
+2025-11-02 02:09:43.3|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (9 ms)
+2025-11-02 02:09:55.2|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (4 ms)
+2025-11-02 02:09:55.2|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (8 ms)
+2025-11-02 02:09:57.8|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:09:57.8|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:09:57.9|Debug|Api|[POST] /api/v1/indexer/test: 200.OK (150 ms)
+2025-11-02 02:10:02.2|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:10:02.2|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:10:02.4|Debug|Api|[POST] /api/v1/indexer: 201.Created (205 ms)
+2025-11-02 02:10:02.4|Debug|ApplicationService|No tags set to application Radarr.
+2025-11-02 02:10:02.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-11-02 02:10:02.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:10:02.5|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:10:04.5|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-11-02 02:10:04.7|Debug|ApplicationService|No tags set to application Sonarr.
+2025-11-02 02:10:04.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-11-02 02:10:04.8|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:10:04.8|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:10:06.5|Debug|ReleaseSearchService|Total of 28 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045] from 1 indexer(s)
+2025-11-02 02:10:07.0|Debug|ApplicationService|No tags set to application Lidarr.
+2025-11-02 02:10:07.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3050]
+2025-11-02 02:10:07.1|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:10:07.1|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:10:07.5|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-11-02 02:10:08.5|Debug|ReleaseSearchService|Total of 15 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3050] from 1 indexer(s)
+2025-11-02 02:10:25.5|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (4 ms)
+2025-11-02 02:10:25.5|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (19 ms)
+2025-11-02 02:11:08.3|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2025-11-02 02:11:09.3|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=
+2025-11-02 02:11:13.6|Debug|RuTracker|Authentication succeeded
+2025-11-02 02:11:16.2|Debug|Api|[POST] /api/v1/indexer/test: 200.OK (6869 ms)
+2025-11-02 02:11:18.5|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=
+2025-11-02 02:11:22.7|Debug|RuTracker|Authentication succeeded
+2025-11-02 02:11:25.5|Debug|ApplicationService|No tags set to application Radarr.
+2025-11-02 02:11:25.5|Debug|Api|[POST] /api/v1/indexer: 201.Created (7042 ms)
+2025-11-02 02:11:25.6|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2010, 2020, 2070, 2040, 2045, 2060]
+2025-11-02 02:11:25.6|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=22%2C941%2C1666%2C376%2C106%2C7%2C187%2C2090%2C2221%2C2091%2C2092%2C2093%2C2200%2C1950%2C252%2C2540%2C934%2C505%2C212%2C2459%2C1235%2C166%2C124%2C1543%2C709%2C1577%2C93%2C905%2C101%2C100%2C877%2C1576%2C572%2C2220%2C1670%2C2198%2C2199%2C313%2C312%2C1247%2C2201%2C2339%2C140%2C194%2C718%2C775%2C1457%2C1940%2C272%2C271%2C352%2C549%2C1213%2C2109%2C514%2C2097%2C4%2C84%2C2343%2C930%2C2365%2C1900%2C2258%2C521%2C208%2C539%2C2183%2C209%2C484%2C822%2C181%2C847
+2025-11-02 02:11:29.1|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (3 ms)
+2025-11-02 02:11:29.1|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (19 ms)
+2025-11-02 02:11:30.5|Debug|Api|[GET] /api/v1/health: 200.OK (0 ms)
+2025-11-02 02:11:30.8|Debug|RuTracker|Authentication succeeded
+2025-11-02 02:11:33.5|Debug|ReleaseSearchService|Total of 49 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2010, 2020, 2070, 2040, 2045, 2060] from 1 indexer(s)
+2025-11-02 02:11:33.7|Debug|ApplicationService|No tags set to application Sonarr.
+2025-11-02 02:11:34.0|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020, 5070]
+2025-11-02 02:11:34.0|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 02:11:35.6|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 02:11:37.6|Debug|ReleaseSearchService|Total of 99 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020, 5070] from 1 indexer(s)
+2025-11-02 02:11:38.0|Debug|ApplicationService|No tags set to application Lidarr.
+2025-11-02 02:11:38.4|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010]
+2025-11-02 02:11:38.4|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=185%2C809%2C2413%2C1501%2C1580%2C525%2C2326%2C574%2C1036%2C400%2C2389%2C2388%2C2387%2C661%2C2348%2C2327%2C695%2C399%2C402%2C467%2C490%2C499%2C2137%2C2127%2C2324%2C2325%2C2342%2C530%2C2152%2C2328%2C1350%2C403%2C1279%2C716%2C2165%2C401%2C409%2C560%2C794%2C556%2C2307%2C557%2C2308%2C558%2C793%2C1395%2C1396%2C436%2C2309%2C2310%2C2311%2C969%2C1125%2C1130%2C1131%2C1132%2C1133%2C2084%2C1128%2C1129%2C1856%2C2430%2C1283%2C2085%2C1282%2C1284%2C1285%2C1138%2C1136%2C1137%2C1849%2C1126%2C1127%2C1134%2C1135%2C2018%2C855%2C408%2C441%2C1173%2C1486%2C1172%2C446%2C909%2C1665%2C1760%2C1764%2C1767%2C1769%2C1765%2C1771%2C1770%2C1768%2C1774%2C1772%2C2233%2C416%2C2377%2C468%2C691%2C469%2C786%2C785%2C1631%2C1499%2C715%2C1388%2C282%2C796%2C784%2C783%2C2331%2C2431%2C880%2C1215%2C1220%2C1221%2C1334%2C1216%2C1223%2C1224%2C1225%2C1226%2C782%2C577%2C1842%2C1648%2C134%2C965%2C2495%2C424%2C1361%2C425%2C1635%2C1634%2C2497%2C428%2C1362%2C429%2C735%2C1753%2C2232%2C714%2C1331%2C1330%2C1219%2C1452%2C2275%2C2270%2C1351%2C2499%2C2503%2C2504%2C2502%2C2501%2C2505%2C2500%2C2267%2C2277%2C2278%2C2279%2C2280%2C2281%2C2282%2C2353%2C2284%2C2285%2C2283%2C2286%2C2287%2C2268%2C2293%2C2292%2C2290%2C2289%2C2288%2C2269%2C2297%2C2295%2C2296%2C2298%2C1698%2C1702%2C1703%2C1704%2C1705%2C1706%2C1707%2C2329%2C2330%2C1708%2C1709%2C1710%2C1711%2C1712%2C1713%2C731%2C1799%2C1714%2C1715
+2025-11-02 02:11:39.2|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=1716%2C1796%2C1797%2C1719%2C1778%2C1779%2C1780%2C1720%2C798%2C1724%2C1725%2C1730%2C1731%2C1726%2C1727%2C1815%2C1816%2C1728%2C1729%2C2230%2C2231%2C1732%2C1736%2C1737%2C1738%2C1739%2C1740%2C1741%2C1773%2C202%2C172%2C236%2C1742%2C1743%2C1744%2C1745%2C1746%2C1747%2C1748%2C1749%2C2175%2C2174%2C722%2C737%2C738%2C464%2C463%2C739%2C740%2C951%2C952%2C1821%2C1844%2C1822%2C1894%2C1895%2C460%2C1818%2C1819%2C1847%2C1824%2C1807%2C1829%2C1830%2C1831%2C1857%2C1859%2C1858%2C840%2C1860%2C1825%2C1826%2C1827%2C1828%2C1808%2C797%2C1805%2C1832%2C1833%2C1834%2C1836%2C1837%2C1839%2C454%2C1838%2C1840%2C1841%2C2229%2C1809%2C1861%2C1862%2C1947%2C1946%2C1945%2C1944%2C1810%2C1864%2C1865%2C1871%2C1867%2C1869%2C1873%2C1811%2C1868%2C1875%2C1877%2C1878%2C1907%2C1880%2C1881%2C466%2C465%2C1866%2C406%2C1299%2C1884%2C1164%2C2513%2C1397%2C2512%2C1885%2C1163%2C2302%2C2303%2C1755%2C1757%2C1893%2C1890%2C2219%2C1660%2C506%2C1835%2C1625%2C1217%2C974%2C1444%2C2401%2C239%2C450%2C2301%2C123%2C1756%2C1758%2C1766%2C1754%2C860%2C453%2C1170%2C1759%2C1852%2C413%2C445%2C702%2C1990%2C1793%2C1141%2C1775%2C1227%2C475%2C1121%2C431%2C2378%2C2383%2C2305%2C1782%2C1787%2C1789%2C1791%2C1912%2C1189%2C2403%2C984%2C983%2C2352%2C2384%2C1142%2C1107%2C1228%2C988%2C1122%2C986%2C2379%2C2088%2C2304%2C1783%2C1788%2C1790%2C1792%2C1886%2C2509%2C2507%2C2263%2C2511%2C2264%2C2262%2C2261%2C1887%2C2531%2C2400%2C1812
+2025-11-02 02:11:41.3|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=655%2C1777%2C2530%2C2529%2C1781%2C2508%2C2426%2C2351%2C2306%2C1795%2C2271%2C1913%2C1784%2C1892%2C2266%2C518%2C2236%2C1909%2C1927%2C2240%2C2248%2C2244%2C148
+2025-11-02 02:11:43.5|Debug|ReleaseSearchService|Total of 149 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010] from 1 indexer(s)
+2025-11-02 02:14:10.9|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (8 ms)
+2025-11-02 02:14:10.9|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (10 ms)
+2025-11-02 02:14:21.8|Debug|Cardigann|Adding request for BitMagnet (Local DHT): http://127.0.0.1:3333/torznab/api?t=search&limit=100
+2025-11-02 02:14:21.8|Debug|Cardigann|Downloading Feed http://127.0.0.1:3333/torznab/api?t=search&limit=100
+2025-11-02 02:14:21.8|Warn|Cardigann|Unable to connect to indexer
+
+[v2.1.5.5216] System.Net.Http.HttpRequestException: Connection refused (127.0.0.1:3333)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 355
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 341
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 764
+
+
+2025-11-02 02:14:21.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, consider using different DNS servers, or try a VPN/proxy if needed. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues' Connection refused (127.0.0.1:3333)
+2025-11-02 02:14:21.9|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (51 ms)
+2025-11-02 02:15:01.1|Debug|Cardigann|Adding request for BitMagnet (Local DHT): http://127.0.0.1:3333/torznab/api?t=search&limit=100
+2025-11-02 02:15:01.1|Debug|Cardigann|Downloading Feed http://127.0.0.1:3333/torznab/api?t=search&limit=100
+2025-11-02 02:15:01.1|Warn|Cardigann|Unable to connect to indexer
+
+[v2.1.5.5216] System.Net.Http.HttpRequestException: Connection refused (127.0.0.1:3333)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 355
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 341
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 764
+
+
+2025-11-02 02:15:01.1|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, consider using different DNS servers, or try a VPN/proxy if needed. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues' Connection refused (127.0.0.1:3333)
+2025-11-02 02:15:01.1|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (43 ms)
+2025-11-02 02:16:38.4|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-11-02 02:22:08.4|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-11-02 02:23:31.9|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-11-02 02:23:33.3|Info|ConsoleApp|Exiting main.
+2025-11-02 02:24:34.5|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-11-02 02:24:34.5|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-11-02 02:24:34.5|Debug|ProcessProvider| - [149] Prowlarr
+2025-11-02 02:24:34.6|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 02:24:34.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 02:24:34.7|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 02:24:34.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 02:24:34.7|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 02:24:34.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0494089s
+2025-11-02 02:24:34.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 02:24:34.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.053227s
+2025-11-02 02:24:34.7|Debug|MigrationController|Took: 00:00:00.1663295
+2025-11-02 02:24:34.7|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 02:24:34.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 02:24:34.8|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 02:24:34.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 02:24:34.8|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 02:24:34.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0048979s
+2025-11-02 02:24:34.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 02:24:34.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0053945s
+2025-11-02 02:24:34.8|Debug|MigrationController|Took: 00:00:00.0287360
+2025-11-02 02:24:35.1|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-11-02 02:24:35.6|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-11-02 02:24:35.6|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-11-02 02:24:37.6|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-11-02 02:24:37.7|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-02 02:24:38.1|Debug|HttpClient|Downloading Completed. took 0s
+2025-11-02 02:24:38.2|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-11-02 02:24:38.2|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-11-02 02:24:38.3|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-11-02 02:24:38.5|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-11-02 02:24:38.6|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-11-02 02:24:38.6|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-02 02:24:38.6|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-02 02:24:38.6|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-11-02 02:24:41.9|Debug|Api|[GET] /api/v1/health: 200.OK (51 ms)
+2025-11-02 02:24:42.0|Debug|Api|[GET] /api/v1/command: 200.OK (130 ms)
+2025-11-02 02:24:42.2|Debug|Api|[GET] /api/v1/indexer: 200.OK (355 ms)
+2025-11-02 02:25:06.9|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (19 ms)
+2025-11-02 02:25:08.2|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (13 ms)
+2025-11-02 02:25:16.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-11-02 02:25:16.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-11-02 02:25:16.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:25:16.5|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:25:16.5|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:25:16.5|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:25:16.5|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020, 5070]
+2025-11-02 02:25:16.6|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 02:25:17.4|Debug|ReleaseSearchService|Total of 28 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045] from 1 indexer(s)
+2025-11-02 02:25:17.4|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:25:17.4|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:25:18.1|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 02:25:18.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-11-02 02:25:18.5|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:25:18.5|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:25:18.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3050]
+2025-11-02 02:25:18.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:25:18.5|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:25:18.6|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010]
+2025-11-02 02:25:18.6|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=185%2C809%2C2413%2C1501%2C1580%2C525%2C2326%2C574%2C1036%2C400%2C2389%2C2388%2C2387%2C661%2C2348%2C2327%2C695%2C399%2C402%2C467%2C490%2C499%2C2137%2C2127%2C2324%2C2325%2C2342%2C530%2C2152%2C2328%2C1350%2C403%2C1279%2C716%2C2165%2C401%2C409%2C560%2C794%2C556%2C2307%2C557%2C2308%2C558%2C793%2C1395%2C1396%2C436%2C2309%2C2310%2C2311%2C969%2C1125%2C1130%2C1131%2C1132%2C1133%2C2084%2C1128%2C1129%2C1856%2C2430%2C1283%2C2085%2C1282%2C1284%2C1285%2C1138%2C1136%2C1137%2C1849%2C1126%2C1127%2C1134%2C1135%2C2018%2C855%2C408%2C441%2C1173%2C1486%2C1172%2C446%2C909%2C1665%2C1760%2C1764%2C1767%2C1769%2C1765%2C1771%2C1770%2C1768%2C1774%2C1772%2C2233%2C416%2C2377%2C468%2C691%2C469%2C786%2C785%2C1631%2C1499%2C715%2C1388%2C282%2C796%2C784%2C783%2C2331%2C2431%2C880%2C1215%2C1220%2C1221%2C1334%2C1216%2C1223%2C1224%2C1225%2C1226%2C782%2C577%2C1842%2C1648%2C134%2C965%2C2495%2C424%2C1361%2C425%2C1635%2C1634%2C2497%2C428%2C1362%2C429%2C735%2C1753%2C2232%2C714%2C1331%2C1330%2C1219%2C1452%2C2275%2C2270%2C1351%2C2499%2C2503%2C2504%2C2502%2C2501%2C2505%2C2500%2C2267%2C2277%2C2278%2C2279%2C2280%2C2281%2C2282%2C2353%2C2284%2C2285%2C2283%2C2286%2C2287%2C2268%2C2293%2C2292%2C2290%2C2289%2C2288%2C2269%2C2297%2C2295%2C2296%2C2298%2C1698%2C1702%2C1703%2C1704%2C1705%2C1706%2C1707%2C2329%2C2330%2C1708%2C1709%2C1710%2C1711%2C1712%2C1713%2C731%2C1799%2C1714%2C1715
+2025-11-02 02:25:19.0|Debug|Api|[POST] /api/v1/tag: 201.Created (214 ms)
+2025-11-02 02:25:19.2|Debug|ReleaseSearchService|Total of 15 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3050] from 1 indexer(s)
+2025-11-02 02:25:19.2|Debug|Api|[GET] /api/v1/tag: 200.OK (2 ms)
+2025-11-02 02:25:19.2|Debug|Api|[GET] /api/v1/tag/detail: 200.OK (12 ms)
+2025-11-02 02:25:19.6|Debug|ReleaseSearchService|Total of 140 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070] from 1 indexer(s)
+2025-11-02 02:25:20.6|Debug|ReleaseSearchService|Total of 99 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020, 5070] from 1 indexer(s)
+2025-11-02 02:25:21.2|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:25:21.2|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:25:21.8|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=1716%2C1796%2C1797%2C1719%2C1778%2C1779%2C1780%2C1720%2C798%2C1724%2C1725%2C1730%2C1731%2C1726%2C1727%2C1815%2C1816%2C1728%2C1729%2C2230%2C2231%2C1732%2C1736%2C1737%2C1738%2C1739%2C1740%2C1741%2C1773%2C202%2C172%2C236%2C1742%2C1743%2C1744%2C1745%2C1746%2C1747%2C1748%2C1749%2C2175%2C2174%2C722%2C737%2C738%2C464%2C463%2C739%2C740%2C951%2C952%2C1821%2C1844%2C1822%2C1894%2C1895%2C460%2C1818%2C1819%2C1847%2C1824%2C1807%2C1829%2C1830%2C1831%2C1857%2C1859%2C1858%2C840%2C1860%2C1825%2C1826%2C1827%2C1828%2C1808%2C797%2C1805%2C1832%2C1833%2C1834%2C1836%2C1837%2C1839%2C454%2C1838%2C1840%2C1841%2C2229%2C1809%2C1861%2C1862%2C1947%2C1946%2C1945%2C1944%2C1810%2C1864%2C1865%2C1871%2C1867%2C1869%2C1873%2C1811%2C1868%2C1875%2C1877%2C1878%2C1907%2C1880%2C1881%2C466%2C465%2C1866%2C406%2C1299%2C1884%2C1164%2C2513%2C1397%2C2512%2C1885%2C1163%2C2302%2C2303%2C1755%2C1757%2C1893%2C1890%2C2219%2C1660%2C506%2C1835%2C1625%2C1217%2C974%2C1444%2C2401%2C239%2C450%2C2301%2C123%2C1756%2C1758%2C1766%2C1754%2C860%2C453%2C1170%2C1759%2C1852%2C413%2C445%2C702%2C1990%2C1793%2C1141%2C1775%2C1227%2C475%2C1121%2C431%2C2378%2C2383%2C2305%2C1782%2C1787%2C1789%2C1791%2C1912%2C1189%2C2403%2C984%2C983%2C2352%2C2384%2C1142%2C1107%2C1228%2C988%2C1122%2C986%2C2379%2C2088%2C2304%2C1783%2C1788%2C1790%2C1792%2C1886%2C2509%2C2507%2C2263%2C2511%2C2264%2C2262%2C2261%2C1887%2C2531%2C2400%2C1812
+2025-11-02 02:25:22.9|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000] from 1 indexer(s)
+2025-11-02 02:25:23.6|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=655%2C1777%2C2530%2C2529%2C1781%2C2508%2C2426%2C2351%2C2306%2C1795%2C2271%2C1913%2C1784%2C1892%2C2266%2C518%2C2236%2C1909%2C1927%2C2240%2C2248%2C2244%2C148
+2025-11-02 02:25:25.7|Debug|ReleaseSearchService|Total of 149 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010] from 1 indexer(s)
+2025-11-02 02:25:44.2|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-11-02 02:25:47.7|Debug|Api|[POST] /api/v1/indexerProxy/test: 200.OK (3501 ms)
+2025-11-02 02:25:50.3|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-11-02 02:25:53.9|Debug|Api|[POST] /api/v1/indexerProxy: 201.Created (3606 ms)
+2025-11-02 02:25:55.9|Debug|Api|[GET] /api/v1/indexer: 200.OK (25 ms)
+2025-11-02 02:25:55.9|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (25 ms)
+2025-11-02 02:25:57.7|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (549 ms)
+2025-11-02 02:25:58.9|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-11-02 02:26:01.9|Debug|Api|[GET] /api/v1/health: 200.OK (2 ms)
+2025-11-02 02:26:02.1|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (51 ms)
+2025-11-02 02:26:02.2|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (82 ms)
+2025-11-02 02:26:25.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:25.5|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:25.6|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:29.5|Debug|Api|[POST] /api/v1/indexer/test: 200.OK (4050 ms)
+2025-11-02 02:26:31.8|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:31.8|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:32.0|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:32.2|Debug|Api|[POST] /api/v1/indexer: 201.Created (446 ms)
+2025-11-02 02:26:32.3|Debug|ApplicationService|No tags set to application Radarr.
+2025-11-02 02:26:32.6|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2070, 2030, 2010, 2040, 2060, 2045]
+2025-11-02 02:26:32.6|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:32.6|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:34.0|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:34.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:26:34.1|Debug|Cardigann|Downloading Feed https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:26:35.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:36.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:26:36.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:26:37.3|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-11-02 02:26:37.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:38.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:26:38.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:26:39.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:40.3|Debug|ReleaseSearchService|Total of 20 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2070, 2030, 2010, 2040, 2060, 2045] from 1 indexer(s)
+2025-11-02 02:26:40.7|Debug|ApplicationService|No tags set to application Sonarr.
+2025-11-02 02:26:41.0|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030, 5070]
+2025-11-02 02:26:41.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:41.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:41.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:42.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:26:42.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:26:43.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:45.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:26:45.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:26:45.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:46.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:26:46.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:26:48.0|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:48.5|Debug|ReleaseSearchService|Total of 20 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030, 5070] from 1 indexer(s)
+2025-11-02 02:26:48.7|Debug|ApplicationService|No tags set to application Lidarr.
+2025-11-02 02:26:48.9|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3010, 3040, 3050, 3030]
+2025-11-02 02:26:48.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:48.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:26:49.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:50.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:26:50.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:26:51.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:53.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:26:53.1|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:26:53.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:54.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:26:54.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:26:55.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:26:56.3|Debug|ReleaseSearchService|Total of 23 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3010, 3040, 3050, 3030] from 1 indexer(s)
+2025-11-02 02:26:57.3|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (6 ms)
+2025-11-02 02:26:57.3|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (7 ms)
+2025-11-02 02:27:21.2|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (7 ms)
+2025-11-02 02:27:21.2|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (9 ms)
+2025-11-02 02:27:36.1|Debug|Api|[GET] /api/v1/command: 200.OK (13 ms)
+2025-11-02 02:33:06.0|Debug|Api|[GET] /api/v1/command: 200.OK (0 ms)
+2025-11-02 02:38:36.1|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-11-02 02:39:20.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-11-02 02:39:20.6|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:39:20.6|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:39:20.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-11-02 02:39:20.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:39:20.6|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:39:20.9|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2070, 2030, 2010, 2040, 2060, 2045]
+2025-11-02 02:39:20.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:39:20.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:39:20.9|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2010, 2020, 2070, 2040, 2045, 2060]
+2025-11-02 02:39:21.0|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=22%2C941%2C1666%2C376%2C106%2C7%2C187%2C2090%2C2221%2C2091%2C2092%2C2093%2C2200%2C1950%2C252%2C2540%2C934%2C505%2C212%2C2459%2C1235%2C166%2C124%2C1543%2C709%2C1577%2C93%2C905%2C101%2C100%2C877%2C1576%2C572%2C2220%2C1670%2C2198%2C2199%2C313%2C312%2C1247%2C2201%2C2339%2C140%2C194%2C718%2C775%2C1457%2C1940%2C272%2C271%2C352%2C549%2C1213%2C2109%2C514%2C2097%2C4%2C84%2C2343%2C930%2C2365%2C1900%2C2258%2C521%2C208%2C539%2C2183%2C209%2C484%2C822%2C181%2C847
+2025-11-02 02:39:21.0|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-11-02 02:39:21.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:39:21.4|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:39:21.4|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:39:21.4|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:39:21.4|Debug|Cardigann|Downloading Feed https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:39:23.0|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:39:23.0|Debug|ReleaseSearchService|Total of 122 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020] from 1 indexer(s)
+2025-11-02 02:39:23.2|Warn|RuTracker|Invalid Credentials for RuTracker.org [https://rutracker.org/forum/tracker.php?nm=&f=22%2C941%2C1666%2C376%2C106%2C7%2C187%2C2090%2C2221%2C2091%2C2092%2C2093%2C2200%2C1950%2C252%2C2540%2C934%2C505%2C212%2C2459%2C1235%2C166%2C124%2C1543%2C709%2C1577%2C93%2C905%2C101%2C100%2C877%2C1576%2C572%2C2220%2C1670%2C2198%2C2199%2C313%2C312%2C1247%2C2201%2C2339%2C140%2C194%2C718%2C775%2C1457%2C1940%2C272%2C271%2C352%2C549%2C1213%2C2109%2C514%2C2097%2C4%2C84%2C2343%2C930%2C2365%2C1900%2C2258%2C521%2C208%2C539%2C2183%2C209%2C484%2C822%2C181%2C847]
+
+[v2.1.5.5216] NzbDrone.Core.Indexers.Exceptions.IndexerAuthException: Форум временно отключен на профилактические работы до 04:45 MSK
+   at NzbDrone.Core.Indexers.Definitions.RuTracker.DoLogin() in ./NzbDrone.Core/Indexers/Definitions/RuTracker.cs:line 110
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 673
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-11-02 02:39:23.3|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2010, 2020, 2070, 2040, 2045, 2060] from 1 indexer(s)
+2025-11-02 02:39:23.4|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (2 ms)
+2025-11-02 02:39:24.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:39:24.1|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:39:25.0|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:39:25.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:39:25.1|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:39:27.0|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:39:27.5|Debug|ReleaseSearchService|Total of 20 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2070, 2030, 2010, 2040, 2060, 2045] from 1 indexer(s)
+2025-11-02 02:39:28.3|Debug|Api|[GET] /api/v1/health: 200.OK (2 ms)
+2025-11-02 02:40:48.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-11-02 02:40:48.1|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:40:48.1|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:40:48.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-11-02 02:40:48.1|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:40:48.1|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:40:48.1|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030, 5070]
+2025-11-02 02:40:48.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:40:48.1|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:40:48.1|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020, 5070]
+2025-11-02 02:40:48.1|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 02:40:48.2|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:40:48.4|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:40:48.4|Debug|Cardigann|Downloading Feed https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:40:48.5|Debug|ReleaseSearchService|Total of 28 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045] from 1 indexer(s)
+2025-11-02 02:40:48.5|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:40:48.5|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:40:48.9|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-11-02 02:40:50.3|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:40:50.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3050]
+2025-11-02 02:40:50.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-11-02 02:40:50.9|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3010, 3040, 3050, 3030]
+2025-11-02 02:40:50.9|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:40:50.9|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:40:50.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:40:50.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:40:50.9|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:40:50.9|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:40:50.9|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010]
+2025-11-02 02:40:50.9|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=185%2C809%2C2413%2C1501%2C1580%2C525%2C2326%2C574%2C1036%2C400%2C2389%2C2388%2C2387%2C661%2C2348%2C2327%2C695%2C399%2C402%2C467%2C490%2C499%2C2137%2C2127%2C2324%2C2325%2C2342%2C530%2C2152%2C2328%2C1350%2C403%2C1279%2C716%2C2165%2C401%2C409%2C560%2C794%2C556%2C2307%2C557%2C2308%2C558%2C793%2C1395%2C1396%2C436%2C2309%2C2310%2C2311%2C969%2C1125%2C1130%2C1131%2C1132%2C1133%2C2084%2C1128%2C1129%2C1856%2C2430%2C1283%2C2085%2C1282%2C1284%2C1285%2C1138%2C1136%2C1137%2C1849%2C1126%2C1127%2C1134%2C1135%2C2018%2C855%2C408%2C441%2C1173%2C1486%2C1172%2C446%2C909%2C1665%2C1760%2C1764%2C1767%2C1769%2C1765%2C1771%2C1770%2C1768%2C1774%2C1772%2C2233%2C416%2C2377%2C468%2C691%2C469%2C786%2C785%2C1631%2C1499%2C715%2C1388%2C282%2C796%2C784%2C783%2C2331%2C2431%2C880%2C1215%2C1220%2C1221%2C1334%2C1216%2C1223%2C1224%2C1225%2C1226%2C782%2C577%2C1842%2C1648%2C134%2C965%2C2495%2C424%2C1361%2C425%2C1635%2C1634%2C2497%2C428%2C1362%2C429%2C735%2C1753%2C2232%2C714%2C1331%2C1330%2C1219%2C1452%2C2275%2C2270%2C1351%2C2499%2C2503%2C2504%2C2502%2C2501%2C2505%2C2500%2C2267%2C2277%2C2278%2C2279%2C2280%2C2281%2C2282%2C2353%2C2284%2C2285%2C2283%2C2286%2C2287%2C2268%2C2293%2C2292%2C2290%2C2289%2C2288%2C2269%2C2297%2C2295%2C2296%2C2298%2C1698%2C1702%2C1703%2C1704%2C1705%2C1706%2C1707%2C2329%2C2330%2C1708%2C1709%2C1710%2C1711%2C1712%2C1713%2C731%2C1799%2C1714%2C1715
+2025-11-02 02:40:51.5|Debug|ReleaseSearchService|Total of 15 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3050] from 1 indexer(s)
+2025-11-02 02:40:51.8|Warn|RuTracker|Invalid Credentials for RuTracker.org [https://rutracker.org/forum/tracker.php?nm=&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068]
+
+[v2.1.5.5216] NzbDrone.Core.Indexers.Exceptions.IndexerAuthException: Форум временно отключен на профилактические работы до 04:45 MSK
+   at NzbDrone.Core.Indexers.Definitions.RuTracker.DoLogin() in ./NzbDrone.Core/Indexers/Definitions/RuTracker.cs:line 110
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 673
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-11-02 02:40:51.8|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020, 5070] from 1 indexer(s)
+2025-11-02 02:40:51.8|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-11-02 02:40:51.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:40:51.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:40:52.0|Debug|ReleaseSearchService|Total of 139 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070] from 1 indexer(s)
+2025-11-02 02:40:52.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:40:52.4|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:40:52.4|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:40:52.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:40:52.5|Debug|Cardigann|Downloading Feed https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:40:52.9|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-11-02 02:40:54.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:40:54.3|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:40:54.3|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:40:54.5|Warn|RuTracker|Invalid Credentials for RuTracker.org [https://rutracker.org/forum/tracker.php?nm=&f=185%2C809%2C2413%2C1501%2C1580%2C525%2C2326%2C574%2C1036%2C400%2C2389%2C2388%2C2387%2C661%2C2348%2C2327%2C695%2C399%2C402%2C467%2C490%2C499%2C2137%2C2127%2C2324%2C2325%2C2342%2C530%2C2152%2C2328%2C1350%2C403%2C1279%2C716%2C2165%2C401%2C409%2C560%2C794%2C556%2C2307%2C557%2C2308%2C558%2C793%2C1395%2C1396%2C436%2C2309%2C2310%2C2311%2C969%2C1125%2C1130%2C1131%2C1132%2C1133%2C2084%2C1128%2C1129%2C1856%2C2430%2C1283%2C2085%2C1282%2C1284%2C1285%2C1138%2C1136%2C1137%2C1849%2C1126%2C1127%2C1134%2C1135%2C2018%2C855%2C408%2C441%2C1173%2C1486%2C1172%2C446%2C909%2C1665%2C1760%2C1764%2C1767%2C1769%2C1765%2C1771%2C1770%2C1768%2C1774%2C1772%2C2233%2C416%2C2377%2C468%2C691%2C469%2C786%2C785%2C1631%2C1499%2C715%2C1388%2C282%2C796%2C784%2C783%2C2331%2C2431%2C880%2C1215%2C1220%2C1221%2C1334%2C1216%2C1223%2C1224%2C1225%2C1226%2C782%2C577%2C1842%2C1648%2C134%2C965%2C2495%2C424%2C1361%2C425%2C1635%2C1634%2C2497%2C428%2C1362%2C429%2C735%2C1753%2C2232%2C714%2C1331%2C1330%2C1219%2C1452%2C2275%2C2270%2C1351%2C2499%2C2503%2C2504%2C2502%2C2501%2C2505%2C2500%2C2267%2C2277%2C2278%2C2279%2C2280%2C2281%2C2282%2C2353%2C2284%2C2285%2C2283%2C2286%2C2287%2C2268%2C2293%2C2292%2C2290%2C2289%2C2288%2C2269%2C2297%2C2295%2C2296%2C2298%2C1698%2C1702%2C1703%2C1704%2C1705%2C1706%2C1707%2C2329%2C2330%2C1708%2C1709%2C1710%2C1711%2C1712%2C1713%2C731%2C1799%2C1714%2C1715]
+
+[v2.1.5.5216] NzbDrone.Core.Indexers.Exceptions.IndexerAuthException: Форум временно отключен на профилактические работы до 04:45 MSK
+   at NzbDrone.Core.Indexers.Definitions.RuTracker.DoLogin() in ./NzbDrone.Core/Indexers/Definitions/RuTracker.cs:line 110
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 673
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-11-02 02:40:54.5|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (2 ms)
+2025-11-02 02:40:54.5|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010] from 1 indexer(s)
+2025-11-02 02:40:54.7|Debug|ReleaseSearchService|Total of 4 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000] from 1 indexer(s)
+2025-11-02 02:40:56.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:40:57.3|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:40:57.3|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:40:57.9|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-11-02 02:40:58.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:40:58.4|Debug|ReleaseSearchService|Total of 20 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030, 5070] from 1 indexer(s)
+2025-11-02 02:41:00.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:41:00.2|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:41:00.2|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:41:02.3|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:41:02.7|Debug|ReleaseSearchService|Total of 23 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3010, 3040, 3050, 3030] from 1 indexer(s)
+2025-11-02 02:43:40.9|Debug|Api|[GET] /api/v1/health: 200.OK (2 ms)
+2025-11-02 02:43:41.0|Debug|Api|[GET] /api/v1/system/status: 200.OK (52 ms)
+2025-11-02 02:43:53.2|Debug|Api|[GET] /api/v1/config/host: 200.OK (45 ms)
+2025-11-02 02:43:57.2|Debug|Api|[PUT] /api/v1/config/host: 202.Accepted (134 ms)
+2025-11-02 02:44:02.3|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-11-02 02:44:06.2|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-11-02 02:49:36.3|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-11-02 02:55:06.3|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-11-02 02:55:39.4|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-11-02 02:55:41.4|Info|ConsoleApp|Exiting main.
+2025-11-02 02:57:46.7|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-11-02 02:57:46.8|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-11-02 02:57:46.8|Debug|ProcessProvider| - [150] Prowlarr
+2025-11-02 02:57:46.8|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 02:57:46.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 02:57:46.9|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 02:57:46.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 02:57:47.0|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 02:57:47.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0705874s
+2025-11-02 02:57:47.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 02:57:47.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0779251s
+2025-11-02 02:57:47.1|Debug|MigrationController|Took: 00:00:00.3152295
+2025-11-02 02:57:47.1|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 02:57:47.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 02:57:47.2|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 02:57:47.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 02:57:47.2|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 02:57:47.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0086974s
+2025-11-02 02:57:47.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 02:57:47.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.009004s
+2025-11-02 02:57:47.2|Debug|MigrationController|Took: 00:00:00.0453054
+2025-11-02 02:57:47.6|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-11-02 02:57:47.9|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-11-02 02:57:47.9|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-11-02 02:57:50.0|Debug|Api|[GET] /api/v1/health: 200.OK (61 ms)
+2025-11-02 02:57:50.0|Debug|Api|[GET] /api/v1/command: 200.OK (91 ms)
+2025-11-02 02:57:50.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (488 ms)
+2025-11-02 02:57:50.9|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-11-02 02:57:51.0|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-02 02:57:51.3|Debug|HttpClient|Downloading Completed. took 0s
+2025-11-02 02:57:51.4|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-11-02 02:57:51.4|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-11-02 02:57:51.4|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-11-02 02:57:51.4|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-11-02 02:57:51.4|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-11-02 02:57:51.5|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-02 02:57:51.5|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-02 02:57:51.5|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-11-02 02:57:52.3|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-11-02 02:57:58.7|Debug|Api|[GET] /api/v1/health: 200.OK (2 ms)
+2025-11-02 02:58:30.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
+2025-11-02 02:58:30.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3050]
+2025-11-02 02:58:30.1|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:58:30.1|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:58:30.1|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:58:30.1|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:58:30.2|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3010, 3040, 3050, 3030]
+2025-11-02 02:58:30.2|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:58:30.2|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:58:30.2|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010]
+2025-11-02 02:58:30.2|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=185%2C809%2C2413%2C1501%2C1580%2C525%2C2326%2C574%2C1036%2C400%2C2389%2C2388%2C2387%2C661%2C2348%2C2327%2C695%2C399%2C402%2C467%2C490%2C499%2C2137%2C2127%2C2324%2C2325%2C2342%2C530%2C2152%2C2328%2C1350%2C403%2C1279%2C716%2C2165%2C401%2C409%2C560%2C794%2C556%2C2307%2C557%2C2308%2C558%2C793%2C1395%2C1396%2C436%2C2309%2C2310%2C2311%2C969%2C1125%2C1130%2C1131%2C1132%2C1133%2C2084%2C1128%2C1129%2C1856%2C2430%2C1283%2C2085%2C1282%2C1284%2C1285%2C1138%2C1136%2C1137%2C1849%2C1126%2C1127%2C1134%2C1135%2C2018%2C855%2C408%2C441%2C1173%2C1486%2C1172%2C446%2C909%2C1665%2C1760%2C1764%2C1767%2C1769%2C1765%2C1771%2C1770%2C1768%2C1774%2C1772%2C2233%2C416%2C2377%2C468%2C691%2C469%2C786%2C785%2C1631%2C1499%2C715%2C1388%2C282%2C796%2C784%2C783%2C2331%2C2431%2C880%2C1215%2C1220%2C1221%2C1334%2C1216%2C1223%2C1224%2C1225%2C1226%2C782%2C577%2C1842%2C1648%2C134%2C965%2C2495%2C424%2C1361%2C425%2C1635%2C1634%2C2497%2C428%2C1362%2C429%2C735%2C1753%2C2232%2C714%2C1331%2C1330%2C1219%2C1452%2C2275%2C2270%2C1351%2C2499%2C2503%2C2504%2C2502%2C2501%2C2505%2C2500%2C2267%2C2277%2C2278%2C2279%2C2280%2C2281%2C2282%2C2353%2C2284%2C2285%2C2283%2C2286%2C2287%2C2268%2C2293%2C2292%2C2290%2C2289%2C2288%2C2269%2C2297%2C2295%2C2296%2C2298%2C1698%2C1702%2C1703%2C1704%2C1705%2C1706%2C1707%2C2329%2C2330%2C1708%2C1709%2C1710%2C1711%2C1712%2C1713%2C731%2C1799%2C1714%2C1715
+2025-11-02 02:58:30.2|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:58:31.4|Debug|ReleaseSearchService|Total of 15 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3050] from 1 indexer(s)
+2025-11-02 02:58:31.5|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:58:31.5|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:58:31.8|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=1716%2C1796%2C1797%2C1719%2C1778%2C1779%2C1780%2C1720%2C798%2C1724%2C1725%2C1730%2C1731%2C1726%2C1727%2C1815%2C1816%2C1728%2C1729%2C2230%2C2231%2C1732%2C1736%2C1737%2C1738%2C1739%2C1740%2C1741%2C1773%2C202%2C172%2C236%2C1742%2C1743%2C1744%2C1745%2C1746%2C1747%2C1748%2C1749%2C2175%2C2174%2C722%2C737%2C738%2C464%2C463%2C739%2C740%2C951%2C952%2C1821%2C1844%2C1822%2C1894%2C1895%2C460%2C1818%2C1819%2C1847%2C1824%2C1807%2C1829%2C1830%2C1831%2C1857%2C1859%2C1858%2C840%2C1860%2C1825%2C1826%2C1827%2C1828%2C1808%2C797%2C1805%2C1832%2C1833%2C1834%2C1836%2C1837%2C1839%2C454%2C1838%2C1840%2C1841%2C2229%2C1809%2C1861%2C1862%2C1947%2C1946%2C1945%2C1944%2C1810%2C1864%2C1865%2C1871%2C1867%2C1869%2C1873%2C1811%2C1868%2C1875%2C1877%2C1878%2C1907%2C1880%2C1881%2C466%2C465%2C1866%2C406%2C1299%2C1884%2C1164%2C2513%2C1397%2C2512%2C1885%2C1163%2C2302%2C2303%2C1755%2C1757%2C1893%2C1890%2C2219%2C1660%2C506%2C1835%2C1625%2C1217%2C974%2C1444%2C2401%2C239%2C450%2C2301%2C123%2C1756%2C1758%2C1766%2C1754%2C860%2C453%2C1170%2C1759%2C1852%2C413%2C445%2C702%2C1990%2C1793%2C1141%2C1775%2C1227%2C475%2C1121%2C431%2C2378%2C2383%2C2305%2C1782%2C1787%2C1789%2C1791%2C1912%2C1189%2C2403%2C984%2C983%2C2352%2C2384%2C1142%2C1107%2C1228%2C988%2C1122%2C986%2C2379%2C2088%2C2304%2C1783%2C1788%2C1790%2C1792%2C1886%2C2509%2C2507%2C2263%2C2511%2C2264%2C2262%2C2261%2C1887%2C2531%2C2400%2C1812
+2025-11-02 02:58:33.1|Debug|ReleaseSearchService|Total of 4 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000] from 1 indexer(s)
+2025-11-02 02:58:33.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-11-02 02:58:33.1|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:58:33.1|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-02 02:58:33.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-11-02 02:58:33.1|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:58:33.1|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-02 02:58:33.2|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030, 5070]
+2025-11-02 02:58:33.2|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:58:33.2|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:58:33.2|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020, 5070]
+2025-11-02 02:58:33.2|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-11-02 02:58:33.2|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 02:58:33.5|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=655%2C1777%2C2530%2C2529%2C1781%2C2508%2C2426%2C2351%2C2306%2C1795%2C2271%2C1913%2C1784%2C1892%2C2266%2C518%2C2236%2C1909%2C1927%2C2240%2C2248%2C2244%2C148
+2025-11-02 02:58:33.6|Debug|ReleaseSearchService|Total of 28 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045] from 1 indexer(s)
+2025-11-02 02:58:34.8|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:58:34.8|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-02 02:58:35.7|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:58:35.7|Debug|Cardigann|Downloading Feed https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:58:35.8|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 02:58:37.0|Debug|ReleaseSearchService|Total of 139 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070] from 1 indexer(s)
+2025-11-02 02:58:37.4|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (7 ms)
+2025-11-02 02:58:37.4|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:58:38.0|Debug|ReleaseSearchService|Total of 149 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010] from 1 indexer(s)
+2025-11-02 02:58:38.4|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:58:38.4|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:58:39.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (3 ms)
+2025-11-02 02:58:39.8|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:58:39.8|Debug|Cardigann|Downloading Feed https://1337x.to/cat/TV/time/desc/1/
+2025-11-02 02:58:39.8|Debug|ReleaseSearchService|Total of 99 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020, 5070] from 1 indexer(s)
+2025-11-02 02:58:41.4|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:58:41.6|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:58:41.6|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:58:42.7|Debug|Api|[GET] /api/v1/health: 200.OK (2 ms)
+2025-11-02 02:58:43.6|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:58:43.8|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:58:43.8|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Music/time/desc/1/
+2025-11-02 02:58:45.4|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:58:47.0|Debug|ReleaseSearchService|Total of 23 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3010, 3040, 3050, 3030] from 1 indexer(s)
+2025-11-02 02:58:47.4|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:58:47.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:58:47.5|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
+2025-11-02 02:58:49.6|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 02:58:50.2|Debug|ReleaseSearchService|Total of 20 reports were found for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030, 5070] from 1 indexer(s)
+2025-11-02 03:00:18.3|Debug|Api|[GET] /api/v1/command: 200.OK (31 ms)
+2025-11-02 03:05:02.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-11-02 03:05:02.3|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=wire.s01%7C%22season.01%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:05:02.3|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=wire.s01%7C%22season.01%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:05:02.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [The Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:05:02.3|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S01
+2025-11-02 03:05:02.3|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S01
+2025-11-02 03:05:02.3|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [The Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:05:02.3|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S01/time/desc/1/
+2025-11-02 03:05:02.3|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S01/time/desc/1/
+2025-11-02 03:05:02.3|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [The Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:05:02.3|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+1&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:05:02.4|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/sort-search/The%20Wire%20S01/time/desc/1/
+2025-11-02 03:05:03.7|Debug|ReleaseSearchService|Total of 28 reports were found for Term: [Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045] from 1 indexer(s)
+2025-11-02 03:05:03.8|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+1&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:05:04.0|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [The Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:05:04.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:05:04.3|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S01
+2025-11-02 03:05:04.3|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S01
+2025-11-02 03:05:04.8|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:05:05.0|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (3 ms)
+2025-11-02 03:05:05.3|Debug|ReleaseSearchService|Total of 37 reports were found for Term: [The Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:05:05.4|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:05:05.4|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+1&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:05:07.3|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+1&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:05:09.3|Debug|ReleaseSearchService|Total of 37 reports were found for Term: [Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:05:10.2|Debug|Api|[GET] /api/v1/health: 200.OK (0 ms)
+2025-11-02 03:05:17.4|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S01/time/desc/2/
+2025-11-02 03:05:17.4|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S01/time/desc/2/
+2025-11-02 03:05:19.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:20.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S01/time/desc/3/
+2025-11-02 03:05:20.0|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S01/time/desc/3/
+2025-11-02 03:05:21.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:21.3|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S01/time/desc/4/
+2025-11-02 03:05:21.3|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S01/time/desc/4/
+2025-11-02 03:05:23.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:23.9|Debug|ReleaseSearchService|Total of 73 reports were found for Term: [The Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)
+2025-11-02 03:05:23.9|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:05:23.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S01/time/desc/1/
+2025-11-02 03:05:23.9|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S01/time/desc/1/
+2025-11-02 03:05:25.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:25.2|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S01/time/desc/2/
+2025-11-02 03:05:25.2|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S01/time/desc/2/
+2025-11-02 03:05:27.2|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:27.6|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S01/time/desc/3/
+2025-11-02 03:05:27.6|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S01/time/desc/3/
+2025-11-02 03:05:29.2|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:29.3|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S01/time/desc/4/
+2025-11-02 03:05:29.3|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S01/time/desc/4/
+2025-11-02 03:05:31.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:31.8|Debug|ReleaseSearchService|Total of 80 reports were found for Term: [Wire] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)
+2025-11-02 03:05:33.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Tenet 2020], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-11-02 03:05:33.4|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Tenet+2020
+2025-11-02 03:05:33.4|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Tenet+2020
+2025-11-02 03:05:33.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Tenet 2020], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-11-02 03:05:33.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=tenet.2020&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2025-11-02 03:05:33.4|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=tenet.2020&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2025-11-02 03:05:33.5|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [Tenet 2020], Offset: 0, Limit: 100, Categories: [2000, 2070, 2030, 2010, 2040, 2060, 2045]
+2025-11-02 03:05:33.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Tenet%202020/time/desc/1/
+2025-11-02 03:05:33.5|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Tenet%202020/time/desc/1/
+2025-11-02 03:05:33.5|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [Tenet 2020], Offset: 0, Limit: 100, Categories: [2000, 2010, 2020, 2070, 2040, 2045, 2060]
+2025-11-02 03:05:33.5|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Tenet%252020&f=22%2C941%2C1666%2C376%2C106%2C7%2C187%2C2090%2C2221%2C2091%2C2092%2C2093%2C2200%2C1950%2C252%2C2540%2C934%2C505%2C212%2C2459%2C1235%2C166%2C124%2C1543%2C709%2C1577%2C93%2C905%2C101%2C100%2C877%2C1576%2C572%2C2220%2C1670%2C2198%2C2199%2C313%2C312%2C1247%2C2201%2C2339%2C140%2C194%2C718%2C775%2C1457%2C1940%2C272%2C271%2C352%2C549%2C1213%2C2109%2C514%2C2097%2C4%2C84%2C2343%2C930%2C2365%2C1900%2C2258%2C521%2C208%2C539%2C2183%2C209%2C484%2C822%2C181%2C847
+2025-11-02 03:05:33.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:34.2|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Tenet%202020/time/desc/2/
+2025-11-02 03:05:34.2|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Tenet%202020/time/desc/2/
+2025-11-02 03:05:34.2|Debug|ReleaseSearchService|Total of 97 reports were found for Term: [Tenet 2020], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-11-02 03:05:34.5|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [Tenet 2020], Offset: 0, Limit: 100, Categories: [2000, 2020] from 1 indexer(s)
+2025-11-02 03:05:34.7|Debug|ReleaseSearchService|Total of 16 reports were found for Term: [Tenet 2020], Offset: 0, Limit: 100, Categories: [2000, 2010, 2020, 2070, 2040, 2045, 2060] from 1 indexer(s)
+2025-11-02 03:05:35.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:36.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Tenet%202020/time/desc/3/
+2025-11-02 03:05:36.0|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Tenet%202020/time/desc/3/
+2025-11-02 03:05:36.9|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [The Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:05:36.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S02/time/desc/1/
+2025-11-02 03:05:36.9|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S02/time/desc/1/
+2025-11-02 03:05:36.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [The Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:05:36.9|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S02
+2025-11-02 03:05:36.9|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S02
+2025-11-02 03:05:36.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-11-02 03:05:36.9|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=wire.s02%7C%22season.02%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:05:36.9|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=wire.s02%7C%22season.02%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:05:36.9|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [The Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:05:36.9|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+2&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:05:37.4|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+2&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:05:37.4|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [The Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:05:37.6|Debug|ReleaseSearchService|Total of 16 reports were found for Term: [Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045] from 1 indexer(s)
+2025-11-02 03:05:37.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:37.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Tenet%202020/time/desc/4/
+2025-11-02 03:05:37.9|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Tenet%202020/time/desc/4/
+2025-11-02 03:05:38.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:05:38.9|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S02
+2025-11-02 03:05:38.9|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S02
+2025-11-02 03:05:39.2|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:05:39.3|Debug|ReleaseSearchService|Total of 8 reports were found for Term: [The Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:05:39.4|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:05:39.4|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+2&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:05:39.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:39.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S02/time/desc/2/
+2025-11-02 03:05:39.9|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S02/time/desc/2/
+2025-11-02 03:05:41.5|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+2&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:05:41.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:42.6|Debug|ReleaseSearchService|Total of 78 reports were found for Term: [Tenet 2020], Offset: 0, Limit: 100, Categories: [2000, 2070, 2030, 2010, 2040, 2060, 2045] from 1 indexer(s)
+2025-11-02 03:05:43.6|Debug|ReleaseSearchService|Total of 8 reports were found for Term: [Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:05:43.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:43.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S02/time/desc/3/
+2025-11-02 03:05:43.9|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S02/time/desc/3/
+2025-11-02 03:05:45.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:45.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S02/time/desc/4/
+2025-11-02 03:05:45.9|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S02/time/desc/4/
+2025-11-02 03:05:47.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:47.8|Debug|Cardigann|CardigannIndexer (1337x): Download selector NzbDrone.Core.Indexers.Definitions.Cardigann.SelectorField matched:
+<a class="l681788a708cda5f7032bbb72450f1dae00b940a4 l421cfdeaa2078b1b6e9297008362b21644704c50 l6c84db1bff7c2861f9a3431f91f77d6d9e010387" target="_blank" href="http://itorrents.org/torrent/06F01A61C6D721CB1473385C72996E461CF8AEB9.torrent">
+	<span class="icon">
+		<i class="flaticon-l2102aedf75254f53bf8ab21ea5cc46b27f1e3760"></i>
+	</span>ITORRENTS MIRROR</a>
+2025-11-02 03:05:49.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:50.1|Debug|ReleaseSearchService|Total of 61 reports were found for Term: [The Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)
+2025-11-02 03:05:50.3|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:05:50.3|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S02/time/desc/1/
+2025-11-02 03:05:50.3|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S02/time/desc/1/
+2025-11-02 03:05:51.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:52.1|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:52.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S02/time/desc/2/
+2025-11-02 03:05:52.1|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S02/time/desc/2/
+2025-11-02 03:05:52.2|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:52.2|Debug|Cardigann|Download request is being redirected to: https://itorrents.org/torrent/06F01A61C6D721CB1473385C72996E461CF8AEB9.torrent
+2025-11-02 03:05:53.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:53.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S02/time/desc/3/
+2025-11-02 03:05:53.9|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S02/time/desc/3/
+2025-11-02 03:05:54.2|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:54.2|Debug|Cardigann|Download request is being redirected to: http://itorrents.net/torrent/06F01A61C6D721CB1473385C72996E461CF8AEB9.torrent
+2025-11-02 03:05:54.2|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:54.2|Debug|Cardigann|Download request is being redirected to: https://itorrents.net/torrent/06F01A61C6D721CB1473385C72996E461CF8AEB9.torrent
+2025-11-02 03:05:55.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:55.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S02/time/desc/4/
+2025-11-02 03:05:55.9|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S02/time/desc/4/
+2025-11-02 03:05:56.2|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:56.2|Debug|Cardigann|Downloaded for release finished (96532 bytes from https://1337x.to/torrent/4708897/Tenet-2020-BONUS-DISC-1080p-BluRay-REMUX-AVC-DD2-0-FGT/)
+2025-11-02 03:05:57.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:05:58.3|Debug|ReleaseSearchService|Total of 68 reports were found for Term: [Wire] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)
+2025-11-02 03:06:01.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [The Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:06:01.5|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S03
+2025-11-02 03:06:01.5|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S03
+2025-11-02 03:06:01.5|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [The Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:06:01.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S03/time/desc/1/
+2025-11-02 03:06:01.5|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S03/time/desc/1/
+2025-11-02 03:06:01.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-11-02 03:06:01.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=wire.s03%7C%22season.03%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:06:01.5|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=wire.s03%7C%22season.03%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:06:01.5|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [The Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:06:01.6|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+3&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:06:01.9|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [The Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:06:02.0|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:02.0|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+3&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:06:02.4|Debug|ReleaseSearchService|Total of 17 reports were found for Term: [Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045] from 1 indexer(s)
+2025-11-02 03:06:02.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S03/time/desc/2/
+2025-11-02 03:06:02.5|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S03/time/desc/2/
+2025-11-02 03:06:03.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:06:03.5|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S03
+2025-11-02 03:06:03.5|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S03
+2025-11-02 03:06:03.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:04.0|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:06:04.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S03/time/desc/3/
+2025-11-02 03:06:04.0|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S03/time/desc/3/
+2025-11-02 03:06:04.4|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [The Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:06:04.5|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:06:04.6|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+3&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:06:05.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:06.0|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+3&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:06:06.3|Debug|ReleaseSearchService|Total of 42 reports were found for Term: [The Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)
+2025-11-02 03:06:06.5|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:06:06.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S03/time/desc/1/
+2025-11-02 03:06:06.5|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S03/time/desc/1/
+2025-11-02 03:06:07.8|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:09.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S03/time/desc/2/
+2025-11-02 03:06:09.0|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S03/time/desc/2/
+2025-11-02 03:06:09.1|Debug|ReleaseSearchService|Total of 6 reports were found for Term: [Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:06:09.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:10.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S03/time/desc/3/
+2025-11-02 03:06:10.0|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S03/time/desc/3/
+2025-11-02 03:06:11.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:12.2|Debug|ReleaseSearchService|Total of 43 reports were found for Term: [Wire] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)
+2025-11-02 03:06:15.1|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [The Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:06:15.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S04/time/desc/1/
+2025-11-02 03:06:15.1|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S04/time/desc/1/
+2025-11-02 03:06:15.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [The Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:06:15.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-11-02 03:06:15.1|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S04
+2025-11-02 03:06:15.1|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S04
+2025-11-02 03:06:15.1|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=wire.s04%7C%22season.04%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:06:15.1|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=wire.s04%7C%22season.04%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:06:15.1|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [The Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:06:15.2|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+4&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:06:15.4|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [The Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:06:15.4|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:15.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S04/time/desc/2/
+2025-11-02 03:06:15.5|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S04/time/desc/2/
+2025-11-02 03:06:15.7|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+4&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:06:17.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:06:17.1|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S04
+2025-11-02 03:06:17.1|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S04
+2025-11-02 03:06:17.5|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:17.5|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:06:17.7|Debug|ReleaseSearchService|Total of 12 reports were found for Term: [The Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:06:17.8|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:06:17.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S04/time/desc/3/
+2025-11-02 03:06:17.9|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S04/time/desc/3/
+2025-11-02 03:06:17.9|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+4&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:06:19.3|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:19.7|Debug|ReleaseSearchService|Total of 40 reports were found for Term: [The Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)
+2025-11-02 03:06:19.7|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:06:19.7|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S04/time/desc/1/
+2025-11-02 03:06:19.7|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S04/time/desc/1/
+2025-11-02 03:06:19.8|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+4&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:06:21.2|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:21.3|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S04/time/desc/2/
+2025-11-02 03:06:21.3|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S04/time/desc/2/
+2025-11-02 03:06:21.9|Debug|ReleaseSearchService|Total of 12 reports were found for Term: [Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:06:23.6|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:23.6|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S04/time/desc/3/
+2025-11-02 03:06:23.6|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S04/time/desc/3/
+2025-11-02 03:06:25.4|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:25.8|Debug|ReleaseSearchService|Total of 46 reports were found for Term: [Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)
+2025-11-02 03:06:29.2|Debug|ReleaseSearchService|Total of 17 reports were found for Term: [Wire] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045] from 1 indexer(s)
+2025-11-02 03:06:40.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-11-02 03:06:40.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=wire.s05%7C%22season.05%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:06:40.4|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=wire.s05%7C%22season.05%22&cat=205%2C206%2C208%2C212
+2025-11-02 03:06:40.4|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [The Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:06:40.4|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S05/time/desc/1/
+2025-11-02 03:06:40.4|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S05/time/desc/1/
+2025-11-02 03:06:40.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [The Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:06:40.4|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S05
+2025-11-02 03:06:40.4|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=The+Wire+S05
+2025-11-02 03:06:40.5|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [The Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:06:40.5|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+5&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:06:40.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:42.9|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=The%25Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+5&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:06:43.4|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S05/time/desc/2/
+2025-11-02 03:06:43.4|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S05/time/desc/2/
+2025-11-02 03:06:43.7|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:43.9|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [The Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:06:44.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000]
+2025-11-02 03:06:44.0|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S05
+2025-11-02 03:06:44.0|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&q=Wire+S05
+2025-11-02 03:06:45.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/The%20Wire%20S05/time/desc/3/
+2025-11-02 03:06:45.0|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/The%20Wire%20S05/time/desc/3/
+2025-11-02 03:06:45.7|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:45.8|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000] from 1 indexer(s)
+2025-11-02 03:06:47.5|Debug|ReleaseSearchService|Total of 9 reports were found for Term: [The Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:06:47.6|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020]
+2025-11-02 03:06:47.7|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+5&f=511%2C1493%2C921%2C815%2C816%2C1460%2C498%2C33%2C1106%2C1105%2C599%2C1389%2C1391%2C2491%2C2544%2C1642%2C1390%2C404%2C893%2C2484%2C1386%2C1387%2C9%2C81%2C920%2C80%2C1535%2C188%2C91%2C990%2C1408%2C175%2C79%2C104%2C189%2C842%2C235%2C242%2C819%2C1531%2C721%2C1102%2C1120%2C1214%2C489%2C387%2C1359%2C184%2C1171%2C1417%2C625%2C1449%2C273%2C504%2C372%2C110%2C121%2C507%2C536%2C1144%2C173%2C195%2C2366%2C119%2C1803%2C266%2C193%2C1690%2C1459%2C1463%2C825%2C1248%2C1288%2C1669%2C2393%2C265%2C2406%2C2404%2C2405%2C2370%2C2396%2C2398%2C1949%2C1498%2C911%2C325%2C534%2C594%2C1301%2C607%2C1574%2C1539%2C694%2C781%2C704%2C1537%2C2100%2C820%2C915%2C1242%2C717%2C1939%2C2412%2C2102%2C19%2C670%2C1475%2C2107%2C1453%2C294%2C46%2C103%2C671%2C2177%2C656%2C2538%2C2159%2C251%2C98%2C97%2C851%2C2178%2C821%2C2076%2C56%2C2123%2C876%2C2139%2C2380%2C1467%2C1469%2C672%2C249%2C552%2C500%2C2112%2C1327%2C1468%2C1280%2C752%2C1114%2C2168%2C2160%2C2176%2C314%2C2323%2C1278%2C1281%2C2110%2C979%2C2169%2C2166%2C2164%2C2163%2C85%2C24%2C1959%2C939%2C1481%2C113%2C115%2C882%2C1482%2C393%2C1569%2C373%2C1186%2C137%2C2537%2C532%2C827%2C1484%2C1485%2C114%2C1332%2C1495%2C1346%2C2493%2C2103%2C2485%2C2479%2C2089%2C2338%2C927%2C1392%2C2475%2C2113%2C2482%2C2522%2C2486%2C1794%2C1315%2C1336%2C2171%2C1339%2C2455%2C1434%2C2350%2C1472%2C2068
+2025-11-02 03:06:49.0|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=Wire+%D0%A2%D0%92+%7C+%D0%A1%D0%B5%D0%B7%D0%BE%D0%BD%3A+5&f=2016%2C1311%2C255%2C256%2C1986%2C660%2C1551%2C626%2C262%2C1326%2C978%2C1287%2C1188%2C1667%2C1675%2C257%2C875%2C263%2C2073%2C550%2C2124%2C1470%2C528%2C486%2C854%2C2079%2C260%2C1319%2C1608%2C2294%2C1693%2C136%2C2532%2C592%2C1229%2C2533%2C1952%2C1621%2C2075%2C1668%2C1613%2C1614%2C1623%2C1615%2C1630%2C2425%2C2514%2C1616%2C2014%2C1442%2C1491%2C1987%2C1617%2C1620%2C1998%2C1343%2C751%2C497%2C1697%2C2004%2C2001%2C2002%2C283%2C1997%2C2003%2C2009%2C2010%2C2006%2C2007%2C2005%2C259%2C2008%2C126%2C845%2C343%2C2111%2C1527%2C2069%2C1323%2C1202%2C1985%2C1982%2C2151%2C1983%2C1984%2C807%2C1167
+2025-11-02 03:06:50.6|Debug|ReleaseSearchService|Total of 56 reports were found for Term: [The Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)
+2025-11-02 03:06:51.5|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030]
+2025-11-02 03:06:51.6|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S05/time/desc/1/
+2025-11-02 03:06:51.6|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S05/time/desc/1/
+2025-11-02 03:06:51.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:52.6|Debug|ReleaseSearchService|Total of 9 reports were found for Term: [Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5050, 5030, 5040, 5045, 5020] from 1 indexer(s)
+2025-11-02 03:06:54.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S05/time/desc/2/
+2025-11-02 03:06:54.1|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S05/time/desc/2/
+2025-11-02 03:06:54.2|Debug|ReleaseSearchService|Total of 23 reports were found for Term: [Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045] from 1 indexer(s)
+2025-11-02 03:06:54.4|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:06:56.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/sort-search/Wire%20S05/time/desc/3/
+2025-11-02 03:06:56.0|Debug|Cardigann|Downloading Feed https://1337x.to/sort-search/Wire%20S05/time/desc/3/
+2025-11-02 03:06:57.0|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-02 03:07:01.9|Debug|ReleaseSearchService|Total of 56 reports were found for Term: [Wire] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5040, 5030] from 1 indexer(s)

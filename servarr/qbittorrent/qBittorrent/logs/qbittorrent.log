@@ -25,3 +25,221 @@
 (N) 2025-10-25T23:19:54 - Saving resume data completed.
 (N) 2025-10-25T23:19:54 - BitTorrent session successfully finished.
 (N) 2025-10-25T23:19:54 - qBittorrent is now ready to exit
+(N) 2025-11-01T22:00:17 - qBittorrent v5.1.2 started. Process ID: 147
+(N) 2025-11-01T22:00:17 - Using config directory: /config/qBittorrent
+(N) 2025-11-01T22:00:17 - Trying to listen on the following list of IP addresses: "0.0.0.0:2700,[::]:2700"
+(I) 2025-11-01T22:00:17 - Peer ID: "-qB5120-"
+(I) 2025-11-01T22:00:17 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-11-01T22:00:17 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-01T22:00:17 - Local Peer Discovery support: ON
+(I) 2025-11-01T22:00:17 - Peer Exchange (PeX) support: ON
+(I) 2025-11-01T22:00:17 - Anonymous mode: OFF
+(I) 2025-11-01T22:00:17 - Encryption support: ON
+(I) 2025-11-01T22:00:17 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/2700"
+(I) 2025-11-01T22:00:17 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/2700"
+(I) 2025-11-01T22:00:17 - Successfully listening on IP. IP: "172.27.7.8". Port: "TCP/2700"
+(I) 2025-11-01T22:00:17 - Successfully listening on IP. IP: "172.27.7.8". Port: "UTP/2700"
+(I) 2025-11-01T22:00:17 - Successfully listening on IP. IP: "::1". Port: "TCP/2700"
+(I) 2025-11-01T22:00:17 - Successfully listening on IP. IP: "::1". Port: "UTP/2700"
+(I) 2025-11-01T22:00:17 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Oct 1 03:26:02 2025.
+(N) 2025-11-01T22:00:17 - Using built-in WebUI.
+(W) 2025-11-01T22:00:17 - Couldn't load WebUI translation for selected locale (C).
+(N) 2025-11-01T22:00:17 - WebUI: Now listening on IP: *, port: 2701
+(I) 2025-11-01T22:00:17 - Detected external IP. IP: "193.77.222.108"
+(W) 2025-11-01T22:04:41 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:05:08 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:05:48 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:10.0.0.25, username: jacko
+(W) 2025-11-01T22:06:56 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:10.0.0.25, username: admin
+(W) 2025-11-01T22:07:00 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:10.0.0.25, username: admin
+(W) 2025-11-01T22:07:18 - WebAPI login failure. Reason: invalid credentials, attempt count: 4, IP: ::ffff:10.0.0.25, username: admin
+(W) 2025-11-01T22:08:25 - WebAPI login failure. Reason: invalid credentials, attempt count: 5, IP: ::ffff:10.0.0.25, username: admin
+(W) 2025-11-01T22:08:35 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:10.0.0.25, username: admin
+(W) 2025-11-01T22:08:59 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:10.0.0.25, username: admin
+(N) 2025-11-01T22:09:13 - qBittorrent termination initiated
+(N) 2025-11-01T22:09:13 - Saving resume data completed.
+(N) 2025-11-01T22:09:13 - BitTorrent session successfully finished.
+(N) 2025-11-01T22:09:14 - qBittorrent is now ready to exit
+(N) 2025-11-01T22:09:35 - qBittorrent v5.1.2 started. Process ID: 145
+(N) 2025-11-01T22:09:35 - Using config directory: /config/qBittorrent
+(N) 2025-11-01T22:09:35 - Trying to listen on the following list of IP addresses: "0.0.0.0:2700,[::]:2700"
+(I) 2025-11-01T22:09:35 - Peer ID: "-qB5120-"
+(I) 2025-11-01T22:09:35 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-11-01T22:09:35 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-01T22:09:35 - Local Peer Discovery support: ON
+(I) 2025-11-01T22:09:35 - Peer Exchange (PeX) support: ON
+(I) 2025-11-01T22:09:35 - Anonymous mode: OFF
+(I) 2025-11-01T22:09:35 - Encryption support: ON
+(I) 2025-11-01T22:09:35 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/2700"
+(I) 2025-11-01T22:09:35 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/2700"
+(I) 2025-11-01T22:09:35 - Successfully listening on IP. IP: "172.27.7.8". Port: "TCP/2700"
+(I) 2025-11-01T22:09:35 - Successfully listening on IP. IP: "172.27.7.8". Port: "UTP/2700"
+(I) 2025-11-01T22:09:35 - Successfully listening on IP. IP: "::1". Port: "TCP/2700"
+(I) 2025-11-01T22:09:35 - Successfully listening on IP. IP: "::1". Port: "UTP/2700"
+(I) 2025-11-01T22:09:35 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Oct 1 03:26:02 2025.
+(N) 2025-11-01T22:09:35 - Using built-in WebUI.
+(W) 2025-11-01T22:09:35 - Couldn't load WebUI translation for selected locale (C).
+(N) 2025-11-01T22:09:35 - WebUI: Now listening on IP: *, port: 2701
+(I) 2025-11-01T22:09:35 - Detected external IP. IP: "193.77.222.108"
+(N) 2025-11-01T22:10:15 - WebAPI login success. IP: ::ffff:10.0.0.25
+(N) 2025-11-01T22:11:25 - WebUI translation for selected locale (en) has been successfully loaded.
+(W) 2025-11-01T22:12:46 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(N) 2025-11-01T22:20:51 - qBittorrent termination initiated
+(N) 2025-11-01T22:20:52 - Saving resume data completed.
+(N) 2025-11-01T22:20:52 - BitTorrent session successfully finished.
+(N) 2025-11-01T22:20:52 - qBittorrent is now ready to exit
+(N) 2025-11-01T22:21:09 - qBittorrent v5.1.2 started. Process ID: 144
+(N) 2025-11-01T22:21:09 - Using config directory: /config/qBittorrent
+(N) 2025-11-01T22:21:09 - Trying to listen on the following list of IP addresses: "0.0.0.0:2700,[::]:2700"
+(I) 2025-11-01T22:21:09 - Peer ID: "-qB5120-"
+(I) 2025-11-01T22:21:09 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-11-01T22:21:09 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-01T22:21:09 - Local Peer Discovery support: ON
+(I) 2025-11-01T22:21:09 - Peer Exchange (PeX) support: ON
+(I) 2025-11-01T22:21:09 - Anonymous mode: OFF
+(I) 2025-11-01T22:21:09 - Encryption support: ON
+(I) 2025-11-01T22:21:09 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/2700"
+(I) 2025-11-01T22:21:09 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/2700"
+(I) 2025-11-01T22:21:09 - Successfully listening on IP. IP: "172.27.7.8". Port: "TCP/2700"
+(I) 2025-11-01T22:21:09 - Successfully listening on IP. IP: "172.27.7.8". Port: "UTP/2700"
+(I) 2025-11-01T22:21:09 - Successfully listening on IP. IP: "::1". Port: "TCP/2700"
+(I) 2025-11-01T22:21:09 - Successfully listening on IP. IP: "::1". Port: "UTP/2700"
+(I) 2025-11-01T22:21:09 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Oct 1 03:26:02 2025.
+(N) 2025-11-01T22:21:09 - Using built-in WebUI.
+(N) 2025-11-01T22:21:09 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-01T22:21:09 - WebUI: Now listening on IP: *, port: 2701
+(I) 2025-11-01T22:21:09 - Detected external IP. IP: "193.77.222.108"
+(W) 2025-11-01T22:21:24 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:10.0.0.25, username: jacko
+(N) 2025-11-01T22:21:59 - WebAPI login success. IP: ::ffff:10.0.0.25
+(W) 2025-11-01T22:27:09 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:27:45 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:27:47 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:29:24 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:24 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:42 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:44 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:44 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:44 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:44 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:45 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:45 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:45 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:45 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:45 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:30:45 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(W) 2025-11-01T22:32:50 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:10.0.0.99'. Referer header: 'https://proxy.home.neverlab.dev/'. Target origin: 'torrent.home.neverlab.dev'
+(N) 2025-11-01T22:34:06 - WebAPI login success. IP: ::ffff:10.0.0.99
+(N) 2025-11-01T22:42:08 - qBittorrent termination initiated
+(N) 2025-11-01T22:42:08 - Saving resume data completed.
+(N) 2025-11-01T22:42:08 - BitTorrent session successfully finished.
+(N) 2025-11-01T22:42:09 - qBittorrent is now ready to exit
+(N) 2025-11-02T01:37:39 - qBittorrent v5.1.2 started. Process ID: 145
+(N) 2025-11-02T01:37:39 - Using config directory: /config/qBittorrent
+(N) 2025-11-02T01:37:39 - Trying to listen on the following list of IP addresses: "0.0.0.0:2700,[::]:2700"
+(I) 2025-11-02T01:37:39 - Peer ID: "-qB5120-"
+(I) 2025-11-02T01:37:39 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-11-02T01:37:39 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-02T01:37:39 - Local Peer Discovery support: ON
+(I) 2025-11-02T01:37:39 - Peer Exchange (PeX) support: ON
+(I) 2025-11-02T01:37:39 - Anonymous mode: OFF
+(I) 2025-11-02T01:37:39 - Encryption support: ON
+(I) 2025-11-02T01:37:39 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/2700"
+(I) 2025-11-02T01:37:39 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/2700"
+(I) 2025-11-02T01:37:39 - Successfully listening on IP. IP: "172.27.7.8". Port: "TCP/2700"
+(I) 2025-11-02T01:37:39 - Successfully listening on IP. IP: "172.27.7.8". Port: "UTP/2700"
+(I) 2025-11-02T01:37:39 - Successfully listening on IP. IP: "::1". Port: "TCP/2700"
+(I) 2025-11-02T01:37:39 - Successfully listening on IP. IP: "::1". Port: "UTP/2700"
+(I) 2025-11-02T01:37:39 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Wed Oct 1 03:26:02 2025.
+(N) 2025-11-02T01:37:39 - Using built-in WebUI.
+(N) 2025-11-02T01:37:39 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-02T01:37:39 - WebUI: Now listening on IP: *, port: 2701
+(I) 2025-11-02T01:37:39 - Detected external IP. IP: "193.77.222.108"
+(I) 2025-11-02T01:37:39 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 03:28:18 2025.
+(I) 2025-11-02T01:37:40 - Successfully updated IP geolocation database.
+(N) 2025-11-02T01:45:41 - qBittorrent termination initiated
+(N) 2025-11-02T01:45:42 - Saving resume data completed.
+(N) 2025-11-02T01:45:42 - BitTorrent session successfully finished.
+(N) 2025-11-02T01:45:43 - qBittorrent is now ready to exit
+(N) 2025-11-02T01:48:00 - qBittorrent v5.1.2 started. Process ID: 148
+(N) 2025-11-02T01:48:00 - Using config directory: /config/qBittorrent
+(N) 2025-11-02T01:48:00 - Trying to listen on the following list of IP addresses: "0.0.0.0:2700,[::]:2700"
+(I) 2025-11-02T01:48:00 - Peer ID: "-qB5120-"
+(I) 2025-11-02T01:48:00 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-11-02T01:48:00 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-02T01:48:00 - Local Peer Discovery support: ON
+(I) 2025-11-02T01:48:00 - Peer Exchange (PeX) support: ON
+(I) 2025-11-02T01:48:00 - Anonymous mode: OFF
+(I) 2025-11-02T01:48:00 - Encryption support: ON
+(I) 2025-11-02T01:48:00 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/2700"
+(I) 2025-11-02T01:48:00 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/2700"
+(I) 2025-11-02T01:48:00 - Successfully listening on IP. IP: "172.27.7.2". Port: "TCP/2700"
+(I) 2025-11-02T01:48:00 - Successfully listening on IP. IP: "172.27.7.2". Port: "UTP/2700"
+(I) 2025-11-02T01:48:00 - Successfully listening on IP. IP: "::1". Port: "TCP/2700"
+(I) 2025-11-02T01:48:00 - Successfully listening on IP. IP: "::1". Port: "UTP/2700"
+(I) 2025-11-02T01:48:00 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 03:28:18 2025.
+(N) 2025-11-02T01:48:00 - Using built-in WebUI.
+(N) 2025-11-02T01:48:00 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-02T01:48:00 - WebUI: Now listening on IP: *, port: 2701
+(I) 2025-11-02T01:48:01 - Detected external IP. IP: "193.77.222.108"
+(N) 2025-11-02T01:51:06 - WebAPI login success. IP: ::ffff:172.27.7.4
+(N) 2025-11-02T02:23:31 - qBittorrent termination initiated
+(N) 2025-11-02T02:23:32 - Saving resume data completed.
+(N) 2025-11-02T02:23:32 - BitTorrent session successfully finished.
+(N) 2025-11-02T02:23:33 - qBittorrent is now ready to exit
+(N) 2025-11-02T02:24:38 - qBittorrent v5.1.2 started. Process ID: 146
+(N) 2025-11-02T02:24:38 - Using config directory: /config/qBittorrent
+(N) 2025-11-02T02:24:38 - Trying to listen on the following list of IP addresses: "0.0.0.0:2700,[::]:2700"
+(I) 2025-11-02T02:24:38 - Peer ID: "-qB5120-"
+(I) 2025-11-02T02:24:38 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-11-02T02:24:38 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-02T02:24:38 - Local Peer Discovery support: ON
+(I) 2025-11-02T02:24:38 - Peer Exchange (PeX) support: ON
+(I) 2025-11-02T02:24:38 - Anonymous mode: OFF
+(I) 2025-11-02T02:24:38 - Encryption support: ON
+(I) 2025-11-02T02:24:38 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/2700"
+(I) 2025-11-02T02:24:38 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/2700"
+(I) 2025-11-02T02:24:38 - Successfully listening on IP. IP: "172.27.7.2". Port: "TCP/2700"
+(I) 2025-11-02T02:24:38 - Successfully listening on IP. IP: "172.27.7.2". Port: "UTP/2700"
+(I) 2025-11-02T02:24:38 - Successfully listening on IP. IP: "::1". Port: "TCP/2700"
+(I) 2025-11-02T02:24:38 - Successfully listening on IP. IP: "::1". Port: "UTP/2700"
+(I) 2025-11-02T02:24:38 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 03:28:18 2025.
+(N) 2025-11-02T02:24:38 - Using built-in WebUI.
+(N) 2025-11-02T02:24:38 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-02T02:24:38 - WebUI: Now listening on IP: *, port: 2701
+(I) 2025-11-02T02:24:38 - Detected external IP. IP: "193.77.222.108"
+(N) 2025-11-02T02:51:55 - WebAPI login success. IP: ::ffff:172.27.7.5
+(N) 2025-11-02T02:52:54 - WebAPI login success. IP: ::ffff:172.27.7.6
+(N) 2025-11-02T02:53:36 - WebAPI login success. IP: ::ffff:172.27.7.7
+(N) 2025-11-02T02:55:39 - qBittorrent termination initiated
+(N) 2025-11-02T02:55:40 - Saving resume data completed.
+(N) 2025-11-02T02:55:40 - BitTorrent session successfully finished.
+(N) 2025-11-02T02:55:41 - qBittorrent is now ready to exit
+(N) 2025-11-02T02:57:49 - qBittorrent v5.1.2 started. Process ID: 146
+(N) 2025-11-02T02:57:49 - Using config directory: /config/qBittorrent
+(N) 2025-11-02T02:57:49 - Trying to listen on the following list of IP addresses: "0.0.0.0:2700,[::]:2700"
+(I) 2025-11-02T02:57:49 - Peer ID: "-qB5120-"
+(I) 2025-11-02T02:57:49 - HTTP User-Agent: "qBittorrent/5.1.2"
+(I) 2025-11-02T02:57:49 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-02T02:57:49 - Local Peer Discovery support: ON
+(I) 2025-11-02T02:57:49 - Peer Exchange (PeX) support: ON
+(I) 2025-11-02T02:57:49 - Anonymous mode: OFF
+(I) 2025-11-02T02:57:49 - Encryption support: ON
+(I) 2025-11-02T02:57:49 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/2700"
+(I) 2025-11-02T02:57:49 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/2700"
+(I) 2025-11-02T02:57:49 - Successfully listening on IP. IP: "172.27.7.2". Port: "TCP/2700"
+(I) 2025-11-02T02:57:49 - Successfully listening on IP. IP: "172.27.7.2". Port: "UTP/2700"
+(I) 2025-11-02T02:57:49 - Successfully listening on IP. IP: "::1". Port: "TCP/2700"
+(I) 2025-11-02T02:57:49 - Successfully listening on IP. IP: "::1". Port: "UTP/2700"
+(I) 2025-11-02T02:57:49 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 03:28:18 2025.
+(N) 2025-11-02T02:57:49 - Using built-in WebUI.
+(N) 2025-11-02T02:57:49 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-02T02:57:49 - WebUI: Now listening on IP: *, port: 2701
+(I) 2025-11-02T02:57:49 - Detected external IP. IP: "193.77.222.108"
+(N) 2025-11-02T02:57:59 - WebAPI login success. IP: ::ffff:172.27.7.5
+(N) 2025-11-02T02:58:01 - WebAPI login success. IP: ::ffff:172.27.7.7
+(N) 2025-11-02T02:58:02 - WebAPI login success. IP: ::ffff:172.27.7.6
+(N) 2025-11-02T03:05:35 - Added new torrent. Torrent: "The.Wire.S01.1080p.BluRay.x265"
+(N) 2025-11-02T03:05:56 - Added new torrent. Torrent: "Tenet.2020.BONUS.DISC.1080p.BluRay.REMUX.AVC.DD2.0-FGT"
+(N) 2025-11-02T03:06:00 - Added new torrent. Torrent: "The.Wire.S02.1080p.BluRay.x265"
+(N) 2025-11-02T03:06:14 - Added new torrent. Torrent: "The.Wire.S03.1080p.BluRay.x265"
+(N) 2025-11-02T03:06:34 - Added new torrent. Torrent: "The.Wire.S04.1080p.BluRay.x265"
+(N) 2025-11-02T03:07:08 - Added new torrent. Torrent: "The.Wire.S05.1080p.BluRay.x265"

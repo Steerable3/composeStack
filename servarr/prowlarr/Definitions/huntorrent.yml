@@ -18,28 +18,30 @@ caps:
     - {id: 3, cat: Movies/DVD, desc: "DVDR/HUN"}
     - {id: 6, cat: Movies/HD, desc: "HD/ENG"}
     - {id: 5, cat: Movies/HD, desc: "HD/HUN"}
-    - {id: 29, cat: Movies, desc: "Mese/ENG"}
-    - {id: 30, cat: Movies, desc: "Mese/HUN"}
-    - {id: 8, cat: TV/SD, desc: "Sorozat/ENG"}
-    - {id: 31, cat: TV/HD, desc: "Sorozat/HD/ENG"}
-    - {id: 9, cat: TV/HD, desc: "Sorozat/HD/HUN"}
-    - {id: 7, cat: TV/SD, desc: "Sorozat/HUN"}
     - {id: 2, cat: Movies/SD, desc: "XviD/ENG"}
     - {id: 1, cat: Movies/SD, desc: "XviD/HUN"}
+    - {id: 17, cat: PC/Games, desc: "Játék/ISO"}
+    - {id: 18, cat: PC/Games, desc: "Játék/RIP"}
+    - {id: 19, cat: Console, desc: "Konzol"}
     - {id: 25, cat: Other, desc: "Kép"}
     - {id: 24, cat: Books, desc: "eBook/ENG"}
     - {id: 23, cat: Books, desc: "eBook/HUN"}
     - {id: 38, cat: Audio/Audiobook, desc: "Hangoskönyv"}
-    - {id: 17, cat: PC/Games, desc: "Játék/ISO"}
-    - {id: 18, cat: PC/Games, desc: "Játék/RIP"}
-    - {id: 19, cat: Console, desc: "Konzol"}
     - {id: 26, cat: PC/Mobile-Other, desc: "Mobil"}
     - {id: 20, cat: PC/ISO, desc: "Program/ISO"}
     - {id: 21, cat: PC/0day, desc: "Program/RIP"}
+    - {id: 31, cat: TV/HD, desc: "Sorozat/HD/ENG"}
+    - {id: 9, cat: TV/HD, desc: "Sorozat/HD/HUN"}
+    - {id: 8, cat: TV/SD, desc: "Sorozat/ENG"}
+    - {id: 7, cat: TV/SD, desc: "Sorozat/HUN"}
     - {id: 13, cat: Audio/Video, desc: "Klip/ENG"}
     - {id: 12, cat: Audio/Video, desc: "Klip/HUN"}
     - {id: 11, cat: Audio/MP3, desc: "MP3/ENG"}
     - {id: 10, cat: Audio/MP3, desc: "MP3/HUN"}
+    - {id: 16, cat: XXX/DVD, desc: "XXX/DVD"}
+    - {id: 32, cat: XXX/x264, desc: "XXX/HD"}
+    - {id: 14, cat: XXX/ImageSet, desc: "XXX/Kép"}
+    - {id: 15, cat: XXX/SD, desc: "XXX/XVID"}
 
   modes:
     search: [q]
@@ -110,12 +112,9 @@ search:
     # can search by genre but you need to know the id. &mufaj[]=20 for Romantikus
 
   rows:
-    selector: table[align="center"][cellpadding="5"] > tbody > tr[id^="torrent-main-"]
+    selector: table.torrent-table > tbody > tr[id^="torrent-main-"]
 
   fields:
-    _id:
-      selector: a.download-link
-      attribute: data-id
     category:
       selector: a[href^="browse.php?cat="]
       attribute: href
@@ -123,13 +122,13 @@ search:
         - name: querystring
           args: cat
     title:
-      selector: a[href^="#details_tr_"]
-      attribute: title
+      selector: a.torrent-title-link
+    details:
+      selector: a.torrent-title-link
+      attribute: href
       filters:
         - name: replace
-          args: ["Név: ", ""]
-    details:
-      text: "details.php?id={{ .Result._id }}"
+          args: ["&hit=1", ""]
     download:
       selector: a.download-link
       attribute: href
@@ -139,9 +138,10 @@ search:
         - name: replace
           args: ["&please_wait=1", ""]
     genre:
-      selector: "span[style=\"font-size: 6pt; font-weight: bold;\"]"
+      selector: span[title]
+      attribute: title
     description:
-      selector: td:nth-child(2) div:nth-child(2)
+      selector: div.torrent-subtitle
       filters:
         - name: append
           args: "{{ if .Result.genre }}</br>{{ .Result.genre }}{{ else }}{{ end }}"
@@ -149,8 +149,8 @@ search:
       selector: a[href*="imdb.com/title/tt"]
       attribute: href
     poster:
-      selector: a[href^="torrents_data/posters/"]
-      attribute: href
+      selector: img.torrent-hover-card-image
+      attribute: src
     date:
       selector: td:nth-last-child(5)
       filters:
@@ -159,11 +159,11 @@ search:
         - name: dateparse
           args: "yyyy-MM-dd HH:mm:ss zzz"
     size:
-      selector: td:nth-last-child(4) b
+      selector: td:nth-last-child(4)
     grabs:
       selector: td:nth-last-child(3)
     seeders:
-      selector: td:nth-last-child(2) a b
+      selector: td:nth-last-child(2)
     leechers:
       selector: td:nth-last-child(1)
     downloadvolumefactor:

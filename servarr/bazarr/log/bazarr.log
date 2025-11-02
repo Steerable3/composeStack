@@ -1,4 +1,33 @@
-2025-10-25 22:49:06|INFO    |root                            |Scheduler will use this timezone: Europe/Vienna|
-2025-10-25 22:49:18|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
-2025-10-25 22:49:18|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
-2025-10-25 22:49:18|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
+2025-11-02 01:37:52|INFO    |root                            |Scheduler will use this timezone: Europe/Vienna|
+2025-11-02 01:37:55|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
+2025-11-02 01:37:55|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
+2025-11-02 01:37:55|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
+2025-11-02 01:46:24|INFO    |root                            |Scheduler will use this timezone: Europe/Vienna|
+2025-11-02 01:46:27|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
+2025-11-02 01:46:27|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
+2025-11-02 01:46:27|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
+2025-11-02 01:48:19|INFO    |root                            |Scheduler will use this timezone: Europe/Vienna|
+2025-11-02 01:48:22|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
+2025-11-02 01:48:22|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
+2025-11-02 01:48:22|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
+2025-11-02 02:24:54|INFO    |root                            |Scheduler will use this timezone: Europe/Vienna|
+2025-11-02 02:24:57|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
+2025-11-02 02:24:57|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
+2025-11-02 02:24:57|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
+2025-11-02 02:37:39|INFO    |root                            |BAZARR trying to connect to Radarr SignalR feed...|
+2025-11-02 02:37:39|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+2025-11-02 02:38:52|INFO    |root                            |BAZARR trying to connect to Sonarr SignalR feed...|
+2025-11-02 02:38:52|INFO    |root                            |BAZARR SignalR client for Sonarr is connected and waiting for events.|
+2025-11-02 02:41:10|INFO    |root                            |Successful authentication from ***.***.***.*** for user jacko|
+2025-11-02 02:43:12|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2025-11-02 02:43:12|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError, ConfigurationError and PaymentRequired).|
+2025-11-02 02:55:39|ERROR   |root                            |BAZARR SignalR client for Radarr connection as been lost. Trying to reconnect...|
+2025-11-02 02:55:42|ERROR   |root                            |BAZARR SignalR client for Sonarr connection as been lost. Trying to reconnect...|
+2025-11-02 02:58:07|INFO    |root                            |Scheduler will use this timezone: Europe/Vienna|
+2025-11-02 02:58:09|INFO    |root                            |Interactive jobs queue started and waiting for tasks|
+2025-11-02 02:58:09|INFO    |root                            |BAZARR trying to connect to Sonarr SignalR feed...|
+2025-11-02 02:58:09|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://***.***.***.***:6767|
+2025-11-02 02:58:09|INFO    |root                            |BAZARR trying to connect to Radarr SignalR feed...|
+2025-11-02 02:58:09|INFO    |waitress                        |BAZARR is started and waiting for requests on: http://[::]:6767|
+2025-11-02 02:58:09|INFO    |root                            |BAZARR SignalR client for Sonarr is connected and waiting for events.|
+2025-11-02 02:58:09|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
