@@ -9,6 +9,31 @@
             "date": 1762048665080,
             "name": "/app/config/logs/jellyseerr-2025-11-02.log",
             "hash": "c9a8ec073d62d731b4e3b5cba546d6335f0bf255736620d72e61a9ddcd460fa9"
+        },
+        {
+            "date": 1762124407935,
+            "name": "/app/config/logs/jellyseerr-2025-11-03.log",
+            "hash": "65bf8ff773163aa00447bbc2ada4ebdf3c98d05756dc1542aa3b54d780b9dfed"
+        },
+        {
+            "date": 1762210800048,
+            "name": "/app/config/logs/jellyseerr-2025-11-04.log",
+            "hash": "8732a7dc3456b9bbc9972f404bf78b6d2b68c26ac1677c864a3f5194af0f4d7d"
+        },
+        {
+            "date": 1762297202542,
+            "name": "/app/config/logs/jellyseerr-2025-11-05.log",
+            "hash": "801237c11ce88fc773eb68e7d74a812caf5b1dd92a30be0cc8db5152e9def555"
+        },
+        {
+            "date": 1762383600541,
+            "name": "/app/config/logs/jellyseerr-2025-11-06.log",
+            "hash": "77115d0cc0090530e62d1e07f5aa583b81a126f1aacdb86db4a89c835e5a96df"
+        },
+        {
+            "date": 1762470009271,
+            "name": "/app/config/logs/jellyseerr-2025-11-07.log",
+            "hash": "7362e5633bf517be1334e78e761547217de239a6af06fc3eab18cdd6f58ea1bb"
         }
     ],
     "hashType": "sha256"

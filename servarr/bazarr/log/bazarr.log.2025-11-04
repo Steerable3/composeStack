@@ -1,0 +1,24 @@
+2025-11-04 02:13:13|INFO    |root                            |Using opensubtitlescom again after 6 hours, (disabled because: DownloadLimitExceeded)|
+2025-11-04 02:16:18|INFO    |root                            |Provider podnapisi throttle count 1 of 5, waiting 5sec and trying again|
+2025-11-04 02:19:49|INFO    |root                            |Provider podnapisi throttle count 1 of 5, waiting 5sec and trying again|
+2025-11-04 02:33:18|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+2025-11-04 02:37:25|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|
+2025-11-04 04:00:00|INFO    |root                            |BAZARR All existing movie subtitles indexed from disk.|
+2025-11-04 04:00:00|INFO    |root                            |BAZARR All existing episode subtitles indexed from disk.|
+2025-11-04 07:46:39|INFO    |root                            |Provider podnapisi throttle count 1 of 5, waiting 5sec and trying again|
+2025-11-04 07:48:07|INFO    |root                            |Provider podnapisi throttle count 2 of 5, waiting 5sec and trying again|
+2025-11-04 08:03:21|INFO    |root                            |Throttling opensubtitlescom for 6 hours, until 25/11/04 14:03, because of: DownloadLimitExceeded. Exception info: "'Daily download limit reached. 21 subtitles have been downloaded and -1 r' ~ opensubtitlescom.py@544"|
+2025-11-04 08:19:23|INFO    |root                            |Provider podnapisi throttle count 1 of 5, waiting 5sec and trying again|
+2025-11-04 08:24:27|INFO    |root                            |BAZARR Finished searching for Subtitles to upgrade. Check History for more information.|
+2025-11-04 08:33:25|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+2025-11-04 08:37:25|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|
+2025-11-04 14:13:13|INFO    |root                            |Using opensubtitlescom again after 6 hours, (disabled because: DownloadLimitExceeded)|
+2025-11-04 14:26:34|WARNING |retry.api                       |HTTPSConnectionPool(host='podnapisi.net', port=443): Max retries exceeded with url: /subtitles/search/old?sXML=1&sL=en%3Aforced&sK=the+wire&sTS=4&sTE=1&sY=2002 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f16a5c112b0>: Failed to resolve 'podnapisi.net' ([Errno -3] Try again)")), retrying in 5 seconds...|
+2025-11-04 18:07:44|WARNING |apscheduler.executors.default   |Run time of job "Update Release Info (trigger: interval[3:00:00], next run at: 2025-11-04 20:37:36 CET)" was missed by 0:30:08.125194|
+2025-11-04 18:07:44|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+2025-11-04 18:07:46|WARNING |apscheduler.executors.default   |Run time of job "Update Announcements File (trigger: interval[6:00:00], next run at: 2025-11-04 21:04:41 CET)" was missed by 3:03:05.354570|
+2025-11-04 18:07:46|ERROR   |root                            |BAZARR SignalR client for Radarr connection as been lost. Trying to reconnect...|
+2025-11-04 18:07:46|WARNING |apscheduler.executors.default   |Run time of job "Search for Missing Movies Subtitles (trigger: interval[6:00:00], next run at: 2025-11-04 20:37:25 CET)" was missed by 3:30:18.296768|
+2025-11-04 18:07:49|WARNING |apscheduler.executors.default   |Run time of job "Sync with Sonarr (trigger: interval[1:00:00], next run at: 2025-11-04 19:07:11 CET)" was missed by 0:00:38.001056|
+2025-11-04 18:07:50|WARNING |apscheduler.executors.default   |Run time of job "Sync with Radarr (trigger: interval[1:00:00], next run at: 2025-11-04 18:14:17 CET)" was missed by 0:53:33.416729|
+2025-11-04 18:07:58|WARNING |apscheduler.executors.default   |Run time of job "update_movies (trigger: date[2025-11-04 18:07:52 CET], next run at: 2025-

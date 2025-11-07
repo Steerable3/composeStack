@@ -38,6 +38,7 @@ services:
      - TZ=${TZ}
    volumes:
      - ./jellyseerr:/app/config
+     - /home/jacko/downloads:/downloads
    ports:
      - 2702:5055
    networks:
@@ -55,6 +56,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./prowlarr:/config
+      - /home/jacko/downloads:/downloads
     restart: unless-stopped
     ports:
       - 2703:9696
@@ -74,6 +76,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - ./radarr:/config
       - /mnt/media:/data
+      - /home/jacko/downloads:/downloads
     ports:
       - 2704:7878
     networks:
@@ -92,6 +95,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - ./sonarr:/config
       - /mnt/media:/data
+      - /home/jacko/downloads:/downloads
     ports:
       - 2705:8989
     networks:
@@ -106,6 +110,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - ./lidarr:/config
       - /mnt/media:/data
+      - /home/jacko/downloads:/downloads
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -128,6 +133,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - ./bazarr:/config
       - /mnt/media:/data
+      - /home/jacko/downloads:/downloads
     ports:
       - 2707:6767
     networks:
@@ -154,3 +160,20 @@ services:
       servarr-network:
         ipv4_address: 172.27.7.9
 
+  lazylibrarian:
+    image: lscr.io/linuxserver/lazylibrarian:latest
+    container_name: lazylibrarian
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - ./lazylibrarian:/config
+      - /mnt/media:/data
+      - /home/jacko/downloads:/downloads
+    ports:
+      - 2709:5299
+    restart: unless-stopped
+    networks:
+      servarr-network:
+        ipv4_address: 172.27.7.10

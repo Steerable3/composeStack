@@ -3099,3 +3099,1768 @@
 2025-11-02 02:58:29.9|Info|RssSyncService|Starting RSS Sync
 2025-11-02 02:58:47.1|Info|DownloadDecisionMaker|Processing 191 releases
 2025-11-02 02:58:47.6|Info|RssSyncService|RSS Sync Completed. Reports found: 191, Reports grabbed: 0
+2025-11-02 03:14:19.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 03:21:59.1|Error|TaskExtensions|Task Error
+
+[v3.0.1.4866] System.Net.WebException: Http request timed out
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 144
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.HealthCheck.Checks.SystemTimeCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/SystemTimeCheck.cs:line 30
+   at NzbDrone.Core.HealthCheck.HealthCheckService.<ProcessHealthChecks>b__15_0(IProvideHealthCheck c) in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 98
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at NzbDrone.Core.HealthCheck.HealthCheckService.ProcessHealthChecks() in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 95
+   at NzbDrone.Core.HealthCheck.HealthCheckService.HandleAsync(IEvent message) in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 187
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+
+
+2025-11-02 03:22:12.2|Warn|Torznab|Nyaa.si (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 03:22:11.6|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 03:22:11.6|Warn|Torznab|The Pirate Bay (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 03:22:17.1|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 03:37:54.1|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/02/2025 02:25:17 +00:00", the heartbeat has been running for "00:00:01.7323803" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-02 03:40:56.7|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from qBittorrent
+
+[v3.0.1.4866] NzbDrone.Core.Download.Clients.DownloadClientException: Failed to connect to qBittorrent, please check your settings.
+ ---> System.Net.WebException: Http request timed out
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 144
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.ProcessRequest(HttpRequestBuilder requestBuilder, QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 369
+   --- End of inner exception stack trace ---
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.ProcessRequest(HttpRequestBuilder requestBuilder, QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 388
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.ProcessRequest[TResult](HttpRequestBuilder requestBuilder, QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 353
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.GetTorrents(QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 104
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.GetItems() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 222
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in ./NzbDrone.Core/Download/TrackedDownloads/DownloadMonitoringService.cs:line 93
+
+
+2025-11-02 03:41:19.9|Info|DownloadDecisionMaker|No results found
+2025-11-02 03:41:22.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-02 03:47:44.0|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-02 03:57:14.3|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Dapper.SqlMapper.QueryMultiple(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 1128
+   at NzbDrone.Core.Datastore.BasicRepository`1.<>c.<Insert>b__24_0(ValueTuple`4 state, CancellationToken _) in ./NzbDrone.Core/Datastore/BasicRepository.cs:line 214
+   at Polly.ResiliencePipeline.<>c__36`2.<Execute>b__36_0(ResilienceContext context, ValueTuple`2 state)
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-02 03:57:30.6|Info|RssSyncService|Starting RSS Sync
+2025-11-02 03:58:05.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 04:12:44 due to recent failures." />
+2025-11-02 03:58:05.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 04:12:42 due to recent failures." />
+2025-11-02 03:58:05.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 04:12:36 due to recent failures." />
+2025-11-02 03:58:05.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 04:12:47 due to recent failures." />
+2025-11-02 03:58:15.2|Warn|Torznab|API Request Limit reached for 1337x (Prowlarr). Disabled for 00:14:43
+2025-11-02 03:58:15.5|Warn|Torznab|API Request Limit reached for The Pirate Bay (Prowlarr). Disabled for 00:14:45
+2025-11-02 03:58:15.8|Warn|Torznab|API Request Limit reached for RuTracker.org (Prowlarr). Disabled for 00:14:46
+2025-11-02 03:58:16.4|Warn|Torznab|API Request Limit reached for Nyaa.si (Prowlarr). Disabled for 00:14:38
+2025-11-02 03:58:17.9|Info|DownloadDecisionMaker|No results found
+2025-11-02 03:58:19.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-02 04:13:33.8|Info|RssSyncService|Starting RSS Sync
+2025-11-02 04:13:42.5|Info|DownloadDecisionMaker|Processing 30 releases
+2025-11-02 04:13:44.5|Info|RssSyncService|RSS Sync Completed. Reports found: 30, Reports grabbed: 0
+2025-11-02 04:29:05.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 04:29:14.0|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 04:29:15.3|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 04:44:36.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 04:44:44.3|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 04:44:45.4|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 05:00:08.2|Info|RssSyncService|Starting RSS Sync
+2025-11-02 05:00:14.8|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 05:00:15.1|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 05:15:40.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 05:15:46.9|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 05:15:48.1|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 05:31:15.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 05:31:22.5|Info|DownloadDecisionMaker|Processing 181 releases
+2025-11-02 05:31:22.9|Info|RssSyncService|RSS Sync Completed. Reports found: 181, Reports grabbed: 0
+2025-11-02 05:46:47.2|Info|RssSyncService|Starting RSS Sync
+2025-11-02 05:46:54.0|Info|DownloadDecisionMaker|Processing 181 releases
+2025-11-02 05:46:54.2|Info|RssSyncService|RSS Sync Completed. Reports found: 181, Reports grabbed: 0
+2025-11-02 06:02:18.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 06:02:30.1|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 06:02:31.2|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 06:17:50.4|Info|RssSyncService|Starting RSS Sync
+2025-11-02 06:17:51.4|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 06:18:05 due to recent failures." />
+2025-11-02 06:17:52.6|Warn|Torznab|API Request Limit reached for RuTracker.org (Prowlarr). Disabled for 00:00:15
+2025-11-02 06:17:57.1|Info|DownloadDecisionMaker|Processing 32 releases
+2025-11-02 06:17:57.2|Info|RssSyncService|RSS Sync Completed. Reports found: 32, Reports grabbed: 0
+2025-11-02 06:33:21.8|Info|RssSyncService|Starting RSS Sync
+2025-11-02 06:33:30.2|Info|DownloadDecisionMaker|Processing 179 releases
+2025-11-02 06:33:30.5|Info|RssSyncService|RSS Sync Completed. Reports found: 179, Reports grabbed: 0
+2025-11-02 06:48:53.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 06:49:00.9|Info|DownloadDecisionMaker|Processing 179 releases
+2025-11-02 06:49:01.2|Info|RssSyncService|RSS Sync Completed. Reports found: 179, Reports grabbed: 0
+2025-11-02 07:04:25.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 07:04:32.1|Info|DownloadDecisionMaker|Processing 178 releases
+2025-11-02 07:04:32.3|Info|RssSyncService|RSS Sync Completed. Reports found: 178, Reports grabbed: 0
+2025-11-02 07:19:57.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 07:20:04.4|Info|DownloadDecisionMaker|Processing 178 releases
+2025-11-02 07:20:05.8|Info|RssSyncService|RSS Sync Completed. Reports found: 178, Reports grabbed: 0
+2025-11-02 07:35:28.2|Info|RssSyncService|Starting RSS Sync
+2025-11-02 07:35:35.0|Info|DownloadDecisionMaker|Processing 178 releases
+2025-11-02 07:35:35.4|Info|RssSyncService|RSS Sync Completed. Reports found: 178, Reports grabbed: 0
+2025-11-02 07:51:05.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 07:52:53.8|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 07:52:53.8|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 07:52:54.0|Info|DownloadDecisionMaker|Processing 9 releases
+2025-11-02 07:52:57.7|Error|DownloadDecisionMaker|Couldn't process release.
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteConnection.Open()
+   at NzbDrone.Core.Datastore.SqlMapperExtensions.Query[TFirst,TSecond,TReturn](IDatabase db, String sql, Func`3 map, Object param, IDbTransaction transaction, Boolean buffered, String splitOn, Nullable`1 commandTimeout, Nullable`1 commandType) in ./NzbDrone.Core/Datastore/Extensions/SqlMapperExtensions.cs:line 46
+   at NzbDrone.Core.Music.ArtistRepository.Query(IDatabase database, SqlBuilder builder) in ./NzbDrone.Core/Music/Repositories/ArtistRepository.cs:line 36
+   at NzbDrone.Core.Music.ArtistRepository.Query(SqlBuilder builder) in ./NzbDrone.Core/Music/Repositories/ArtistRepository.cs:line 32
+   at NzbDrone.Core.Music.ArtistRepository.FindByName(String cleanName) in ./NzbDrone.Core/Music/Repositories/ArtistRepository.cs:line 66
+   at NzbDrone.Core.DecisionEngine.DownloadDecisionMaker.GetAlbumDecisions(List`1 reports, Boolean pushedRelease, SearchCriteriaBase searchCriteria)+MoveNext()
+
+
+2025-11-02 07:53:05.5|Info|RssSyncService|RSS Sync Completed. Reports found: 9, Reports grabbed: 0
+2025-11-02 07:53:07.5|Info|RssSyncService|Starting RSS Sync
+2025-11-02 07:53:13.1|Info|DownloadDecisionMaker|Processing 9 releases
+2025-11-02 07:53:13.3|Info|RssSyncService|RSS Sync Completed. Reports found: 9, Reports grabbed: 0
+2025-11-02 08:08:39.6|Info|RssSyncService|Starting RSS Sync
+2025-11-02 08:08:48.9|Info|DownloadDecisionMaker|Processing 177 releases
+2025-11-02 08:08:49.8|Info|RssSyncService|RSS Sync Completed. Reports found: 177, Reports grabbed: 0
+2025-11-02 08:24:11.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 08:24:17.7|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-02 08:24:18.2|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-02 08:39:42.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 08:39:50.2|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-02 08:39:50.9|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-02 08:55:15.4|Info|RssSyncService|Starting RSS Sync
+2025-11-02 08:55:23.1|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-02 08:55:23.6|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-02 09:11:04.3|Info|Bootstrap|Starting Lidarr - /app/lidarr/bin/Lidarr - Version 3.0.1.4866
+2025-11-02 09:11:05.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-11-02 09:11:07.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-11-02 09:11:15.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-11-02 09:11:17.9|Info|MigrationController|*** Migrating data source=/config/lidarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 09:11:19.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 09:11:19.1|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 09:11:19.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 09:11:19.9|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 09:11:19.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.7624245s
+2025-11-02 09:11:19.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 09:11:19.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.7684276s
+2025-11-02 09:11:20.1|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-11-02 09:11:20.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-11-02 09:11:20.1|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-11-02 09:11:20.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-11-02 09:11:20.1|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-11-02 09:11:20.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0033588s
+2025-11-02 09:11:20.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-11-02 09:11:20.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0036018s
+2025-11-02 09:11:25.2|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8686
+2025-11-02 09:11:42.9|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-11-02 09:11:42.9|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-11-02 09:11:42.9|Info|Microsoft.Hosting.Lifetime|Content root path: /app/lidarr/bin
+2025-11-02 09:11:44.1|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-11-02 09:12:14.6|Info|RssSyncService|Starting RSS Sync
+2025-11-02 09:12:18.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 09:13:17 due to recent failures." />
+2025-11-02 09:12:19.3|Warn|Torznab|API Request Limit reached for 1337x (Prowlarr). Disabled for 00:00:58
+2025-11-02 09:12:25.8|Info|DownloadDecisionMaker|Processing 152 releases
+2025-11-02 09:12:26.9|Info|RssSyncService|RSS Sync Completed. Reports found: 152, Reports grabbed: 0
+2025-11-02 09:27:48.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 09:27:58.0|Info|DownloadDecisionMaker|Processing 175 releases
+2025-11-02 09:27:58.3|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2025-11-02 09:43:23.2|Info|RssSyncService|Starting RSS Sync
+2025-11-02 09:43:29.9|Info|DownloadDecisionMaker|Processing 176 releases
+2025-11-02 09:43:30.1|Info|RssSyncService|RSS Sync Completed. Reports found: 176, Reports grabbed: 0
+2025-11-02 09:58:55.1|Info|RssSyncService|Starting RSS Sync
+2025-11-02 09:59:01.7|Info|DownloadDecisionMaker|Processing 176 releases
+2025-11-02 09:59:02.0|Info|RssSyncService|RSS Sync Completed. Reports found: 176, Reports grabbed: 0
+2025-11-02 10:08:37.7|Error|CommandExecutor|Error occurred while executing task ApplicationUpdateCheck
+
+[v3.0.1.4866] System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.GetAsync[T](HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 333
+   at NzbDrone.Common.Http.HttpClient.Get[T](HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 341
+   at NzbDrone.Core.Update.UpdatePackageProvider.GetLatestUpdate(String branch, Version currentVersion) in ./NzbDrone.Core/Update/UpdatePackageProvider.cs:line 54
+   at NzbDrone.Core.Update.CheckUpdateService.AvailableUpdate() in ./NzbDrone.Core/Update/UpdateCheckService.cs:line 25
+   at NzbDrone.Core.Update.InstallUpdateService.GetUpdatePackage(CommandTrigger updateTrigger, Boolean installMajorUpdate) in ./NzbDrone.Core/Update/InstallUpdateService.cs:line 239
+   at NzbDrone.Core.Update.InstallUpdateService.Execute(ApplicationUpdateCheckCommand message) in ./NzbDrone.Core/Update/InstallUpdateService.cs:line 282
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 67
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-11-02 10:08:47.7|Error|CommandExecutor|Error occurred while executing task CheckHealth
+
+[v3.0.1.4866] System.Net.WebException: Http request timed out
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 144
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.HealthCheck.Checks.SystemTimeCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/SystemTimeCheck.cs:line 30
+   at NzbDrone.Core.HealthCheck.HealthCheckService.<ProcessHealthChecks>b__15_0(IProvideHealthCheck c) in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 98
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at NzbDrone.Core.HealthCheck.HealthCheckService.ProcessHealthChecks() in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 95
+   at NzbDrone.Core.HealthCheck.HealthCheckService.Execute(CheckHealthCommand message) in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 149
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 67
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-11-02 10:14:03.9|Info|RssSyncService|Starting RSS Sync
+2025-11-02 10:14:37.1|Info|DownloadDecisionMaker|Processing 176 releases
+2025-11-02 10:14:43.7|Info|RssSyncService|RSS Sync Completed. Reports found: 176, Reports grabbed: 0
+2025-11-02 10:30:05.6|Info|RssSyncService|Starting RSS Sync
+2025-11-02 10:30:14.5|Info|DownloadDecisionMaker|Processing 176 releases
+2025-11-02 10:30:14.8|Info|RssSyncService|RSS Sync Completed. Reports found: 176, Reports grabbed: 0
+2025-11-02 10:45:38.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 10:45:47.5|Info|DownloadDecisionMaker|Processing 176 releases
+2025-11-02 10:45:47.8|Info|RssSyncService|RSS Sync Completed. Reports found: 176, Reports grabbed: 0
+2025-11-02 11:01:10.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 11:01:31.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 11:02:25 due to recent failures." />
+2025-11-02 11:01:32.4|Warn|Torznab|API Request Limit reached for 1337x (Prowlarr). Disabled for 00:00:55
+2025-11-02 11:01:32.6|Info|DownloadDecisionMaker|Processing 153 releases
+2025-11-02 11:01:36.9|Info|RssSyncService|RSS Sync Completed. Reports found: 153, Reports grabbed: 0
+2025-11-02 11:16:47.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 11:17:06.7|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 11/01/2025 22:26:17 and 11/02/2025 07:23:08 UTC. Search may be required.
+2025-11-02 11:17:21.7|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 11:17:22.8|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 11:32:50.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 11:33:06.3|Info|DownloadDecisionMaker|Processing 179 releases
+2025-11-02 11:33:07.4|Info|RssSyncService|RSS Sync Completed. Reports found: 179, Reports grabbed: 0
+2025-11-02 11:48:22.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 11:48:31.7|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 11:48:34.2|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 12:03:54.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 12:04:06.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 12:04:57 due to recent failures." />
+2025-11-02 12:04:10.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 12:05:07 due to recent failures." />
+2025-11-02 12:04:12.6|Error|Torznab|An error occurred while processing feed. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteConnection.Open()
+   at NzbDrone.Core.Datastore.SqlMapperExtensions.Query[T](IDatabase db, String sql, Object param) in ./NzbDrone.Core/Datastore/Extensions/SqlMapperExtensions.cs:line 12
+   at NzbDrone.Core.Datastore.SqlMapperExtensions.Query[T](IDatabase db, SqlBuilder builder) in ./NzbDrone.Core/Datastore/Extensions/SqlMapperExtensions.cs:line 137
+   at NzbDrone.Core.Datastore.BasicRepository`1.Query(SqlBuilder builder) in ./NzbDrone.Core/Datastore/BasicRepository.cs:line 96
+   at NzbDrone.Core.ThingiProvider.Status.ProviderStatusRepository`1.FindByProviderId(Int32 providerId)
+   at NzbDrone.Core.ThingiProvider.Status.ProviderStatusServiceBase`2.GetProviderStatus(Int32 providerId) in ./NzbDrone.Core/ThingiProvider/Status/ProviderStatusServiceBase.cs:line 50
+   at NzbDrone.Core.Indexers.IndexerStatusService.UpdateRssSyncStatus(Int32 indexerId, ReleaseInfo releaseInfo) in ./NzbDrone.Core/Indexers/IndexerStatusService.cs:line 32
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, Boolean isRecent)
+FeedUrl: http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100
+
+2025-11-02 12:04:12.4|Warn|Torznab|API Request Limit reached for 1337x (Prowlarr). Disabled for 00:00:57
+2025-11-02 12:04:12.0|Warn|Torznab|API Request Limit reached for RuTracker.org (Prowlarr). Disabled for 00:00:52
+2025-11-02 12:04:22.6|Info|DownloadDecisionMaker|Processing 12 releases
+2025-11-02 12:04:22.7|Info|RssSyncService|RSS Sync Completed. Reports found: 12, Reports grabbed: 0
+2025-11-02 12:19:27.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 12:19:47.7|Info|DownloadDecisionMaker|Processing 181 releases
+2025-11-02 12:19:48.5|Info|RssSyncService|RSS Sync Completed. Reports found: 181, Reports grabbed: 0
+2025-11-02 12:34:58.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 12:35:06.2|Info|DownloadDecisionMaker|Processing 181 releases
+2025-11-02 12:35:06.8|Info|RssSyncService|RSS Sync Completed. Reports found: 181, Reports grabbed: 0
+2025-11-02 12:50:30.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 12:50:39.0|Info|DownloadDecisionMaker|Processing 182 releases
+2025-11-02 12:50:40.8|Info|RssSyncService|RSS Sync Completed. Reports found: 182, Reports grabbed: 0
+2025-11-02 13:06:02.9|Info|RssSyncService|Starting RSS Sync
+2025-11-02 13:06:12.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 13:07:09 due to recent failures." />
+2025-11-02 13:06:13.0|Warn|Torznab|API Request Limit reached for RuTracker.org (Prowlarr). Disabled for 00:00:58
+2025-11-02 13:06:13.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 13:07:10 due to recent failures." />
+2025-11-02 13:06:14.7|Warn|Torznab|API Request Limit reached for 1337x (Prowlarr). Disabled for 00:00:57
+2025-11-02 13:06:14.7|Info|DownloadDecisionMaker|Processing 13 releases
+2025-11-02 13:06:15.0|Info|RssSyncService|RSS Sync Completed. Reports found: 13, Reports grabbed: 0
+2025-11-02 13:21:33.9|Info|RssSyncService|Starting RSS Sync
+2025-11-02 13:21:37.1|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 11/02/2025 08:52:44 and 11/02/2025 09:44:30 UTC. Search may be required.
+2025-11-02 13:21:42.5|Info|DownloadDecisionMaker|Processing 179 releases
+2025-11-02 13:21:43.2|Info|RssSyncService|RSS Sync Completed. Reports found: 179, Reports grabbed: 0
+2025-11-02 13:37:05.4|Info|RssSyncService|Starting RSS Sync
+2025-11-02 13:37:12.9|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 13:37:13.2|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 13:52:37.2|Info|RssSyncService|Starting RSS Sync
+2025-11-02 13:52:44.6|Info|DownloadDecisionMaker|Processing 179 releases
+2025-11-02 13:52:45.0|Info|RssSyncService|RSS Sync Completed. Reports found: 179, Reports grabbed: 0
+2025-11-02 14:08:09.2|Info|RssSyncService|Starting RSS Sync
+2025-11-02 14:08:16.8|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 14:08:17.2|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 14:23:41.6|Info|RssSyncService|Starting RSS Sync
+2025-11-02 14:23:49.1|Info|DownloadDecisionMaker|Processing 180 releases
+2025-11-02 14:23:49.3|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2025-11-02 14:39:12.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 14:39:20.3|Info|DownloadDecisionMaker|Processing 179 releases
+2025-11-02 14:39:20.6|Info|RssSyncService|RSS Sync Completed. Reports found: 179, Reports grabbed: 0
+2025-11-02 14:54:43.9|Info|RssSyncService|Starting RSS Sync
+2025-11-02 14:54:51.7|Info|DownloadDecisionMaker|Processing 178 releases
+2025-11-02 14:54:52.1|Info|RssSyncService|RSS Sync Completed. Reports found: 178, Reports grabbed: 0
+2025-11-02 15:10:15.6|Info|RssSyncService|Starting RSS Sync
+2025-11-02 15:10:23.7|Info|DownloadDecisionMaker|Processing 176 releases
+2025-11-02 15:10:24.1|Info|RssSyncService|RSS Sync Completed. Reports found: 176, Reports grabbed: 0
+2025-11-02 15:25:47.4|Info|RssSyncService|Starting RSS Sync
+2025-11-02 15:25:55.6|Info|DownloadDecisionMaker|Processing 176 releases
+2025-11-02 15:25:56.0|Info|RssSyncService|RSS Sync Completed. Reports found: 176, Reports grabbed: 0
+2025-11-02 15:41:18.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 15:41:26.2|Info|DownloadDecisionMaker|Processing 175 releases
+2025-11-02 15:41:26.5|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2025-11-02 15:56:50.2|Info|RssSyncService|Starting RSS Sync
+2025-11-02 15:56:57.7|Info|DownloadDecisionMaker|Processing 175 releases
+2025-11-02 15:56:58.1|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2025-11-02 16:12:22.6|Info|RssSyncService|Starting RSS Sync
+2025-11-02 16:12:30.0|Info|DownloadDecisionMaker|Processing 175 releases
+2025-11-02 16:12:30.4|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2025-11-02 16:27:53.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 16:28:01.2|Info|DownloadDecisionMaker|Processing 176 releases
+2025-11-02 16:28:01.6|Info|RssSyncService|RSS Sync Completed. Reports found: 176, Reports grabbed: 0
+2025-11-02 16:43:25.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 16:43:32.8|Info|DownloadDecisionMaker|Processing 175 releases
+2025-11-02 16:43:33.6|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2025-11-02 16:58:56.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 16:59:04.9|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-02 16:59:05.4|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-02 17:14:28.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 17:14:36.1|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-02 17:14:36.8|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-02 17:29:59.8|Info|RssSyncService|Starting RSS Sync
+2025-11-02 17:30:07.1|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 17:31:02 due to recent failures." />
+2025-11-02 17:30:08.3|Warn|Torznab|API Request Limit reached for The Pirate Bay (Prowlarr). Disabled for 00:00:57
+2025-11-02 17:30:12.4|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-02 17:30:12.6|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-02 17:45:31.4|Info|RssSyncService|Starting RSS Sync
+2025-11-02 17:45:40.1|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-02 17:45:42.0|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-02 18:01:06.8|Info|RssSyncService|Starting RSS Sync
+2025-11-02 18:02:11.5|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 18:02:15.2|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-02 18:17:40.4|Info|RssSyncService|Starting RSS Sync
+2025-11-02 18:17:50.7|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 18:17:52.3|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-02 18:33:15.1|Info|RssSyncService|Starting RSS Sync
+2025-11-02 18:33:20.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 18:34:14 due to recent failures." />
+2025-11-02 18:33:25.9|Warn|Torznab|API Request Limit reached for 1337x (Prowlarr). Disabled for 00:00:57
+2025-11-02 18:33:37.2|Info|DownloadDecisionMaker|Processing 149 releases
+2025-11-02 18:33:48.3|Info|RssSyncService|RSS Sync Completed. Reports found: 149, Reports grabbed: 0
+2025-11-02 18:49:14.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 18:49:22.7|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-02 18:49:23.8|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-02 19:04:46.8|Info|RssSyncService|Starting RSS Sync
+2025-11-02 19:04:55.5|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-02 19:04:56.0|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-02 19:20:21.9|Info|RssSyncService|Starting RSS Sync
+2025-11-02 19:20:36.0|Warn|Torznab|Indexer Nyaa.si (Prowlarr) rss sync didn't cover the period between 11/02/2025 16:14:00 and 11/02/2025 18:08:00 UTC. Search may be required.
+2025-11-02 19:20:45.5|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 19:20:48.3|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-02 19:35:54.9|Info|RssSyncService|Starting RSS Sync
+2025-11-02 19:36:19.4|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 19:36:22.1|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-02 19:51:27.8|Info|RssSyncService|Starting RSS Sync
+2025-11-02 19:51:40.1|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 19:51:41.6|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-02 20:06:59.6|Info|RssSyncService|Starting RSS Sync
+2025-11-02 20:07:09.7|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 20:07:12.3|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-02 20:22:31.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 20:22:41.6|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-02 20:22:42.0|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-02 20:38:06.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 20:38:21.1|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-02 20:38:22.3|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-02 20:53:37.1|Info|RssSyncService|Starting RSS Sync
+2025-11-02 20:53:48.0|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-02 20:53:56.1|Error|DownloadDecisionMaker|Couldn't process release.
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteConnection.Open()
+   at NzbDrone.Core.Datastore.SqlMapperExtensions.Query[TFirst,TSecond,TReturn](IDatabase db, String sql, Func`3 map, Object param, IDbTransaction transaction, Boolean buffered, String splitOn, Nullable`1 commandTimeout, Nullable`1 commandType) in ./NzbDrone.Core/Datastore/Extensions/SqlMapperExtensions.cs:line 46
+   at NzbDrone.Core.Music.ArtistRepository.Query(IDatabase database, SqlBuilder builder) in ./NzbDrone.Core/Music/Repositories/ArtistRepository.cs:line 36
+   at NzbDrone.Core.Music.ArtistRepository.FindByName(String cleanName)
+   at NzbDrone.Core.DecisionEngine.DownloadDecisionMaker.GetAlbumDecisions(List`1 reports, Boolean pushedRelease, SearchCriteriaBase searchCriteria)+MoveNext()
+
+
+2025-11-02 20:54:04.9|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-02 21:09:12.9|Info|RssSyncService|Starting RSS Sync
+2025-11-02 21:09:28.6|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 11/02/2025 10:59:30 and 11/02/2025 16:36:38 UTC. Search may be required.
+2025-11-02 21:09:54.4|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-02 21:09:57.9|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-02 21:25:14.9|Info|RssSyncService|Starting RSS Sync
+2025-11-02 21:26:00.0|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-02 21:26:02.7|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-02 21:41:19.5|Info|RssSyncService|Starting RSS Sync
+2025-11-02 21:41:36.8|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-02 21:41:39.7|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-02 21:56:55.0|Info|RssSyncService|Starting RSS Sync
+2025-11-02 21:57:50.4|Error|Torznab|An error occurred while processing feed. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, SQLiteCommand command, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String& strRemain)
+   at System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteConnection.Open()
+   at NzbDrone.Core.Datastore.SqlMapperExtensions.Query[T](IDatabase db, String sql, Object param) in ./NzbDrone.Core/Datastore/Extensions/SqlMapperExtensions.cs:line 12
+   at NzbDrone.Core.Datastore.SqlMapperExtensions.Query[T](IDatabase db, SqlBuilder builder) in ./NzbDrone.Core/Datastore/Extensions/SqlMapperExtensions.cs:line 137
+   at NzbDrone.Core.Datastore.BasicRepository`1.Query(SqlBuilder builder) in ./NzbDrone.Core/Datastore/BasicRepository.cs:line 96
+   at NzbDrone.Core.ThingiProvider.Status.ProviderStatusRepository`1.FindByProviderId(Int32 providerId)
+   at NzbDrone.Core.Indexers.IndexerStatusService.UpdateRssSyncStatus(Int32 indexerId, ReleaseInfo releaseInfo) in ./NzbDrone.Core/Indexers/IndexerStatusService.cs:line 32
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, Boolean isRecent)
+FeedUrl: http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100
+
+2025-11-02 21:58:14.2|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-02 21:58:20.1|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-02 22:03:21.4|Info|HousekeepingService|Running housecleaning tasks
+2025-11-02 22:03:48.7|Info|TrackGroupingService|Grouping 0 tracks
+2025-11-02 22:04:34.0|Info|ImportApprovedTracks|Importing 0 tracks
+2025-11-02 22:04:37.4|Info|Database|Vacuuming Log database
+2025-11-02 22:04:39.0|Info|Database|Log database compressed
+2025-11-02 22:04:39.0|Info|Database|Vacuuming Main database
+2025-11-02 22:04:42.3|Info|Database|Main database compressed
+2025-11-02 22:13:48.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 22:14:19.6|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-02 22:14:26.4|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-02 22:29:51.5|Info|RssSyncService|Starting RSS Sync
+2025-11-02 22:30:10.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/02/2025 22:31:03 due to recent failures." />
+2025-11-02 22:30:14.6|Warn|Torznab|API Request Limit reached for RuTracker.org (Prowlarr). Disabled for 00:00:55
+2025-11-02 22:30:16.6|Info|DownloadDecisionMaker|Processing 26 releases
+2025-11-02 22:30:16.7|Info|RssSyncService|RSS Sync Completed. Reports found: 26, Reports grabbed: 0
+2025-11-02 22:45:26.7|Info|RssSyncService|Starting RSS Sync
+2025-11-02 22:46:05.7|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-02 22:46:15.6|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-02 23:01:45.2|Info|RssSyncService|Starting RSS Sync
+2025-11-02 23:04:21.9|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 23:04:21.9|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 23:04:21.9|Warn|Torznab|Nyaa.si (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 23:04:21.9|Warn|Torznab|The Pirate Bay (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-02 23:04:28.7|Info|DownloadDecisionMaker|No results found
+2025-11-02 23:04:32.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-02 23:19:52.9|Info|RssSyncService|Starting RSS Sync
+2025-11-02 23:20:04.2|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 11/02/2025 18:56:10 and 11/02/2025 19:38:14 UTC. Search may be required.
+2025-11-02 23:20:15.6|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 23:20:22.6|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-02 23:20:23.5|Info|RssSyncService|Starting RSS Sync
+2025-11-02 23:20:33.9|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 23:20:37.1|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-02 23:35:56.8|Info|RssSyncService|Starting RSS Sync
+2025-11-02 23:36:09.0|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 23:36:09.3|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-02 23:51:28.3|Info|RssSyncService|Starting RSS Sync
+2025-11-02 23:51:36.3|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-02 23:51:38.2|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 00:07:02.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 00:07:33.8|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 00:07:47.0|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 00:23:07.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 00:23:25.5|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 00:23:31.0|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 00:38:42.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 00:39:12.7|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 00:39:15.3|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 00:54:43.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 00:54:55.5|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 00:54:57.1|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 01:10:16.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 01:10:24.7|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 01:10:27.4|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-03 01:25:49.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 01:25:57.1|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 01:25:57.6|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-03 01:41:21.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 01:41:30.8|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 01:41:32.8|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-03 01:56:53.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 01:57:02.0|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 01:57:03.9|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-03 02:12:25.5|Info|RssSyncService|Starting RSS Sync
+2025-11-03 02:12:32.6|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 02:12:32.9|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-03 02:27:57.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 02:28:05.8|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 02:28:06.2|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-03 02:43:30.6|Info|RssSyncService|Starting RSS Sync
+2025-11-03 02:43:55.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (142 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 11/03/2025 02:48:46 due to recent failures." />
+2025-11-03 02:43:59.2|Warn|Torznab|API Request Limit reached for RuTracker.org (Prowlarr). Disabled for 00:04:56
+2025-11-03 02:43:59.4|Info|DownloadDecisionMaker|Processing 23 releases
+2025-11-03 02:44:00.5|Info|RssSyncService|RSS Sync Completed. Reports found: 23, Reports grabbed: 0
+2025-11-03 02:59:07.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 02:59:27.2|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 02:59:30.6|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 03:14:43.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 03:16:05.1|Info|DownloadDecisionMaker|Processing 168 releases
+2025-11-03 03:16:18.1|Info|RssSyncService|RSS Sync Completed. Reports found: 168, Reports grabbed: 0
+2025-11-03 03:31:47.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 03:31:54.9|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 03:31:56.7|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 03:47:19.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 03:47:26.9|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 03:47:29.6|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 04:02:51.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 04:02:58.5|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 04:02:58.8|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 04:18:24.2|Info|RssSyncService|Starting RSS Sync
+2025-11-03 04:18:31.5|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 04:18:31.9|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 04:33:55.6|Info|RssSyncService|Starting RSS Sync
+2025-11-03 04:34:02.4|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 04:34:02.6|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 04:49:27.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 04:49:33.8|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 04:49:34.1|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 05:04:58.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 05:05:04.9|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 05:05:05.0|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 05:20:29.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 05:20:36.5|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 05:20:36.6|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 05:36:00.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 05:36:08.1|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 05:36:08.2|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 05:51:32.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 05:51:39.1|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 05:51:39.3|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 06:07:03.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 06:07:10.2|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 06:07:10.4|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 06:22:34.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 06:22:41.6|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 06:22:42.1|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 06:38:07.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 06:38:13.9|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 06:38:14.1|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 06:53:38.6|Info|RssSyncService|Starting RSS Sync
+2025-11-03 06:53:45.2|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 06:53:45.5|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 07:09:10.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 07:09:17.1|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 07:09:17.4|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 07:24:41.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 07:24:48.5|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 07:24:48.7|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 07:40:13.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 07:40:20.3|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 07:40:20.6|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 07:55:45.2|Info|RssSyncService|Starting RSS Sync
+2025-11-03 07:55:52.5|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 07:55:52.8|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 08:11:16.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 08:11:23.1|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 08:11:23.3|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 08:26:47.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 08:26:54.7|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 08:26:55.2|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 08:42:19.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 08:42:26.2|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 08:42:26.5|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 08:57:50.6|Info|RssSyncService|Starting RSS Sync
+2025-11-03 08:57:57.5|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 08:57:57.9|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 09:13:21.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 09:13:28.4|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 09:13:28.6|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 09:28:53.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 09:29:00.0|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 09:29:00.2|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 09:44:24.5|Info|RssSyncService|Starting RSS Sync
+2025-11-03 09:44:32.6|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 09:44:32.9|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 09:59:55.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 10:00:02.7|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 10:00:03.0|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 10:15:27.6|Info|RssSyncService|Starting RSS Sync
+2025-11-03 10:15:34.5|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 10:15:34.8|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 10:30:59.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 10:31:05.8|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 10:31:06.3|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 10:46:30.2|Info|RssSyncService|Starting RSS Sync
+2025-11-03 10:46:39.1|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 10:46:39.3|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 11:02:01.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 11:02:09.1|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 11:02:09.3|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 11:17:33.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 11:17:40.5|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 11:17:41.0|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 11:33:05.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 11:33:12.7|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 11:33:12.9|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 11:48:36.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 11:48:44.2|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 11:48:44.5|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 12:04:08.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 12:04:15.3|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 12:04:15.6|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 12:19:40.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 12:19:47.1|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 12:19:47.6|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 12:35:11.2|Info|RssSyncService|Starting RSS Sync
+2025-11-03 12:35:18.4|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 12:35:18.7|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 12:50:43.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 12:50:50.5|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 12:50:50.8|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 13:06:15.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 13:06:22.1|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 13:06:22.4|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 13:21:46.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 13:21:53.5|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 13:21:53.7|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 13:37:18.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 13:37:24.8|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 13:37:25.1|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 13:52:49.5|Info|RssSyncService|Starting RSS Sync
+2025-11-03 13:52:56.7|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 13:52:57.0|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 14:08:20.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 14:08:28.2|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 14:08:28.5|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 14:23:52.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 14:23:58.9|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 14:23:59.2|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 14:39:23.5|Info|RssSyncService|Starting RSS Sync
+2025-11-03 14:39:30.7|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 14:39:31.0|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 14:54:54.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 14:55:01.8|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 14:55:02.2|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 15:10:26.5|Info|RssSyncService|Starting RSS Sync
+2025-11-03 15:10:33.4|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 15:10:33.7|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 15:25:58.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 15:26:04.9|Info|DownloadDecisionMaker|Processing 175 releases
+2025-11-03 15:26:05.4|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2025-11-03 15:41:29.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 15:41:36.1|Info|DownloadDecisionMaker|Processing 175 releases
+2025-11-03 15:41:36.6|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2025-11-03 15:57:01.5|Info|RssSyncService|Starting RSS Sync
+2025-11-03 15:57:09.0|Info|DownloadDecisionMaker|Processing 175 releases
+2025-11-03 15:57:09.2|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2025-11-03 16:12:33.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 16:12:40.3|Info|DownloadDecisionMaker|Processing 175 releases
+2025-11-03 16:12:40.4|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2025-11-03 16:28:04.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 16:28:11.2|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 16:28:11.4|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 16:43:35.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 16:43:42.8|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 16:43:43.2|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 16:59:07.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 16:59:14.2|Info|DownloadDecisionMaker|Processing 174 releases
+2025-11-03 16:59:14.5|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2025-11-03 17:14:38.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 17:14:45.3|Info|DownloadDecisionMaker|Processing 173 releases
+2025-11-03 17:14:45.4|Info|RssSyncService|RSS Sync Completed. Reports found: 173, Reports grabbed: 0
+2025-11-03 17:30:09.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 17:30:17.0|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 17:30:17.4|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 17:45:41.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 17:45:48.6|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 17:45:49.0|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 18:01:12.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 18:01:19.7|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 18:01:19.8|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 18:16:44.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 18:16:51.3|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 18:16:51.5|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 18:32:15.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 18:32:22.4|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 18:32:22.5|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 18:47:46.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 18:47:53.9|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 18:47:54.2|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 19:03:18.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 19:03:25.1|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 19:03:25.4|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 19:18:50.2|Info|RssSyncService|Starting RSS Sync
+2025-11-03 19:18:51.1|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 11/02/2025 20:38:14 and 11/03/2025 15:18:05 UTC. Search may be required.
+2025-11-03 19:18:57.5|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 19:18:57.7|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 19:34:21.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 19:34:29.1|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 19:34:29.3|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 19:49:53.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 19:50:00.7|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 19:50:00.9|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 20:05:24.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 20:05:31.7|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 20:05:32.0|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 20:20:56.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 20:21:03.5|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 20:21:03.7|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 20:36:28.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 20:36:35.0|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 20:36:35.3|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 20:51:59.6|Info|RssSyncService|Starting RSS Sync
+2025-11-03 20:52:06.7|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-03 20:52:07.0|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-03 21:07:30.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 21:07:38.8|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 21:07:39.1|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 21:23:02.3|Info|RssSyncService|Starting RSS Sync
+2025-11-03 21:23:09.3|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 21:23:09.6|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 21:38:33.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 21:38:40.7|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 21:38:40.9|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 21:54:05.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 21:54:12.6|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 21:54:13.0|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 22:05:07.2|Info|HousekeepingService|Running housecleaning tasks
+2025-11-03 22:05:07.4|Info|TrackGroupingService|Grouping 0 tracks
+2025-11-03 22:05:07.8|Info|ImportApprovedTracks|Importing 0 tracks
+2025-11-03 22:05:09.2|Info|Database|Vacuuming Log database
+2025-11-03 22:05:09.4|Info|Database|Log database compressed
+2025-11-03 22:05:09.4|Info|Database|Vacuuming Main database
+2025-11-03 22:05:09.5|Info|Database|Main database compressed
+2025-11-03 22:09:37.7|Info|RssSyncService|Starting RSS Sync
+2025-11-03 22:09:46.2|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 22:09:46.4|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 22:25:09.4|Info|RssSyncService|Starting RSS Sync
+2025-11-03 22:25:16.8|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 22:25:17.1|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-03 22:40:41.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 22:40:47.7|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 22:40:48.1|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-03 22:56:12.8|Info|RssSyncService|Starting RSS Sync
+2025-11-03 22:56:19.9|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 22:56:20.2|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-03 23:11:44.1|Info|RssSyncService|Starting RSS Sync
+2025-11-03 23:11:44.5|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 11/03/2025 16:18:05 and 11/03/2025 19:32:12 UTC. Search may be required.
+2025-11-03 23:11:51.1|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 23:11:51.4|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 23:27:15.9|Info|RssSyncService|Starting RSS Sync
+2025-11-03 23:27:22.8|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 23:27:23.2|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 23:42:48.2|Info|RssSyncService|Starting RSS Sync
+2025-11-03 23:42:55.2|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-03 23:42:55.6|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-03 23:58:20.0|Info|RssSyncService|Starting RSS Sync
+2025-11-03 23:58:26.7|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-03 23:58:27.0|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 00:13:51.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 00:13:58.2|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 00:13:58.5|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 00:29:23.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 00:29:29.6|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 00:29:29.8|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 00:44:54.4|Info|RssSyncService|Starting RSS Sync
+2025-11-04 00:45:03.4|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 00:45:03.6|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 01:00:26.2|Info|RssSyncService|Starting RSS Sync
+2025-11-04 01:00:32.7|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 01:00:33.1|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 01:15:57.5|Info|RssSyncService|Starting RSS Sync
+2025-11-04 01:16:04.4|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 01:16:04.7|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 01:31:29.1|Info|RssSyncService|Starting RSS Sync
+2025-11-04 01:31:36.1|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 01:31:36.4|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 01:47:00.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 01:47:07.8|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 01:47:08.1|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 02:02:32.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 02:02:38.8|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 02:02:39.1|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 02:18:03.3|Info|RssSyncService|Starting RSS Sync
+2025-11-04 02:18:10.6|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 02:18:10.9|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 02:33:34.6|Info|RssSyncService|Starting RSS Sync
+2025-11-04 02:33:41.6|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 02:33:41.7|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 02:49:06.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 02:49:12.9|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 02:49:13.1|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 03:04:37.5|Info|RssSyncService|Starting RSS Sync
+2025-11-04 03:04:44.3|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 03:04:44.6|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 03:20:09.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 03:20:15.7|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 03:20:16.0|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 03:35:40.6|Info|RssSyncService|Starting RSS Sync
+2025-11-04 03:35:47.6|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 03:35:47.9|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 03:51:12.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 03:51:18.8|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 03:51:19.1|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 04:06:43.8|Info|RssSyncService|Starting RSS Sync
+2025-11-04 04:06:50.8|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 04:06:51.2|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 04:22:15.4|Info|RssSyncService|Starting RSS Sync
+2025-11-04 04:22:22.1|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 04:22:22.4|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 04:37:46.9|Info|RssSyncService|Starting RSS Sync
+2025-11-04 04:37:53.7|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 04:37:54.0|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 04:53:18.4|Info|RssSyncService|Starting RSS Sync
+2025-11-04 04:53:25.2|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 04:53:25.5|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 05:08:50.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 05:08:57.0|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 05:08:57.4|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 05:24:21.5|Info|RssSyncService|Starting RSS Sync
+2025-11-04 05:24:28.7|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 05:24:29.0|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 05:39:52.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 05:39:59.5|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 05:39:59.9|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 05:55:24.3|Info|RssSyncService|Starting RSS Sync
+2025-11-04 05:55:31.3|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 05:55:31.6|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 06:10:55.9|Info|RssSyncService|Starting RSS Sync
+2025-11-04 06:11:02.7|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 06:11:03.0|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 06:26:27.1|Info|RssSyncService|Starting RSS Sync
+2025-11-04 06:26:34.1|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 06:26:34.4|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 06:41:59.1|Info|RssSyncService|Starting RSS Sync
+2025-11-04 06:42:06.0|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 06:42:06.4|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 06:57:30.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 06:57:38.1|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 06:57:38.4|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 07:13:02.1|Info|RssSyncService|Starting RSS Sync
+2025-11-04 07:13:03.1|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 11/03/2025 20:32:12 and 11/04/2025 04:06:00 UTC. Search may be required.
+2025-11-04 07:13:09.1|Info|DownloadDecisionMaker|Processing 177 releases
+2025-11-04 07:13:09.6|Info|RssSyncService|RSS Sync Completed. Reports found: 177, Reports grabbed: 0
+2025-11-04 07:28:34.6|Info|RssSyncService|Starting RSS Sync
+2025-11-04 07:28:41.7|Info|DownloadDecisionMaker|Processing 177 releases
+2025-11-04 07:28:42.2|Info|RssSyncService|RSS Sync Completed. Reports found: 177, Reports grabbed: 0
+2025-11-04 07:44:06.5|Info|RssSyncService|Starting RSS Sync
+2025-11-04 07:44:13.7|Info|DownloadDecisionMaker|Processing 177 releases
+2025-11-04 07:44:14.1|Info|RssSyncService|RSS Sync Completed. Reports found: 177, Reports grabbed: 0
+2025-11-04 07:59:38.8|Info|RssSyncService|Starting RSS Sync
+2025-11-04 07:59:46.7|Info|DownloadDecisionMaker|Processing 177 releases
+2025-11-04 07:59:47.0|Info|RssSyncService|RSS Sync Completed. Reports found: 177, Reports grabbed: 0
+2025-11-04 08:15:10.2|Info|RssSyncService|Starting RSS Sync
+2025-11-04 08:15:17.3|Info|DownloadDecisionMaker|Processing 177 releases
+2025-11-04 08:15:17.6|Info|RssSyncService|RSS Sync Completed. Reports found: 177, Reports grabbed: 0
+2025-11-04 08:30:41.5|Info|RssSyncService|Starting RSS Sync
+2025-11-04 08:30:48.6|Info|DownloadDecisionMaker|Processing 177 releases
+2025-11-04 08:30:48.9|Info|RssSyncService|RSS Sync Completed. Reports found: 177, Reports grabbed: 0
+2025-11-04 08:46:13.2|Info|RssSyncService|Starting RSS Sync
+2025-11-04 08:46:20.6|Info|DownloadDecisionMaker|Processing 177 releases
+2025-11-04 08:46:20.9|Info|RssSyncService|RSS Sync Completed. Reports found: 177, Reports grabbed: 0
+2025-11-04 09:01:44.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 09:01:51.6|Info|DownloadDecisionMaker|Processing 177 releases
+2025-11-04 09:01:51.8|Info|RssSyncService|RSS Sync Completed. Reports found: 177, Reports grabbed: 0
+2025-11-04 09:17:16.1|Info|RssSyncService|Starting RSS Sync
+2025-11-04 09:17:23.4|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 09:17:23.5|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 09:32:47.9|Info|RssSyncService|Starting RSS Sync
+2025-11-04 09:32:55.2|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 09:32:55.6|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 09:48:19.2|Info|RssSyncService|Starting RSS Sync
+2025-11-04 09:48:26.7|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 09:48:26.8|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 10:03:51.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 10:03:58.1|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 10:03:58.3|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 10:19:23.2|Info|RssSyncService|Starting RSS Sync
+2025-11-04 10:19:30.4|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 10:19:30.7|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 10:34:54.6|Info|RssSyncService|Starting RSS Sync
+2025-11-04 10:35:01.7|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 10:35:02.1|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 10:50:26.4|Info|RssSyncService|Starting RSS Sync
+2025-11-04 10:50:33.7|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 10:50:34.0|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 11:05:57.4|Info|RssSyncService|Starting RSS Sync
+2025-11-04 11:06:04.8|Info|DownloadDecisionMaker|Processing 169 releases
+2025-11-04 11:06:05.3|Info|RssSyncService|RSS Sync Completed. Reports found: 169, Reports grabbed: 0
+2025-11-04 11:21:29.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 11:21:29.6|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 11/04/2025 05:13:03 and 11/04/2025 07:49:07 UTC. Search may be required.
+2025-11-04 11:21:36.1|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-04 11:21:36.4|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-04 11:37:01.6|Info|RssSyncService|Starting RSS Sync
+2025-11-04 11:37:08.8|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-04 11:37:09.0|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-04 11:52:33.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 11:52:40.1|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-04 11:52:40.2|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-04 12:08:04.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 12:08:07.9|Warn|Torznab|Indexer Nyaa.si (Prowlarr) rss sync didn't cover the period between 11/03/2025 15:11:00 and 11/04/2025 11:02:00 UTC. Search may be required.
+2025-11-04 12:08:12.0|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-04 12:08:12.4|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-04 12:23:36.2|Info|RssSyncService|Starting RSS Sync
+2025-11-04 12:23:43.4|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-04 12:23:43.7|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-04 12:39:07.6|Info|RssSyncService|Starting RSS Sync
+2025-11-04 12:39:14.7|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-04 12:39:15.1|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-04 12:54:39.9|Info|RssSyncService|Starting RSS Sync
+2025-11-04 12:54:47.4|Info|DownloadDecisionMaker|Processing 172 releases
+2025-11-04 12:54:47.6|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2025-11-04 13:10:11.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 13:10:19.0|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-04 13:10:19.3|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-04 13:25:43.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 13:25:50.2|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-04 13:25:50.5|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-04 13:41:14.3|Info|RssSyncService|Starting RSS Sync
+2025-11-04 13:41:21.7|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 13:41:22.0|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 13:56:45.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 13:56:53.0|Info|DownloadDecisionMaker|Processing 170 releases
+2025-11-04 13:56:53.3|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2025-11-04 14:12:17.1|Info|RssSyncService|Starting RSS Sync
+2025-11-04 14:12:24.3|Info|DownloadDecisionMaker|Processing 171 releases
+2025-11-04 14:12:24.4|Info|RssSyncService|RSS Sync Completed. Reports found: 171, Reports grabbed: 0
+2025-11-04 14:28:05.9|Info|RssSyncService|Starting RSS Sync
+2025-11-04 14:30:11.9|Warn|Torznab|The Pirate Bay (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 14:30:12.3|Warn|Torznab|Nyaa.si (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 14:30:12.5|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 14:30:12.7|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 14:30:13.0|Info|DownloadDecisionMaker|No results found
+2025-11-04 14:30:13.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 14:40:24.0|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 14:45:42.9|Info|RssSyncService|Starting RSS Sync
+2025-11-04 14:49:10.7|Warn|Torznab|The Pirate Bay (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 14:49:11.0|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 14:49:11.3|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 14:49:11.8|Warn|Torznab|Nyaa.si (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 14:49:13.9|Info|DownloadDecisionMaker|No results found
+2025-11-04 14:49:14.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 15:04:51.8|Info|RssSyncService|Starting RSS Sync
+2025-11-04 15:09:44.6|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 15:09:55.8|Warn|Torznab|Nyaa.si (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 15:10:02.5|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 15:10:05.1|Warn|Torznab|The Pirate Bay (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 15:10:12.0|Info|DownloadDecisionMaker|No results found
+2025-11-04 15:10:17.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 15:14:35.7|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 15:15:43.3|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 15:16:01.7|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 15:26:42.8|Info|RssSyncService|Starting RSS Sync
+2025-11-04 15:29:54.9|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 15:29:55.9|Warn|Torznab|The Pirate Bay (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 15:29:58.0|Warn|Torznab|Nyaa.si (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 15:29:58.4|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 15:29:58.7|Info|DownloadDecisionMaker|No results found
+2025-11-04 15:30:01.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 15:34:03.0|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 15:45:11.2|Info|RssSyncService|Starting RSS Sync
+2025-11-04 15:46:01.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-04 15:46:02.1|Info|DownloadDecisionMaker|No results found
+2025-11-04 15:46:02.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 16:01:53.0|Info|RssSyncService|Starting RSS Sync
+2025-11-04 16:03:25.9|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:06:35.8|Warn|Torznab|Nyaa.si (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 16:06:41.2|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 16:06:45.7|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 16:06:50.4|Warn|Torznab|The Pirate Bay (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 16:07:09.9|Info|DownloadDecisionMaker|No results found
+2025-11-04 16:08:39.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 16:09:15.9|Info|RssSyncService|Starting RSS Sync
+2025-11-04 16:09:21.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-04 16:09:21.5|Info|DownloadDecisionMaker|No results found
+2025-11-04 16:09:21.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 16:09:38.7|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:11:36.6|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:11:46.5|Warn|BasicRepository`1|Failed writing to database. Retry #1
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:11:59.3|Warn|BasicRepository`1|Failed writing to database. Retry #2
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:11:59.6|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:12:11.1|Warn|BasicRepository`1|Failed writing to database. Retry #1
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:13:14.1|Warn|BasicRepository`1|Failed writing to database. Retry #2
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:13:16.5|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:12:23.4|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/04/2025 15:02:05 +00:00", the heartbeat has been running for "00:00:01.0093958" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-04 16:13:46.3|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/04/2025 15:13:33 +00:00", the heartbeat has been running for "00:00:01.1653919" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-04 16:14:45.1|Error|CommandExecutor|Error occurred while executing task RefreshMonitoredDownloads
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+--- End of stack trace from previous location ---
+   at Polly.Utils.Pipeline.PipelineComponent.ExecuteCoreSync[TResult,TState](Func`3 callback, ResilienceContext context, TState state)
+   at Polly.ResiliencePipeline.Execute[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Datastore.BasicRepository`1.UpdateFields(IDbConnection connection, IDbTransaction transaction, TModel model, List`1 propertiesToUpdate) in ./NzbDrone.Core/Datastore/BasicRepository.cs:line 406
+   at NzbDrone.Core.Datastore.BasicRepository`1.SetFields(TModel model, Expression`1[] properties) in ./NzbDrone.Core/Datastore/BasicRepository.cs:line 358
+   at NzbDrone.Core.Messaging.Commands.CommandRepository.Start(CommandModel command) in ./NzbDrone.Core/Messaging/Commands/CommandRepository.cs:line 55
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 75
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-11-04 16:16:20.0|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/04/2025 15:16:20 +00:00", the heartbeat has been running for "00:00:01.2138067" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-04 16:17:29.6|Error|ServerSideNotificationService|Failed to retrieve notifications
+
+[v3.0.1.4866] System.Net.WebException: Http request timed out
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 144
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.HealthCheck.ServerSideNotificationService.RetrieveServerChecks() in ./NzbDrone.Core/HealthCheck/ServerSideNotificationService.cs:line 61
+
+
+2025-11-04 16:18:49.0|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:18:52.8|Error|CommandExecutor|Error occurred while executing task ApplicationUpdateCheck
+
+[v3.0.1.4866] System.Net.WebException: Http request timed out
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 144
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.GetAsync[T](HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 333
+   at NzbDrone.Common.Http.HttpClient.Get[T](HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 341
+   at NzbDrone.Core.Update.UpdatePackageProvider.GetLatestUpdate(String branch, Version currentVersion) in ./NzbDrone.Core/Update/UpdatePackageProvider.cs:line 54
+   at NzbDrone.Core.Update.CheckUpdateService.AvailableUpdate() in ./NzbDrone.Core/Update/UpdateCheckService.cs:line 25
+   at NzbDrone.Core.Update.InstallUpdateService.GetUpdatePackage(CommandTrigger updateTrigger, Boolean installMajorUpdate) in ./NzbDrone.Core/Update/InstallUpdateService.cs:line 239
+   at NzbDrone.Core.Update.InstallUpdateService.Execute(ApplicationUpdateCheckCommand message) in ./NzbDrone.Core/Update/InstallUpdateService.cs:line 282
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 67
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-11-04 16:26:07.8|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:28:02.2|Error|CommandExecutor|Error occurred while executing task ApplicationUpdateCheck
+
+[v3.0.1.4866] System.Net.WebException: Http request timed out
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 144
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.GetAsync[T](HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 333
+   at NzbDrone.Common.Http.HttpClient.Get[T](HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 341
+   at NzbDrone.Core.Update.UpdatePackageProvider.GetLatestUpdate(String branch, Version currentVersion) in ./NzbDrone.Core/Update/UpdatePackageProvider.cs:line 54
+   at NzbDrone.Core.Update.CheckUpdateService.AvailableUpdate() in ./NzbDrone.Core/Update/UpdateCheckService.cs:line 25
+   at NzbDrone.Core.Update.InstallUpdateService.GetUpdatePackage(CommandTrigger updateTrigger, Boolean installMajorUpdate) in ./NzbDrone.Core/Update/InstallUpdateService.cs:line 239
+   at NzbDrone.Core.Update.InstallUpdateService.Execute(ApplicationUpdateCheckCommand message) in ./NzbDrone.Core/Update/InstallUpdateService.cs:line 282
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 67
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-11-04 16:32:23.1|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/04/2025 15:30:29 +00:00", the heartbeat has been running for "00:00:01.2506588" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-04 16:32:38.0|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:33:58.9|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/04/2025 15:33:53 +00:00", the heartbeat has been running for "00:00:01.1614188" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-04 16:34:18.9|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/04/2025 15:34:15 +00:00", the heartbeat has been running for "00:00:01.2973826" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-04 16:34:47.2|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/04/2025 15:34:33 +00:00", the heartbeat has been running for "00:00:03.1090293" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-04 16:38:05.8|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/04/2025 15:38:05 +00:00", the heartbeat has been running for "00:00:01.4212407" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-04 16:39:30.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 16:39:52.4|Error|CommandExecutor|Error occurred while executing task CheckHealth
+
+[v3.0.1.4866] System.Net.WebException: Http request timed out
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 144
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.HealthCheck.Checks.SystemTimeCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/SystemTimeCheck.cs:line 30
+   at NzbDrone.Core.HealthCheck.HealthCheckService.<ProcessHealthChecks>b__15_0(IProvideHealthCheck c) in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 98
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at NzbDrone.Core.HealthCheck.HealthCheckService.ProcessHealthChecks() in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 95
+   at NzbDrone.Core.HealthCheck.HealthCheckService.Execute(CheckHealthCommand message) in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 149
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 67
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-11-04 16:40:39.8|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-04 16:40:49.4|Info|DownloadDecisionMaker|No results found
+2025-11-04 16:40:59.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 16:43:25.2|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:43:49.8|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:44:46.6|Info|RssSyncService|Starting RSS Sync
+2025-11-04 16:45:01.4|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-04 16:45:02.0|Info|DownloadDecisionMaker|No results found
+2025-11-04 16:45:02.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 16:45:18.0|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:49:34.5|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 16:51:49.6|Error|CommandExecutor|Error occurred while executing task CheckHealth
+
+[v3.0.1.4866] System.Net.WebException: Http request timed out
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   --- End of inner exception stack trace ---
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 144
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.HealthCheck.Checks.SystemTimeCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/SystemTimeCheck.cs:line 30
+   at NzbDrone.Core.HealthCheck.HealthCheckService.<ProcessHealthChecks>b__15_0(IProvideHealthCheck c) in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 98
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at NzbDrone.Core.HealthCheck.HealthCheckService.ProcessHealthChecks() in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 95
+   at NzbDrone.Core.HealthCheck.HealthCheckService.Execute(CheckHealthCommand message) in ./NzbDrone.Core/HealthCheck/HealthCheckService.cs:line 149
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 67
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-11-04 17:01:59.8|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 17:02:51.5|Info|RssSyncService|Starting RSS Sync
+2025-11-04 17:03:10.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-04 17:03:11.4|Info|DownloadDecisionMaker|No results found
+2025-11-04 17:03:12.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 17:03:25.6|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 17:03:28.2|Info|RssSyncService|Starting RSS Sync
+2025-11-04 17:03:30.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-04 17:03:30.3|Info|DownloadDecisionMaker|No results found
+2025-11-04 17:03:30.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 17:21:05.6|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 17:21:54.7|Info|RssSyncService|Starting RSS Sync
+2025-11-04 17:24:57.9|Warn|Torznab|Nyaa.si (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 17:25:00.4|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 17:25:06.9|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 17:25:59.6|Warn|Torznab|The Pirate Bay (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-04 17:26:07.0|Info|DownloadDecisionMaker|No results found
+2025-11-04 17:26:12.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 17:27:37.8|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "11/04/2025 16:26:46 +00:00", the heartbeat has been running for "00:00:01.5885987" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2025-11-04 17:40:29.5|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-04 17:42:40.1|Info|RssSyncService|Starting RSS Sync
+2025-11-04 17:43:13.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-04 17:43:18.1|Info|DownloadDecisionMaker|No results found
+2025-11-04 17:43:18.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 17:58:50.1|Info|RssSyncService|Starting RSS Sync
+2025-11-04 17:59:13.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-04 17:59:13.5|Info|DownloadDecisionMaker|No results found
+2025-11-04 17:59:13.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-04 18:03:49.0|Error|TaskExtensions|Task Error
+
+[v3.0.1.4866] code = Full (13), message = System.Data.SQLite.SQLiteException (0x87AF0070): database or disk is full
+database or disk is full
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.Utils.Pipeline.PipelineComponent.ExecuteCoreSync[TResult,TState](Func`3 callback, ResilienceContext context, TState state)
+   at Polly.ResiliencePipeline.Execute[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./NzbDrone.Core/Datastore/BasicRepository.cs:line 212
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(TModel model) in ./NzbDrone.Core/Datastore/BasicRepository.cs:line 170
+   at NzbDrone.Core.Messaging.Commands.CommandQueueManager.Push[TCommand](TCommand command, CommandPriority priority, CommandTrigger trigger) in ./NzbDrone.Core/Messaging/Commands/CommandQueueManager.cs:line 135
+   at NzbDrone.Core.Jobs.Scheduler.ExecuteCommands() in ./NzbDrone.Core/Jobs/Scheduler.cs:line 34
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+
+
+2025-11-04 18:07:05.7|Error|TaskExtensions|Task Error
+
+[v3.0.1.4866] code = Full (13), message = System.Data.SQLite.SQLiteException (0x87AF0070): database or disk is full
+database or disk is full
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.Utils.Pipeline.PipelineComponent.ExecuteCoreSync[TResult,TState](Func`3 callback, ResilienceContext context, TState state)
+   at Polly.ResiliencePipeline.Execute[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./NzbDrone.Core/Datastore/BasicRepository.cs:line 212
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(TModel model) in ./NzbDrone.Core/Datastore/BasicRepository.cs:line 170
+   at NzbDrone.Core.Messaging.Commands.CommandQueueManager.Push[TCommand](TCommand command, CommandPriority priority, CommandTrigger trigger) in ./NzbDrone.Core/Messaging/Commands/CommandQueueManager.cs:line 135
+   at NzbDrone.Core.Jobs.Scheduler.ExecuteCommands() in ./NzbDrone.Core/Jobs/Scheduler.cs:line 34
+   at 2025-11-07 14:52:58.5|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2994
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 685
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-07 14:52:59.7|Warn|BasicRepository`1|Failed writing to database. Retry #0
+
+[v3.0.1.4866] code = Busy (5), message = System.Data.SQLite.SQLiteException (0x87AF00AA): database is locked
+database is locked
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1185
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1152
+   at Polly.Utils.Pipeline.PipelineComponent.<>c__8`2.<ExecuteCoreSync>b__8_0(ResilienceContext context, ValueTuple`2 state)
+
+
+2025-11-07 14:54:09.7|Info|RssSyncService|Starting RSS Sync
+2025-11-07 14:54:35.4|Error|GlobalExceptionHandlers|Task Error
+
+[v3.0.1.4866] System.Net.Http.HttpIOException: An HTTP/2 connection could not be established because the server did not complete the HTTP/2 handshake. (InvalidResponse)
+ ---> System.Net.Http.HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+   at System.Net.Http.Http2Connection.<ReadFrameAsync>g__ThrowMissingFrame|61_1()
+   at System.Net.Http.Http2Connection.ReadFrameAsync(Boolean initialFrame)
+   at System.Net.Http.Http2Connection.ProcessIncomingFramesAsync()
+   --- End of inner exception stack trace ---
+
+
+2025-11-07 14:57:07.9|Error|CommandExecutor|Error occurred while executing task ApplicationUpdateCheck
+
+[v3.0.1.4866] System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: An HTTP/2 connection could not be established because the server did not complete the HTTP/2 handshake.
+ ---> System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.Security.SslStream'.
+   at System.Net.Security.SslStream.<ThrowIfExceptional>g__ThrowExceptional|126_0(ExceptionDispatchInfo e)
+   at System.Net.Security.SslStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SetupAsync(CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SetupAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConstructHttp2ConnectionAsync(Stream stream, HttpRequestMessage request, IPEndPoint remoteEndPoint, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConstructHttp2ConnectionAsync(Stream stream, HttpRequestMessage request, IPEndPoint remoteEndPoint, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.GetAsync[T](HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 333
+   at NzbDrone.Common.Http.HttpClient.Get[T](HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 341
+   at NzbDrone.Core.Update.UpdatePackageProvider.GetLatestUpdate(String branch, Version currentVersion) in ./NzbDrone.Core/Update/UpdatePackageProvider.cs:line 54
+   at NzbDrone.Core.Update.CheckUpdateService.AvailableUpdate() in ./NzbDrone.Core/Update/UpdateCheckService.cs:line 25
+   at NzbDrone.Core.Update.InstallUpdateService.GetUpdatePackage(CommandTrigger updateTrigger, Boolean installMajorUpdate) in ./NzbDrone.Core/Update/InstallUpdateService.cs:line 239
+   at NzbDrone.Core.Update.InstallUpdateService.Execute(ApplicationUpdateCheckCommand message) in ./NzbDrone.Core/Update/InstallUpdateService.cs:line 282
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 67
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./NzbDrone.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+
+2025-11-07 14:57:08.1|Warn|Torznab|1337x (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/4/api?t=music&cat=3000,3010,3040,3050,3030&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-07 14:57:10.2|Warn|Torznab|The Pirate Bay (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/2/api?t=music&cat=3000,3030,3040,3050&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-07 14:57:11.8|Warn|Torznab|Nyaa.si (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/1/api?t=music&cat=3000&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-07 14:57:12.1|Warn|Torznab|RuTracker.org (Prowlarr) server is currently unavailable. http://172.27.7.4:9696/3/api?t=music&cat=3000,3030,3040,3010&extended=1&apikey=(removed)&offset=0&limit=100 Http request timed out
+2025-11-07 14:57:12.4|Info|DownloadDecisionMaker|No results found
+2025-11-07 14:57:12.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 14:57:31.3|Info|HousekeepingService|Running housecleaning tasks
+2025-11-07 14:57:31.9|Info|TrackGroupingService|Grouping 0 tracks
+2025-11-07 14:57:32.3|Info|ImportApprovedTracks|Importing 0 tracks
+2025-11-07 14:57:41.2|Info|Database|Vacuuming Log database
+2025-11-07 14:57:41.7|Info|Database|Log database compressed
+2025-11-07 14:57:41.9|Info|Database|Vacuuming Main database
+2025-11-07 14:57:42.5|Info|Database|Main database compressed
+2025-11-07 15:12:20.2|Info|RssSyncService|Starting RSS Sync
+2025-11-07 15:12:20.2|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 15:12:20.2|Info|DownloadDecisionMaker|No results found
+2025-11-07 15:12:20.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 15:27:21.7|Info|RssSyncService|Starting RSS Sync
+2025-11-07 15:27:21.8|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 15:27:21.8|Info|DownloadDecisionMaker|No results found
+2025-11-07 15:27:21.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 15:42:23.1|Info|RssSyncService|Starting RSS Sync
+2025-11-07 15:42:23.1|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 15:42:23.1|Info|DownloadDecisionMaker|No results found
+2025-11-07 15:42:23.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 15:57:24.5|Info|RssSyncService|Starting RSS Sync
+2025-11-07 15:57:24.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 15:57:24.5|Info|DownloadDecisionMaker|No results found
+2025-11-07 15:57:24.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 16:12:25.6|Info|RssSyncService|Starting RSS Sync
+2025-11-07 16:12:25.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 16:12:25.6|Info|DownloadDecisionMaker|No results found
+2025-11-07 16:12:25.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 16:27:26.9|Info|RssSyncService|Starting RSS Sync
+2025-11-07 16:27:26.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 16:27:26.9|Info|DownloadDecisionMaker|No results found
+2025-11-07 16:27:26.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 16:42:28.1|Info|RssSyncService|Starting RSS Sync
+2025-11-07 16:42:28.1|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 16:42:28.1|Info|DownloadDecisionMaker|No results found
+2025-11-07 16:42:28.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 16:57:29.3|Info|RssSyncService|Starting RSS Sync
+2025-11-07 16:57:29.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 16:57:29.3|Info|DownloadDecisionMaker|No results found
+2025-11-07 16:57:29.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 17:12:30.7|Info|RssSyncService|Starting RSS Sync
+2025-11-07 17:12:30.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 17:12:30.7|Info|DownloadDecisionMaker|No results found
+2025-11-07 17:12:30.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 17:27:31.9|Info|RssSyncService|Starting RSS Sync
+2025-11-07 17:27:31.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 17:27:31.9|Info|DownloadDecisionMaker|No results found
+2025-11-07 17:27:31.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 17:42:33.2|Info|RssSyncService|Starting RSS Sync
+2025-11-07 17:42:33.2|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 17:42:33.2|Info|DownloadDecisionMaker|No results found
+2025-11-07 17:42:33.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 17:57:34.5|Info|RssSyncService|Starting RSS Sync
+2025-11-07 17:57:34.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 17:57:34.5|Info|DownloadDecisionMaker|No results found
+2025-11-07 17:57:34.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 18:12:35.7|Info|RssSyncService|Starting RSS Sync
+2025-11-07 18:12:35.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 18:12:35.7|Info|DownloadDecisionMaker|No results found
+2025-11-07 18:12:35.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 18:27:37.2|Info|RssSyncService|Starting RSS Sync
+2025-11-07 18:27:37.2|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 18:27:37.2|Info|DownloadDecisionMaker|No results found
+2025-11-07 18:27:37.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-11-07 18:42:38.3|Info|RssSyncService|Starting RSS Sync
+2025-11-07 18:42:38.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+2025-11-07 18:42:38.3|Info|DownloadDecisionMaker|No results found
+2025-11-07 18:42:38.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0

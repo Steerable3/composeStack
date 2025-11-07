@@ -1,0 +1,35 @@
+2025-11-03 02:13:16|INFO    |root                            |Using opensubtitlescom again after 6 hours, (disabled because: DownloadLimitExceeded)|
+2025-11-03 02:19:41|INFO    |root                            |Throttling podnapisi for 10 minutes, until 25/11/03 02:29, because of: HTTPError. Exception info: "'502 Server Error: Bad Gateway for url: https://www.podnapisi.net/subtitles/0rMH' ~ podnapisi.py@287"|
+2025-11-03 02:23:03|WARNING |apscheduler.executors.default   |Run time of job "Check Health (trigger: interval[6:00:00], next run at: 2025-11-03 08:21:25 CET)" was missed by 0:01:38.544629|
+2025-11-03 02:23:03|ERROR   |root                            |BAZARR SignalR client for Radarr connection as been lost. Trying to reconnect...|
+2025-11-03 02:23:03|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+2025-11-03 02:23:11|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+2025-11-03 02:23:36|INFO    |root                            |Throttling opensubtitlescom for 6 hours, until 25/11/03 08:23, because of: DownloadLimitExceeded. Exception info: "'Daily download limit reached. 21 subtitles have been downloaded and -1 r' ~ opensubtitlescom.py@544"|
+2025-11-03 02:23:53|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+2025-11-03 02:37:25|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|
+2025-11-03 04:01:36|INFO    |root                            |BAZARR All existing movie subtitles indexed from disk.|
+2025-11-03 04:01:36|ERROR   |root                            |BAZARR SignalR client for Radarr connection as been lost. Trying to reconnect...|
+2025-11-03 04:01:36|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+2025-11-03 04:01:42|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+2025-11-03 04:01:47|INFO    |root                            |BAZARR All existing episode subtitles indexed from disk.|
+2025-11-03 07:43:56|INFO    |root                            |Using podnapisi again after 10 minutes, (disabled because: HTTPError)|
+2025-11-03 07:48:45|INFO    |root                            |Provider podnapisi throttle count 1 of 5, waiting 5sec and trying again|
+2025-11-03 08:03:23|INFO    |root                            |Throttling podnapisi for 10 minutes, until 25/11/03 08:13, because of: HTTPError. Exception info: "'502 Server Error: Bad Gateway for url: https://www.podnapisi.net/subtitles/vt5G' ~ podnapisi.py@287"|
+2025-11-03 08:03:33|INFO    |root                            |BAZARR Finished searching for Subtitles to upgrade. Check History for more information.|
+2025-11-03 08:13:23|INFO    |root                            |Using podnapisi again after 10 minutes, (disabled because: HTTPError)|
+2025-11-03 08:24:16|INFO    |root                            |Using opensubtitlescom again after 6 hours, (disabled because: DownloadLimitExceeded)|
+2025-11-03 08:25:19|INFO    |root                            |Throttling opensubtitlescom for 6 hours, until 25/11/03 14:25, because of: DownloadLimitExceeded. Exception info: "'Daily download limit reached. 21 subtitles have been downloaded and -1 r' ~ opensubtitlescom.py@544"|
+2025-11-03 08:30:10|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+2025-11-03 08:37:25|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|
+2025-11-03 14:25:21|INFO    |root                            |Using opensubtitlescom again after 6 hours, (disabled because: DownloadLimitExceeded)|
+2025-11-03 14:34:22|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+2025-11-03 14:37:25|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|
+2025-11-03 19:53:15|INFO    |root                            |Provider podnapisi throttle count 1 of 5, waiting 5sec and trying again|
+2025-11-03 19:54:42|INFO    |root                            |Throttling opensubtitlescom for 6 hours, until 25/11/04 01:54, because of: DownloadLimitExceeded. Exception info: "'Daily download limit reached. 21 subtitles have been downloaded and -1 r' ~ opensubtitlescom.py@544"|
+2025-11-03 20:00:41|INFO    |root                            |Throttling podnapisi for 10 minutes, until 25/11/03 20:10, because of: HTTPError. Exception info: "'502 Server Error: Bad Gateway for url: https://www.podnapisi.net/subtitles/v95G' ~ podnapisi.py@287"|
+2025-11-03 20:00:57|INFO    |root                            |BAZARR Finished searching for Subtitles to upgrade. Check History for more information.|
+2025-11-03 20:13:13|INFO    |root                            |Using podnapisi again after 10 minutes, (disabled because: HTTPError)|
+2025-11-03 20:17:45|INFO    |root                            |Provider podnapisi throttle count 1 of 5, waiting 5sec and trying again|
+2025-11-03 20:20:15|INFO    |root                            |Provider podnapisi throttle count 1 of 5, waiting 5sec and trying again|
+2025-11-03 20:33:32|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+2025-11-03 20:37:25|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|
