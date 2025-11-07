@@ -10,8 +10,17 @@ services:
   cpu: {}
 
   nvenc:
-    devices:
-      - nvidia.com/gpu=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: cdi
+            capabilities:
+              - gpu
+              - compute
+              - video
+            device_ids:
+            - nvidia.com/gpu=all
 
   quicksync:
     devices:

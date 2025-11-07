@@ -154,3 +154,19 @@ services:
       servarr-network:
         ipv4_address: 172.27.7.9
 
+  audiobookrequest:
+    image: markbeep/audiobookrequest:latest
+    container_name: audiobookrequest
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    ports:
+      - 2709:8000
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./audiobookrequest:/config
+    restart: unless-stopped 
+    networks:
+      servarr-network:
+        ipv4_address: 172.27.7.10

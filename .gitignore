@@ -7,10 +7,21 @@
 !/*/compose.yaml
 
 # Also keep the specified files
-!/servarr/**
+!/servarr/bazzarr/config/**
+!/servarr/qbittorrent/qBittorrent/categories.json
+!/servarr/qbittorrent/qBittorrent/qBittorrent-data.json
+!/servarr/qbittorrent/qBittorrent/qBittorrent.json
+!/servarr/jellyseerr/settings.json
+!/servarr/lidarr/config.xml
+!/servarr/prowlarr/config.xml
+!/servarr/radarr/config.xml
+!/servarr/sonarr/config.xml
 !/immich/**
 /immich/db-password.txt
 !/jellyfin/**
+/jellyfin/config/cache
+/jellyfin/config/.cache
+/jellyfin/config/log
 !/beszel-hub/**
 !/audiobookshelf/**
 !/navidrome/**

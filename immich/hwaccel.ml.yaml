@@ -24,8 +24,15 @@ services:
   cpu: {}
 
   cuda:
-    devices:
-      - nvidia.com/gpu=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: cdi
+            capabilities:
+              - gpu
+            device_ids:
+            - nvidia.com/gpu=all
 
   rocm:
     group_add:
