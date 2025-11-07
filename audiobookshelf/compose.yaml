@@ -8,7 +8,6 @@ services:
     volumes:
       - /safe/media/audiobooks:/audiobooks
       - /safe/media/podcasts:/podcasts
-      - /safe/media/abs-metadata:/metadata
       - ./config:/config
     restart: unless-stopped
     user: 1000:1000
