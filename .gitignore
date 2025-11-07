@@ -19,8 +19,11 @@
 !/immich/**
 /immich/db-password.txt
 !/jellyfin/**
+/jellyfin/config/cache
 /jellyfin/config/cache/**
+/jellyfin/config/.cache
 /jellyfin/config/.cache/**
+/jellyfin/config/log
 /jellyfin/config/log/**
 !/beszel-hub/**
 !/audiobookshelf/**
