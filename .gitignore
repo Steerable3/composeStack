@@ -8,9 +8,9 @@
 
 # Also keep the specified files
 !/servarr
-!/servarr/bazzarr
-!/servarr/bazzarr/config
-!/servarr/bazzarr/config/**
+!/servarr/bazarr
+!/servarr/bazarr/config
+!/servarr/bazarr/config/**
 !/servarr/qbittorrent
 !/servarr/qbittorrent/qBittorrent
 !/servarr/qbittorrent/qBittorrent/categories.json
