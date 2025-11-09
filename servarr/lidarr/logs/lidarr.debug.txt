@@ -655,3 +655,5 @@
 2025-11-09 13:42:45.8|Debug|Parser|Unable to parse East Clubbers Promo Album Play Dance Zone 1 2005 FLAC CUE LOG-SCANS
 2025-11-09 13:42:45.8|Info|RssSyncService|RSS Sync Completed. Reports found: 167, Reports grabbed: 0
 2025-11-09 13:42:45.8|Debug|PendingReleaseService|Removing failed releases from pending
+2025-11-09 13:46:09.2|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-11-09 13:51:09.5|Debug|ImportListSyncService|No import lists with automatic add enabled

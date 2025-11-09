@@ -4436,3 +4436,5 @@
 2025-11-09 13:41:37.0|Debug|RootFolderService|0 unmapped folders detected.
 2025-11-09 13:41:37.0|Debug|Api|[GET] /api/v3/rootfolder?apikey=(removed) 200.OK (7 ms)
 2025-11-09 13:44:46.7|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-11-09 13:49:47.0|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-11-09 13:54:47.4|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning

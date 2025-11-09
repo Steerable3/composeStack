@@ -83,3 +83,7 @@
 2025-11-09 13:34:30|INFO    |root                            |Throttling opensubtitlescom for 10 minutes, until 25/11/09 13:44, because of: EOFError. Exception info: "'Ran out of input' ~ opensubtitlescom.py@192"|
 2025-11-09 13:44:33|INFO    |root                            |Using opensubtitlescom again after 10 minutes, (disabled because: EOFError)|
 2025-11-09 13:44:33|INFO    |root                            |Throttling opensubtitlescom for 10 minutes, until 25/11/09 13:54, because of: EOFError. Exception info: "'Ran out of input' ~ opensubtitlescom.py@192"|
+2025-11-09 13:47:18|INFO    |root                            |Provider podnapisi throttle count 1 of 5, waiting 5sec and trying again|
+2025-11-09 13:54:57|INFO    |root                            |Using opensubtitlescom again after 10 minutes, (disabled because: EOFError)|
+2025-11-09 13:54:58|INFO    |root                            |Throttling opensubtitlescom for 10 minutes, until 25/11/09 14:04, because of: EOFError. Exception info: "'Ran out of input' ~ opensubtitlescom.py@192"|
+2025-11-09 13:55:18|INFO    |root                            |Throttling opensubtitlescom for 10 minutes, until 25/11/09 14:05, because of: EOFError. Exception info: "'Ran out of input' ~ opensubtitlescom.py@192"|

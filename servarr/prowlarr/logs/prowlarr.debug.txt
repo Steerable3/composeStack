@@ -5078,3 +5078,31 @@
 2025-11-09 13:42:44.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
 2025-11-09 13:42:45.2|Debug|FlareSolverr|CF Protection not detected, returning original response
 2025-11-09 13:42:45.5|Debug|ReleaseSearchService|Total of 20 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3010, 3040, 3050, 3030] from 1 indexer(s)
+2025-11-09 13:53:16.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [7000]
+2025-11-09 13:53:16.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7020, 7030, 7050]
+2025-11-09 13:53:16.7|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-11-09 13:53:16.7|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-11-09 13:53:16.7|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-09 13:53:16.7|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc
+2025-11-09 13:53:16.7|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7020, 7030]
+2025-11-09 13:53:16.7|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-11-09 13:53:16.7|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-11-09 13:53:16.7|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7010, 7040, 7030, 7050, 7020]
+2025-11-09 13:53:16.7|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=1411%2C21%2C2157%2C765%2C2019%2C31%2C1427%2C2422%2C2195%2C2521%2C2223%2C2447%2C39%2C2086%2C1101%2C745%2C1689%2C2336%2C2337%2C1353%2C1400%2C1415%2C2046%2C1802%2C2189%2C2190%2C2443%2C1477%2C669%2C2196%2C2056%2C1436%2C2191%2C2477%2C1680%2C1684%2C2446%2C2524%2C2525%2C995%2C2022%2C2471%2C2375%2C764%2C1685%2C1688%2C2472%2C1687%2C2020%2C1349%2C1967%2C1341%2C2049%2C1681%2C2319%2C2434%2C1683%2C2444%2C2427%2C2452%2C2445%2C2435%2C667%2C2436%2C1335%2C2453%2C2320%2C1801%2C2023%2C2024%2C2026%2C2192%2C2027%2C295%2C2028%2C2029%2C1325%2C2386%2C2031%2C2030%2C2526%2C2527%2C2254%2C2376%2C2054%2C770%2C2476%2C2494%2C1528%2C2032%2C919%2C944%2C980%2C946%2C977%2C2074%2C2349%2C768%2C2099%2C2021%2C2437%2C1337%2C1447%2C2468%2C2469%2C2470%2C1686%2C2215%2C2216%2C2217%2C2218%2C2252%2C2543%2C767%2C2515%2C2516%2C2517%2C2518%2C2519%2C2520%2C1696%2C2253%2C2033%2C1412%2C1446%2C753%2C2037%2C2224%2C2194%2C2418%2C1410%2C2034%2C2433%2C1961%2C2432%2C565%2C1523%2C1575%2C1520%2C2424%2C769%2C2038%2C2043%2C2042%2C2041%2C2044%2C2039%2C2045%2C2080%2C2047%2C2193%2C1037%2C1418%2C1422%2C1423%2C1424%2C1445%2C1425%2C1426%2C1428%2C1429%2C1430%2C1431%2C1433%2C1432%2C2202%2C862%2C2461%2C2462%2C2463%2C2464%2C2473%2C281%2C2465%2C2458%2C2048%2C1238%2C2055%2C754%2C2114%2C2438%2C2439%2C2440%2C2441%2C2442%2C2125%2C2133%2C2130%2C2313%2C2528%2C2129%2C2141%2C2314%2C2132%2C2131%2C2315%2C2362%2C1265%2C1266%2C1267
+2025-11-09 13:53:16.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-09 13:53:17.0|Debug|ReleaseSearchService|Total of 1 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7020, 7030, 7050] from 1 indexer(s)
+2025-11-09 13:53:17.4|Debug|Cardigann|Adding request for Nyaa.si: https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-09 13:53:17.4|Debug|Cardigann|Downloading Feed https://nyaa.si/?f=0&c=0_0&s=id&o=desc&p=2
+2025-11-09 13:53:17.9|Debug|RuTracker|Downloading Feed https://rutracker.org/forum/tracker.php?nm=&f=1358%2C2363%2C734%2C1268%2C1673%2C1269%2C1270%2C1275%2C2364%2C1276%2C2094%2C1274%2C1264%2C2358%2C2359%2C2360%2C2361%2C2057%2C2355%2C2474%2C2356%2C2357%2C2413%2C1501%2C1580%2C525%2C610%2C1568%2C1542%2C2335%2C1544%2C1546%2C1549%2C1597%2C1552%2C1550%2C1553%2C1554%2C617%2C1555%2C2017%2C1257%2C1258%2C2208%2C677%2C1255%2C1479%2C1261%2C614%2C1583%2C1259%2C2065%2C1254%2C1260%2C2209%2C2210%2C1547%2C1548%2C2211%2C1596%2C2135%2C2140%2C2136%2C2138%2C615%2C1581%2C1590%2C1587%2C1594%2C1591%2C1588%2C1585%2C1586%2C2078%2C1929%2C1593%2C1592%2C1595%2C1556%2C2539%2C1560%2C1991%2C1561%2C1653%2C1570%2C1654%2C1655%2C1656%2C1930%2C1931%2C1932%2C1562%2C1563%2C1626%2C1564%2C1545%2C1565%2C1559%2C1566%2C1573%2C1567%2C2326%2C574%2C1036%2C400%2C2389%2C2388%2C2387%2C661%2C2348%2C2327%2C695%2C399%2C402%2C467%2C490%2C499%2C2137%2C2127%2C2324%2C2325%2C2342%2C530%2C2152%2C2328%2C1350%2C403%2C1279%2C716%2C2165%2C401%2C1964%2C1973%2C1974%2C1975%2C1976%2C1977%2C1203%2C1978%2C1979%2C1980%2C1981%2C1970%2C334%2C1909%2C147
+2025-11-09 13:53:18.2|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/TV/time/desc/1/
+2025-11-09 13:53:18.2|Debug|Cardigann|Downloading Feed https://1337x.to/cat/TV/time/desc/1/
+2025-11-09 13:53:18.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-09 13:53:19.0|Debug|ReleaseSearchService|Total of 14 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [7000] from 1 indexer(s)
+2025-11-09 13:53:19.6|Debug|ReleaseSearchService|Total of 97 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7010, 7040, 7030, 7050, 7020] from 1 indexer(s)
+2025-11-09 13:53:19.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Music/time/desc/1/
+2025-11-09 13:53:19.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Music/time/desc/1/
+2025-11-09 13:53:20.7|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-09 13:53:21.7|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Other/time/desc/1/
+2025-11-09 13:53:21.7|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Other/time/desc/1/
+2025-11-09 13:53:22.9|Debug|FlareSolverr|CF Protection not detected, returning original response
+2025-11-09 13:53:23.4|Debug|ReleaseSearchService|Total of 18 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7020, 7030] from 1 indexer(s)

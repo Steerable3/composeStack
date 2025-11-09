@@ -3959,3 +3959,7 @@ FeedUrl: https://rutracker.org/forum/tracker.php?nm=&f=511%2C1493%2C921%2C815%2C
 2025-11-09 13:42:39.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [3000]
 2025-11-09 13:42:39.0|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3010, 3040, 3050, 3030]
 2025-11-09 13:42:39.0|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [], Offset: 0, Limit: 100, Categories: [3000, 3030, 3040, 3010]
+2025-11-09 13:53:16.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [7000]
+2025-11-09 13:53:16.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7020, 7030, 7050]
+2025-11-09 13:53:16.7|Info|ReleaseSearchService|Searching indexer(s): [1337x] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7020, 7030]
+2025-11-09 13:53:16.7|Info|ReleaseSearchService|Searching indexer(s): [RuTracker.org] for Term: [], Offset: 0, Limit: 100, Categories: [7000, 3030, 7010, 7040, 7030, 7050, 7020]

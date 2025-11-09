@@ -7288,3 +7288,4 @@
 2025-11-09 13:41:49.2|Info|RssSyncService|RSS Sync Completed. Reports found: 264, Reports grabbed: 0
 2025-11-09 13:41:49.2|Debug|PendingReleaseService|Removing failed releases from pending
 2025-11-09 13:45:42.1|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-11-09 13:50:42.7|Debug|ImportListSyncService|No import lists with automatic add enabled
