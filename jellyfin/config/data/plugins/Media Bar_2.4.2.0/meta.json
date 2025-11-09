@@ -1,0 +1,15 @@
+{
+  "category": "General",
+  "changelog": "\u2728 New Features\r\n\r\n- Updated to support 10.11.2\r\n- Updated branch with upstream",
+  "description": "Adds a media bar element at the top of the homepage on Jellyfin web",
+  "guid": "08f615ea-2107-4f04-89cc-091035f54448",
+  "name": "Media Bar",
+  "owner": "IAmParadox27 \u0026 M0RPH3US",
+  "targetAbi": "10.11.2.0",
+  "timestamp": "2025-11-03T22:34:47.0000000Z",
+  "version": "2.4.2.0",
+  "status": "Active",
+  "autoUpdate": true,
+  "imagePath": "/config/data/plugins/Media Bar_2.4.2.0/logo.png",
+  "assemblies": []
+}

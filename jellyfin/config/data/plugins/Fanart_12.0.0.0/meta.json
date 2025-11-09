@@ -1,0 +1,16 @@
+{
+  "category": "MoviesAndShows",
+  "changelog": "- Jellyfin 10.11 support (#62) @crobibero\n- Guess correct Thumb image size (#52) @enter-a-random-username\n- Adjust structure of the classes to v3.2 response (#56) @markalex2209\n- Link to wiki for API key information (#51) @enter-a-random-username\n- Use latest API 3.2 (#49) @enter-a-random-username\n\n### Code or Repo Maintenance ###\n- Maintenance (#57) @Shadowghost\n\n### Dependency updates ###\n- Update dependency Microsoft.Extensions.Http to 8.0.1 (#54) @renovate",
+  "description": "Scrape poster images for movies, shows, and artists in your library.",
+  "guid": "170a157f-ac6c-437a-abdd-ca9c25cebd39",
+  "name": "Fanart",
+  "overview": "Scrape poster images from Fanart",
+  "owner": "jellyfin",
+  "targetAbi": "10.11.0.0",
+  "timestamp": "2025-10-20T01:44:31.0000000Z",
+  "version": "12.0.0.0",
+  "status": "Active",
+  "autoUpdate": true,
+  "imagePath": "/config/data/plugins/Fanart_12.0.0.0/jellyfin-plugin-fanart.png",
+  "assemblies": []
+}
