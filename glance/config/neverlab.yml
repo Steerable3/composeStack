@@ -29,8 +29,7 @@
                   hide: false
             - type: remote
               name: Privateer
-              url: privateer#2020
-              token: ${secrets:glance-token}
+              url: http://privateer:27973
 
         # Immich stats widget
         - type: custom-api
@@ -59,13 +58,10 @@
         # Pi-hole DNS stats
         - type: dns-stats
           service: pihole-v6
-          url: http://dns.${LOCAL_DOMAIN}
+          url: http://mainframe:2100
+          allow-insecure: true
           password: ${secret:pihole-webpassword}
           hour-format: 24h
-
-        # Calendar widget
-        - type: calendar
-          first-day-of-the-week: monday
 
     - size: full
       widgets:
@@ -144,37 +140,10 @@
         # Docker containers widget
         - type: docker-containers
 
-    - size: small
-      widgets:
-        # Weather widget
-        - type: weather
-          units: metric
-          hour-format: 24h
-          location: Škofja Loka, Slovenia
-
-        # Steam specials widget
-        - type: custom-api
-          title: Steam Specials
-          cache: 12h
-          url: https://store.steampowered.com/api/featuredcategories?cc=us
-          template: |
-            <ul class="list list-gap-10 collapsible-container" data-collapse-after="5">
-            {{ range .JSON.Array "specials.items" }}
-              <li>
-                <a class="size-h4 color-highlight block text-truncate" href="https://store.steampowered.com/app/{{ .Int "id" }}/">{{ .String "name" }}</a>
-                <ul class="list-horizontal-text">
-                  <li>{{ div (.Int "final_price" | toFloat) 100 | printf "$%.2f" }}</li>
-                  {{ $discount := .Int "discount_percent" }}
-                  <li{{ if ge $discount 40 }} class="color-positive"{{ end }}>{{ $discount }}% off</li>
-                </ul>
-              </li>
-            {{ end }}
-            </ul>
-
         # YouTube Widget
         - type: videos
           limit: 100
-          style: vertical-list
+          style: horizontal-cards
           channels:
             - UC-lHJZR3Gqxm24_Vd_AJ5Yw  # Pewdiepie
             - UCXuqSBlHAE6Xw-yeJA0Tunw  # LTT
@@ -200,3 +169,34 @@
             - UCT7H_xchRHaT9zr5GalIZVA  # Evan Edinger
             - UCRcgy6GzDeccI7dkbbBna3Q  # Lemmino
             - UCsXVk37bltHxD1rDPwtNM8Q  # Kurzgesagt
+
+    - size: small
+      widgets:
+        # Weather widget
+        - type: weather
+          units: metric
+          hour-format: 24h
+          location: Škofja Loka, Slovenia
+
+        # Calendar widget
+        - type: calendar
+          first-day-of-the-week: monday
+
+        # Steam specials widget
+        - type: custom-api
+          title: Steam Specials
+          cache: 12h
+          url: https://store.steampowered.com/api/featuredcategories?cc=us
+          template: |
+            <ul class="list list-gap-10 collapsible-container" data-collapse-after="5">
+            {{ range .JSON.Array "specials.items" }}
+              <li>
+                <a class="size-h4 color-highlight block text-truncate" href="https://store.steampowered.com/app/{{ .Int "id" }}/">{{ .String "name" }}</a>
+                <ul class="list-horizontal-text">
+                  <li>{{ div (.Int "final_price" | toFloat) 100 | printf "$%.2f" }}</li>
+                  {{ $discount := .Int "discount_percent" }}
+                  <li{{ if ge $discount 40 }} class="color-positive"{{ end }}>{{ $discount }}% off</li>
+                </ul>
+              </li>
+            {{ end }}
+            </ul>
