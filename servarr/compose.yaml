@@ -19,8 +19,8 @@ services:
       - WEBUI_PORT=2701
       - TORRENTING_PORT=2700
     ports:
-      - 2700:2700 # qbittorrent web interface
-      - 2701:2701 # qbittorrent torrent port
+      - 2700:2700
+      - 2701:2701
     volumes:
       - ./qbittorrent:/config
       - /mnt/media:/data
@@ -152,7 +152,6 @@ services:
       - TZ=${TZ}
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ./flaresolverr:/config
     ports:
       - 2708:8191
     restart: unless-stopped 
@@ -160,20 +159,38 @@ services:
       servarr-network:
         ipv4_address: 172.27.7.9
 
-  lazylibrarian:
-    image: lscr.io/linuxserver/lazylibrarian:latest
-    container_name: lazylibrarian
+  readarr:
+    image: ghcr.io/pennydreadful/bookshelf:hardcover
+    container_name: readarr
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TZ}
+    ports:
+      - 2709:8787
     volumes:
-      - ./lazylibrarian:/config
+      - /etc/localtime:/etc/localtime:ro
+      - ./readarr:/config
       - /mnt/media:/data
       - /home/jacko/downloads:/downloads
-    ports:
-      - 2709:5299
-    restart: unless-stopped
+    restart: unless-stopped 
     networks:
       servarr-network:
         ipv4_address: 172.27.7.10
+  #
+  # audiobookrequest:
+  #   image: markbeep/audiobookrequest:latest
+  #   container_name: audiobookrequest
+  #   environment:
+  #     - PUID=${PUID}
+  #     - PGID=${PGID}
+  #     - TZ=${TZ}
+  #   ports:
+  #     - 2710:8000
+  #   volumes:
+  #     - /etc/localtime:/etc/localtime:ro
+  #     - ./audiobookrequest:/config
+  #   restart: unless-stopped 
+  #   networks:
+  #     servarr-network:
+  #       ipv4_address: 172.27.7.11

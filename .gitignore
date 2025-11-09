@@ -16,6 +16,7 @@
 !/servarr/prowlarr/config.xml
 !/servarr/radarr/config.xml
 !/servarr/sonarr/config.xml
+!/servarr/readarr/config.xml
 !/immich/**
 /immich/db-password.txt
 !/jellyfin/**
