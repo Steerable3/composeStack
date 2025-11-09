@@ -7,7 +7,6 @@
 !/*/compose.yaml
 
 # Also keep the specified files
-!/servarr
 !/servarr/bazarr
 !/servarr/bazarr/config
 !/servarr/bazarr/config/**
@@ -31,16 +30,31 @@
 
 !/immich/**
 /immich/db-password.txt
-!/jellyfin/**
-/jellyfin/config/cache
-/jellyfin/config/cache/**
-/jellyfin/config/.cache
-/jellyfin/config/.cache/**
-/jellyfin/config/log
-/jellyfin/config/log/**
-!/beszel-hub/**
-!/audiobookshelf/**
-!/navidrome/**
-!/home-assistant/**
-!/pihole/**
-/pihole/web-password.txt
+
+!/jellyfin/config
+!/jellyfin/config/data
+!/jellyfin/config/data/.jellyfin-data
+!/jellyfin/config/data/plugins
+!/jellyfin/config/data/plugins/**
+!/jellyfin/config/data/root
+!/jellyfin/config/data/root/**
+!/jellyfin/config/*.xml
+!/jellyfin/config/.jellyfin-config
+
+!/home-assistant
+!/home-assistant/config
+!/home-assistant/config/configuration.yaml
+!/home-assistant/config/automations.yaml
+!/home-assistant/config/scenes.yaml
+!/home-assistant/config/scripts.yaml
+!/home-assistant/config/blueprints
+!/home-assistant/config/blueprints/**
+
+!/pihole/
+!/pihole/compose.yaml
+!/pihole/unbound
+!/pihole/unbound/**
+!/pihole/pihole
+!/pihole/pihole/adlists.list
+!/pihole/pihole/dnsmasq.conf
+!/pihole/pihole/pihole.toml
