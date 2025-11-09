@@ -9,9 +9,9 @@ services:
     container_name: glance-agent
     image: glanceapp/agent
     environment:
-      TOKEN: your_auth_token_here
+      TOKEN_FILE: /run/secrets/glance-token
     ports:
-      - 2020:2020
+      - 27973:27973
     restart: unless-stopped
     secrets:
       - glance-token
