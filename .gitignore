@@ -7,6 +7,11 @@
 !/*/compose.yaml
 
 # Also keep the specified files
+!/glance/**
+/glance/immich-apitoken.txt
+/glance/pihole-webpassword.txt
+/glance/glance-token.txt
+
 !/servarr/bazarr
 !/servarr/bazarr/config
 !/servarr/bazarr/config/**
@@ -53,7 +58,7 @@
 !/pihole/
 !/pihole/compose.yaml
 !/pihole/unbound
-!/pihole/unbound/**
+!/pihole/unbound/unbound.conf
 !/pihole/pihole
 !/pihole/pihole/adlists.list
 !/pihole/pihole/dnsmasq.conf

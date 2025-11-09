@@ -1,0 +1,202 @@
+- name: NeverLAB
+  hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        # Clock widget
+        - type: clock
+          hour-format: 24h
+          timezones:
+            - timezone: Europe/Vienna
+              label: Local
+            - timezone: America/New_York
+              label: New York
+            - timezone: Asia/Tokyo
+              label: Tokyo
+
+        # Server stats widget
+        - type: server-stats
+          servers:
+            - type: local
+              name: Mainframe
+              hide-mountpoints-by-default: true
+              mountpoints:
+                "/mnt${DATA_DISK}":
+                  hide: false
+                "/mnt${PARITY_DISK}":
+                  hide: false
+                "/":
+                  hide: false
+            - type: remote
+              name: Privateer
+              url: privateer#2020
+              token: ${secrets:glance-token}
+
+        # Immich stats widget
+        - type: custom-api
+          title: Immich stats
+          cache: 1h
+          url: https://immich.${DOMAIN}/api/server/statistics
+          headers:
+            x-api-key: ${secret:immich-apitoken}
+            Accept: application/json
+          template: |
+            <div class="flex justify-between text-center">
+              <div>
+                  <div class="color-highlight size-h3">{{ .JSON.Int "photos" | formatNumber }}</div>
+                  <div class="size-h6">PHOTOS</div>
+              </div>
+              <div>
+                  <div class="color-highlight size-h3">{{ .JSON.Int "videos" | formatNumber }}</div>
+                  <div class="size-h6">VIDEOS</div>
+              </div>
+              <div>
+                  <div class="color-highlight size-h3">{{ div (.JSON.Int "usage" | toFloat) 1073741824 | toInt | formatNumber }}GB</div>
+                  <div class="size-h6">USAGE</div>
+              </div>
+            </div>
+
+        # Pi-hole DNS stats
+        - type: dns-stats
+          service: pihole-v6
+          url: http://dns.${LOCAL_DOMAIN}
+          password: ${secret:pihole-webpassword}
+          hour-format: 24h
+
+        # Calendar widget
+        - type: calendar
+          first-day-of-the-week: monday
+
+    - size: full
+      widgets:
+        # Services monitor widgets
+        - type: split-column
+          widgets:
+            # First column - Services
+            - type: monitor
+              cache: 1m
+              title: Services
+              sites:
+                - title: Immich
+                  url: https://immich.${DOMAIN}
+                  icon: di:immich
+                - title: Nextcloud
+                  url: https://cloud.${DOMAIN}
+                  icon: di:nextcloud
+                - title: Home Assistant
+                  url: https://house.${DOMAIN}
+                  icon: di:home-assistant
+
+            # Second column - Servarr
+            - type: monitor
+              cache: 1m
+              title: Servarr
+              sites:
+                - title: Jellyfin
+                  url: https://stream.${DOMAIN}
+                  icon: di:jellyfin
+                - title: Audiobookshelf
+                  url: https://listen.${DOMAIN}
+                  icon: di:audiobookshelf
+                - title: Jellyseerr
+                  url: https://request.${DOMAIN}
+                  icon: di:jellyseerr
+                - title: Prowlarr
+                  url: https://prowlarr.${LOCAL_DOMAIN}
+                  icon: di:prowlarr
+                - title: Radarr
+                  url: https://radarr.${LOCAL_DOMAIN}
+                  icon: di:radarr
+                - title: Sonarr
+                  url: https://sonarr.${LOCAL_DOMAIN}
+                  icon: di:sonarr
+                - title: Lidarr
+                  url: https://lidarr.${LOCAL_DOMAIN}
+                  icon: di:lidarr
+                - title: Readarr
+                  url: https://readarr.${LOCAL_DOMAIN}
+                  icon: di:readarr
+                - title: Bazarr
+                  url: https://bazarr.${LOCAL_DOMAIN}
+                  icon: di:bazarr
+
+            # Third column - Infrastructure
+            - type: monitor
+              cache: 1m
+              title: Infrastructure
+              sites:
+                - title: Nginx Proxy Manager
+                  url: https://proxy.${LOCAL_DOMAIN}
+                  icon: di:nginx-proxy-manager
+                - title: Qbittorrent
+                  url: https://torrent.${LOCAL_DOMAIN}
+                  icon: di:qbittorrent
+                - title: Nextcloud AIO
+                  url: https://ncm.${LOCAL_DOMAIN}
+                  icon: di:nextcloud
+                - title: Pi-hole
+                  url: https://dns.${LOCAL_DOMAIN}/admin/login
+                  icon: di:pi-hole
+                - title: FritzBox Router
+                  url: https://router.${LOCAL_DOMAIN}
+                  icon: di:fritzbox
+
+        # Docker containers widget
+        - type: docker-containers
+
+    - size: small
+      widgets:
+        # Weather widget
+        - type: weather
+          units: metric
+          hour-format: 24h
+          location: Škofja Loka, Slovenia
+
+        # Steam specials widget
+        - type: custom-api
+          title: Steam Specials
+          cache: 12h
+          url: https://store.steampowered.com/api/featuredcategories?cc=us
+          template: |
+            <ul class="list list-gap-10 collapsible-container" data-collapse-after="5">
+            {{ range .JSON.Array "specials.items" }}
+              <li>
+                <a class="size-h4 color-highlight block text-truncate" href="https://store.steampowered.com/app/{{ .Int "id" }}/">{{ .String "name" }}</a>
+                <ul class="list-horizontal-text">
+                  <li>{{ div (.Int "final_price" | toFloat) 100 | printf "$%.2f" }}</li>
+                  {{ $discount := .Int "discount_percent" }}
+                  <li{{ if ge $discount 40 }} class="color-positive"{{ end }}>{{ $discount }}% off</li>
+                </ul>
+              </li>
+            {{ end }}
+            </ul>
+
+        # YouTube Widget
+        - type: videos
+          limit: 100
+          style: vertical-list
+          channels:
+            - UC-lHJZR3Gqxm24_Vd_AJ5Yw  # Pewdiepie
+            - UCXuqSBlHAE6Xw-yeJA0Tunw  # LTT
+            - UCBJycsmduvYEL83R_U4JriQ  # MKBHD
+            - UCmlzNHg8QiWVutUyFOV2UdQ  # The Stock Pot
+            - UCHnyfMqiRRG1u-2MsSQLbXA  # Veritasium
+            - UCODHrzPMGbNv67e84WDZhQQ  # Fern
+            - UCvK4bOhULCpmLabd2pDMtnA  # Yes Theory
+            - UC6nSFpj9HTCZ5t-N3Rm3-HA  # Vsauce
+            - UCWFKCr40YwOZQx8FHU_ZqqQ  # JerryRigEverything
+            - UC7YOGHUfC1Tb6E4pudI9STA  # Mental Outlaw
+            - UCs6KfncB4OV6Vug4o_bzijg  # Techlore
+            - UC5UAwBUum7CPN5buc-_N1Fw  # The Linux Experiment
+            - UCgdTVe88YVSrOZ9qKumhULQ  # Hardware Haven
+            - UCsnGwSIHyoYN0kiINAGUKxg  # Wolfgang's channel
+            - UCmGSJVG3mCRXVOP4yZrU1Dw  # Johnny Harris
+            - UC7KbIaEOuY7H2j-cvhJ3mYA  # Search Party
+            - UCqykZoZjaOPb6i_Y5gk0kLQ  # Cristophe
+            - UCbtEd1MuY6gd2RpdWqkzXFw  # Morley Kert
+            - UCUQo7nzH1sXVpzL92VesANw  # DIY Perks
+            - UCR-DXc1voovS8nhAvccRZhg  # Jeff Geerling
+            - UCREHHX2Lk_BYGS9R0ia7DDQ  # Rantoni
+            - UCT7H_xchRHaT9zr5GalIZVA  # Evan Edinger
+            - UCRcgy6GzDeccI7dkbbBna3Q  # Lemmino
+            - UCsXVk37bltHxD1rDPwtNM8Q  # Kurzgesagt

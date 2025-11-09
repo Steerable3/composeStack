@@ -1,0 +1,29 @@
+name: glance
+
+secrets:
+  pihole-webpassword:
+    file: ./pihole-webpassword.txt
+  immich-apitoken:
+    file: ./immich-apitoken.txt
+  glance-token:
+    file: ./glance-token.txt
+    
+
+services:
+  glance:
+    container_name: glance
+    image: glanceapp/glance
+    restart: unless-stopped
+    volumes:
+      - ./config:/app/config
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ${DATA_DISK}/.beszel:/mnt${DATA_DISK}:ro
+      - ${PARITY_DISK}/.beszel:/mnt${PARITY_DISK}:ro
+    ports:
+      - 2000:2000
+    env_file: .env
+    secrets:
+      - pihole-webpassword
+      - immich-apitoken
+      - glance-token

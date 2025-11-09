@@ -1,0 +1,17 @@
+name: glance-agent
+
+secrets:
+  glance-token:
+    file: ./glance-token.txt
+
+services:
+  glance-agent:
+    container_name: glance-agent
+    image: glanceapp/agent
+    environment:
+      TOKEN: your_auth_token_here
+    ports:
+      - 2020:2020
+    restart: unless-stopped
+    secrets:
+      - glance-token
