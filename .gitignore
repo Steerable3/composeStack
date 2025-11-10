@@ -12,9 +12,10 @@
 /glance/pihole-webpassword.txt
 /glance/glance-token.txt
 
+!/servarr/.env
 !/servarr/bazarr
 !/servarr/bazarr/config
-!/servarr/bazarr/config/**
+!/servarr/bazarr/config/config.yaml
 !/servarr/qbittorrent
 !/servarr/qbittorrent/qBittorrent
 !/servarr/qbittorrent/qBittorrent/categories.json
