@@ -121,21 +121,27 @@
               cache: 1m
               title: Infrastructure
               sites:
+                - title: Beszel
+                  url: https://dash.${LOCAL_DOMAIN}
+                  icon: di:beszel
+                - title: Dockge
+                  url: https://dockge.${LOCAL_DOMAIN}
+                  icon: di:dockge
                 - title: Nginx Proxy Manager
                   url: https://proxy.${LOCAL_DOMAIN}
                   icon: di:nginx-proxy-manager
                 - title: Qbittorrent
                   url: https://torrent.${LOCAL_DOMAIN}
                   icon: di:qbittorrent
-                - title: Nextcloud AIO
-                  url: https://ncm.${LOCAL_DOMAIN}
-                  icon: di:nextcloud
                 - title: Pi-hole
                   url: https://dns.${LOCAL_DOMAIN}/admin/login
                   icon: di:pi-hole
                 - title: FritzBox Router
                   url: https://router.${LOCAL_DOMAIN}
                   icon: di:fritzbox
+                - title: Nextcloud AIO
+                  url: https://ncm.${LOCAL_DOMAIN}
+                  icon: di:nextcloud
 
         # Docker containers widget
         - type: docker-containers
@@ -176,7 +182,7 @@
         - type: weather
           units: metric
           hour-format: 24h
-          location: Škofja Loka, Slovenia
+          location: Vienna, Austria
 
         # Calendar widget
         - type: calendar

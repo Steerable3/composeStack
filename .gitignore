@@ -36,6 +36,8 @@
 !/immich/**
 /immich/db-password.txt
 
+!/searxng/**
+
 !/jellyfin/config
 !/jellyfin/config/data
 !/jellyfin/config/data/.jellyfin-data
