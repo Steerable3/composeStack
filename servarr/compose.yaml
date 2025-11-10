@@ -177,6 +177,27 @@ services:
     networks:
       servarr-network:
         ipv4_address: 172.27.7.10
+
+
+  slskd:
+    image: slskd/slskd:latest
+    container_name: slskd
+    user: 1000:1000
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - SLSKD_REMOTE_CONFIGURATION=true
+    ports:
+      - 2710:5030/tcp
+      - 50300:50300/tcp
+    volumes:
+      - /var/slskd:/app:rw
+      - /mnt/media:/data
+    restart: unless-stopped 
+    networks:
+      servarr-network:
+        ipv4_address: 172.27.7.11
   #
   # audiobookrequest:
   #   image: markbeep/audiobookrequest:latest

@@ -1,19 +1,24 @@
 name: netbird
 
+secrets:
+  netbird-key:
+    file: ./netbird-key.txt
+
 services:
   netbird:
     container_name: netbird
-    hostname: proxy-stack
+    image: netbirdio/netbird:latest
     cap_add:
         - NET_ADMIN
         - SYS_ADMIN
         - SYS_RESOURCE
     network_mode: host
     environment:
-        - NB_SETUP_KEY=0D93D012-E113-450B-8DCE-E5F452E83E37
+        - NB_SETUP_KEY_FILE=7D6B504E-443A-4FA1-B4AA-C6AE06D95654
     volumes:
         - netbird-client:/var/lib/netbird
-    image: netbirdio/netbird:latest
+    secrets:
+      - netbird-key
 
 volumes:
   netbird-client:
